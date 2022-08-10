@@ -1,0 +1,27 @@
+{
+  "name": "my-nuxt-theme",
+  "private": true,
+  "type": "module",
+  "exports": "./theme/nuxt.config.ts",
+  "files": [
+    "theme"
+  ],
+  "scripts": {
+    "dev": "nuxt dev template",
+    "build": "nuxt build template",
+    "generate": "nuxt generate template",
+    "preview": "nuxt preview template",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@nuxt-themes/config": "npm:@nuxt-themes/config-edge@latest",
+    "@nuxt/content": "npm:@nuxt/content-edge@latest",
+    "@nuxtjs/design-tokens": "npm:@nuxtjs/design-tokens-edge@latest"
+  },
+  "devDependencies": {
+    "@nuxtjs/eslint-config-typescript": "^10.0.0",
+    "eslint": "^8.19.0",
+    "nuxt": "npm:nuxt3@latest",
+    "typescript": "^4.7.4"
+  }
+}
