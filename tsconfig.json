@@ -1,0 +1,7 @@
+{
+  // https://v3.nuxtjs.org/concepts/typescript
+  "extends": "./template/.nuxt/tsconfig.json",
+  "include": [
+    "index.d.ts"
+  ]
+}

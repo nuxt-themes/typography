@@ -1,23 +1,27 @@
+import { fileURLToPath } from 'url'
 import { defineNuxtConfig } from 'nuxt'
+import { resolve } from 'pathe'
 
-// https://v3.nuxtjs.org/api/configuration/nuxt.config
+const themeDir = fileURLToPath(new URL('./', import.meta.url))
+const resolveThemeDir = (path: string) => resolve(themeDir, path)
+
+// @ts-ignore
 export default defineNuxtConfig({
-  // TODO: replace with app.config when ready
-  // https://github.com/nuxt/framework/pull/6333
-  theme: {
-    meta: {
-      name: 'Theme Starter',
-      description: 'The best place to start your Nuxt Theme.',
-      author: 'NuxtLabs'
-    }
-  },
   modules: [
     '@nuxt-themes/config/module',
-    '@nuxtjs/design-tokens/module',
-    '@nuxt/content'
+    '@nuxtjs/design-tokens/module'
   ],
-  content: {
-    documentDriven: true
+  components: [
+    {
+      path: resolveThemeDir('components'),
+      prefix: '',
+      global: true
+    }
+  ],
+  postcss: {
+    plugins: {
+      'postcss-nested': {}
+    }
   },
   // TODO: remove in RC7
   experimental: {
