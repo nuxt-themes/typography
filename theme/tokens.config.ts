@@ -56,14 +56,14 @@ export default defineTokens({
     'drop-shadow-2xl': { value: 'drop-shadow(0 25px 25px rgb(0 0 0 / 0.15))' }
   },
   'font-size': {
-    xs: '12px',
-    sm: '14px',
-    normal: '16px'
+    xs: { value: '12px' },
+    sm: { value: '14px' },
+    normal: { value: '16px' }
   },
   'font-weight': {
-    normal: '400',
-    medium: '500',
-    semibold: '600'
+    normal: { value: '400' },
+    medium: { value: '500' },
+    semibold: { value: '600' }
   },
   'line-height': {
     'leading-5': { value: '1.25rem' }, /* 20px */
@@ -71,17 +71,17 @@ export default defineTokens({
     'leading-relaxed': { value: '1.625' }
   },
   spacing: {
-    0: '0px',
-    px: '1px',
-    0.5: '0.125rem', /* 2px */
-    1: '0.25rem', /* 4px */
-    1.5: '0.375rem', /* 6px */
-    2: '0.5rem', /* 8px */
-    3: '0.75rem', /* 12px */
-    4: '1rem', /* 16px */
-    5: '1.25rem', /* 20px */
-    6: '1.5rem', /* 24px */
-    8: '2rem' /* 32px */
+    0: { value: '0px' },
+    px: { value: '1px' },
+    '0-5': { value: '0.125rem' }, /* 2px */
+    1: { value: '0.25rem' }, /* 4px */
+    '1-5': { value: '0.375rem' }, /* 6px */
+    2: { value: '0.5rem' }, /* 8px */
+    3: { value: '0.75rem' }, /* 12px */
+    4: { value: '1rem' }, /* 16px */
+    5: { value: '1.25rem' }, /* 20px */
+    6: { value: '1.5rem' }, /* 24px */
+    8: { value: '2rem' } /* 32px */
   },
   prose: {
     a: {
@@ -118,7 +118,7 @@ export default defineTokens({
       color: { value: '{colors.gray.800}' },
       'background-color': { value: '{colors.gray.100}' },
       'border-radius': { value: '{border-radius.rounded-md}' },
-      padding: { value: '{spacing.1} {spacing.1.5} {spacing.1} {spacing.1.5}' },
+      padding: { value: '{spacing.1} {spacing.1-5} {spacing.1} {spacing.1-5}' },
       'font-size': { value: '{font-size.sm}' },
       'font-weight': { value: '{font-weight.normal}' }
     },
@@ -163,10 +163,14 @@ export default defineTokens({
       'font-weight': { value: '{font-weight.semibold}' }
     },
     table: {
+      margin: { value: '{spacing.6} 0 {spacing.6} 0' },
       'font-size': { value: '{font-size.sm}' },
       'line-height': { value: '{line-height.leading-5}' }
     },
     tbody: {
+      tr: {
+        'border-bottom': { value: '2px solid {colors.gray.100}' }
+      },
       td: {
         padding: { value: '{spacing.2}' }
       }
@@ -181,9 +185,7 @@ export default defineTokens({
         padding: { value: '0 {spacing.2} {spacing.2} {spacing.2}' }
       }
     },
-    tr: {
-      'border-bottom': { value: '1px solid {colors.gray.100}' }
-    },
+    tr: {},
     ul: {
       'list-style-type': { value: 'disc' },
       margin: { value: '{spacing.5} 0' },

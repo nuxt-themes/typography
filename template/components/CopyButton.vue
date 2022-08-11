@@ -1,5 +1,5 @@
 <template>
-  <button class="" style="text-decoration: capitalize;" @click="copyCode">
+  <button @click="copyCode">
     {{ state }}
   </button>
 </template>
@@ -39,6 +39,7 @@ const copyCode = () => {
 button {
   display: flex;
   cursor: pointer;
+  text-transform: capitalize;
 
   background-color: v-bind($dt('colors.gray.700'));
   border-radius: v-bind($dt('border-radius.md'));
@@ -48,10 +49,5 @@ button {
   &:hover {
     color: v-bind($dt('colors.primary.50'));
   }
-}
-
-.icon {
-  width: 1rem;
-  height: 1rem;
 }
 </style>

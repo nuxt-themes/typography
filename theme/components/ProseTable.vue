@@ -1,5 +1,5 @@
 <template>
-  <div class="my-6 max-w-full overflow-x-auto">
+  <div class="table-wrapper">
     <table>
       <slot />
     </table>
@@ -7,8 +7,17 @@
 </template>
 
 <style lang="postcss" scoped>
+.table-wrapper {
+  overflow-x: auto;
+  max-width: 100%;
+
+  margin: v-bind($dt('prose.table.margin'));
+}
 table {
-  @apply w-full table-auto text-left;
+  width: 100%;
+  table-layout: auto;
+  text-align: left;
+
   font-size: v-bind($dt('prose.table.font-size'));
   line-height: v-bind($dt('prose.table.line-height'));
 }

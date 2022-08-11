@@ -6,7 +6,8 @@
 
 <style lang="postcss" scoped>
 code {
-  @apply overflow-hidden;
+  overflow: hidden;
+
   color: v-bind($dt('prose.code-inline.color'));
   background-color: v-bind($dt('prose.code-inline.background-color'));
   border-radius: v-bind($dt('prose.code-inline.border-radius'));
@@ -20,7 +21,7 @@ tbody code {
 }
 
 a {
-  @apply overflow-hidden;
+  overflow: hidden;
 
   code {
     color: v-bind($dt('prose.a.color'));
@@ -35,6 +36,7 @@ h4 a {
   code {
     color: inherit !important;
     font-size: inherit !important;
+
     background-color: v-bind($dt('prose.code-inline.background-color')) !important;
     border-radius: v-bind($dt('prose.code-inline.border-radius')) !important;
     padding: v-bind($dt('prose.code-inline.padding')) !important;

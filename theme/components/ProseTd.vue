@@ -6,7 +6,14 @@
 
 <style lang="postcss" scoped>
 tbody td {
-  @apply align-top first:pl-0 last:pr-0;
+  vertical-align: top;
+  &:first-child {
+    padding-left: 0;
+  }
+  &:last-child {
+    padding-right: 0;
+  }
+
   padding: v-bind($dt('prose.tbody.td.padding'));
 }
 </style>

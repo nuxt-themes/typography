@@ -9,11 +9,11 @@ defineProps({
 
 <template>
   <div>
-    <ProseH2 :id="name">
+    <h2>
       {{ name }}
-    </ProseH2>
+    </h2>
 
-    <div class="px-6 pb-6 border border-gray-200 rounded-lg">
+    <div class="card">
       <h3 style="text-decoration: none;">
         Code
       </h3>
@@ -28,3 +28,11 @@ defineProps({
     </div>
   </div>
 </template>
+
+<style lang="postcss" scoped>
+.card {
+  padding: 0 1.5rem 1.5rem 1.5rem;
+  border: 1px solid v-bind($dt('colors.gray-200'));
+  border-radius: v-bind($dt('border-radius.rounded-lg'));
+}
+</style>

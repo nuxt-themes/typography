@@ -64,14 +64,15 @@ defineProps({
 
       .line::before {
         content: '>';
-        color: v-bind($dt('color.primary.500'));
         position: absolute;
         top: 0;
         left: -0.1rem;
         display: block;
         user-select: none;
-        font-family: v-bind($dt('fonts.code'));
         font-weight: 700;
+
+        color: v-bind($dt('color.primary.500'));
+        font-family: v-bind($dt('fonts.code'));
       }
     }
   }

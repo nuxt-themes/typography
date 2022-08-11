@@ -8,9 +8,10 @@ p {
   line-height: v-bind($dt('prose.p.line-height'));
 
   :deep(br) {
-    @apply block;
-    margin: v-bind($dt('prose.p.br.margin'));
+    display: block;
     content: '';
+
+    margin: v-bind($dt('prose.p.br.margin'));
   }
 }
 </style>
