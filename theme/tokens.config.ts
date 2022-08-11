@@ -153,7 +153,7 @@ export default defineTokens({
       'hover-border-bottom': { value: '1px dashed {colors.gray.900}' }
     },
     h4: {
-      color: { value: '{colors.gray.500}' },
+      color: { value: '{colors.gray.900}' },
       margin: { value: '{spacing.8} 0 {spacing.4} 0' },
       'font-size': { value: '{font-size.lg}' },
       'font-weight': { value: '{font-weight.semibold}' },
