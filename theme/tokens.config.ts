@@ -58,7 +58,11 @@ export default defineTokens({
   'font-size': {
     xs: { value: '12px' },
     sm: { value: '14px' },
-    normal: { value: '16px' }
+    normal: { value: '16px' },
+    lg: { value: '18px' },
+    xl: { value: '20px' },
+    '2xl': { value: '24px' },
+    '3xl': { value: '30px' }
   },
   'font-weight': {
     normal: { value: '400' },
@@ -68,6 +72,7 @@ export default defineTokens({
   'line-height': {
     'leading-5': { value: '1.25rem' }, /* 20px */
     'leading-none': { value: '1' },
+    'leading-snug': { value: '1.375' },
     'leading-relaxed': { value: '1.625' }
   },
   spacing: {
@@ -123,10 +128,38 @@ export default defineTokens({
       'font-weight': { value: '{font-weight.normal}' }
     },
     em: {},
-    h1: {},
-    h2: {},
-    h3: {},
-    h4: {},
+    h1: {
+      color: { value: '{colors.gray.900}' },
+      margin: { value: '{spacing.8} 0 {spacing.4} 0' },
+      'font-size': { value: '{font-size.3xl}' },
+      'font-weight': { value: '{font-weight.semibold}' },
+      'line-height': { value: '{line-height.leading-snug}' },
+      'hover-border-bottom': { value: '1px dashed {colors.gray.900}' }
+    },
+    h2: {
+      color: { value: '{colors.gray.900}' },
+      margin: { value: '{spacing.8} 0 {spacing.4} 0' },
+      'font-size': { value: '{font-size.2xl}' },
+      'font-weight': { value: '{font-weight.semibold}' },
+      'line-height': { value: '{line-height.leading-snug}' },
+      'hover-border-bottom': { value: '1px dashed {colors.gray.900}' }
+    },
+    h3: {
+      color: { value: '{colors.gray.900}' },
+      margin: { value: '{spacing.8} 0 {spacing.4} 0' },
+      'font-size': { value: '{font-size.xl}' },
+      'font-weight': { value: '{font-weight.semibold}' },
+      'line-height': { value: '{line-height.leading-snug}' },
+      'hover-border-bottom': { value: '1px dashed {colors.gray.900}' }
+    },
+    h4: {
+      color: { value: '{colors.gray.500}' },
+      margin: { value: '{spacing.8} 0 {spacing.4} 0' },
+      'font-size': { value: '{font-size.lg}' },
+      'font-weight': { value: '{font-weight.semibold}' },
+      'line-height': { value: '{line-height.leading-snug}' },
+      'hover-border-bottom': { value: '1px dashed {colors.gray.900}' }
+    },
     hr: {
       margin: { value: '{spacing.8} 0' },
       'border-top': { value: '1px solid {colors.gray.200}' }

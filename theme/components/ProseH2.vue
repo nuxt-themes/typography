@@ -12,26 +12,40 @@ defineProps<{ id: string }>()
 
 <style lang="postcss" scoped>
 h2 {
-  @apply text-gray-900 mt-8 mb-4 scroll-mt-[calc(var(--header-height)+4.5rem)] text-2xl font-semibold leading-snug tracking-tight sm:scroll-mt-[calc(var(--header-height)+2rem)];
+  /* TODO */
+  /* @apply scroll-mt-[calc(var(--header-height)+4.5rem)] sm:scroll-mt-[calc(var(--header-height)+2rem)]; */
+  color: v-bind($dt('prose.h2.color'));
+  margin: v-bind($dt('prose.h2.margin'));
+  font-size: v-bind($dt('prose.h2.font-size'));
+  font-weight: v-bind($dt('prose.h2.font-weight'));
+  line-height: v-bind($dt('prose.h2.line-height'));
 }
 
 h2 + * {
-  @apply mt-0;
+  margin-top: 0;
 }
 
 h2 > a {
-  @apply relative;
+  position: relative;
 
   &:before {
-    @apply absolute top-0 left-[2px] h-[calc(100%+2px)] w-[calc(100%-4px)] content-[''];
+    position: absolute;
+    top: 0;
+    left: 2px;
+    height: calc(100%+2px);
+    width: calc(100%-4px);
+    content: '';
   }
 
   &:hover {
     &:before {
-      @apply border-gray-900 border-b border-dashed;
+      border-bottom: v-bind($dt('prose.h2.hover-border-bottom'));
     }
     &:after {
-      @apply absolute -right-5 h-3 w-3;
+      position: absolute;
+      right: 1.25rem;
+      height: 0.75rem;
+      width: 0.75rem;
       content: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='#000'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1'/%3E%3C/svg%3E");
     }
   }
