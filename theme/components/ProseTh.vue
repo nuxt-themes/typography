@@ -7,9 +7,11 @@
 <style lang="postcss" scoped>
 thead th {
   vertical-align: bottom;
+
   &:first-child {
     padding-left: 0;
   }
+
   &:last-child {
     padding-right: 0;
   }

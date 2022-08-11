@@ -4,8 +4,7 @@ import { defineNuxtConfig } from 'nuxt'
 export default defineNuxtConfig({
   extends: 'my-nuxt-theme',
   modules: ['@nuxt/content'],
-  // Same as Tailwind CSS reset
-  css: ['modern-normalize/modern-normalize.css'],
+  css: ['assets/reset.css'],
   components: [
     {
       path: './components',

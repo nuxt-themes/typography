@@ -9,29 +9,21 @@ defineProps({
 
 <template>
   <div>
-    <h2>
+    <ProseH2 :id="`${name}-section`">
       {{ name }}
-    </h2>
+    </ProseH2>
 
     <div class="card">
-      <h3 style="text-decoration: none;">
-        Code
-      </h3>
-
       <slot name="code" />
 
-      <h3>
-        Render
-      </h3>
-
-      <Markdown :use="$slots.render" unwrap="p" />
+      <Markdown :use="$slots.render" />
     </div>
   </div>
 </template>
 
 <style lang="postcss" scoped>
 .card {
-  padding: 0 1.5rem 1.5rem 1.5rem;
+  padding: 0 1rem;
   border: 1px solid v-bind($dt('colors.gray-200'));
   border-radius: v-bind($dt('border-radius.rounded-lg'));
 }
