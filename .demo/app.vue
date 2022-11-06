@@ -18,7 +18,7 @@ css({
     },
   },
   '.page': {
-    padding: '{space.16}',
+    padding: '{space.16} {space.24}',
     minHeight: '100vh',
     display: 'flex',
     flexDirection: 'column'

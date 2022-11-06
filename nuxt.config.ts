@@ -1,21 +1,11 @@
-import { fileURLToPath } from 'url'
-import { resolve } from 'pathe'
+import { createResolver } from '@nuxt/kit'
 
-const themeDir = fileURLToPath(new URL('./', import.meta.url))
-const resolveThemeDir = (path: string) => resolve(themeDir, path)
+const { resolve } = createResolver(import.meta.url)
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   components: [
-    { path: resolveThemeDir('components'), global: true, prefix: '' }
+    { path: resolve('./components'), global: true, prefix: '' }
   ],
-
-  modules: ['nuxt-icon', '@nuxt-themes/tokens', '@nuxt/content'],
-
-  content: {
-    highlight: {
-      preload: ['ts'],
-      theme: 'github-dark'
-    }
-  }
+  modules: ['nuxt-icon', '@nuxt-themes/tokens']
 })

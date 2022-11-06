@@ -1,40 +1,39 @@
 {
-  "name": "my-nuxt-theme",
+  "name": "@nuxt-themes/prose",
   "private": true,
   "type": "module",
   "exports": "./theme/nuxt.config.ts",
   "files": [
-    "theme"
+    "components",
+    "app.config.ts",
+    "nuxt.config.ts",
+    "tokens.config.ts"
   ],
   "scripts": {
-    "dev": "nuxt dev",
-    "build": "nuxt build",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
+    "dev": "nuxi prepare && nuxt dev .demo",
+    "build": "nuxt build .demo",
+    "generate": "nuxt generate .demo",
+    "preview": "nuxt preview .demo",
     "lint": "eslint ."
   },
   "dependencies": {
-    "@iconify/vue": "^4.0.0",
     "@nuxt-themes/tokens": "latest",
-    "@nuxt/content": "^2.2.1",
     "@nuxtjs/color-mode": "^3.1.8",
-    "@unocss/reset": "^0.46.3",
-    "@vueuse/core": "^9.4.0",
     "nuxt-icon": "^0.1.7",
-    "pinceau": "latest",
-    "ufo": "^0.8.6"
+    "pinceau": "latest"
   },
   "devDependencies": {
+    "@nuxt/content": "^2.2.1",
     "@nuxtjs/eslint-config-typescript": "^11.0.0",
-    "eslint": "^8.26.0",
-    "nuxt": "npm:nuxt3@latest",
-    "typescript": "^4.8.4",
-    "vue": "^3.2.41"
+    "eslint": "^8.27.0",
+    "nuxt": "^3.0.0-rc.13",
+    "typescript": "^4.8.4"
   },
   "pnpm": {
     "peerDependencyRules": {
       "ignoreMissing": [
-        "postcss"
+        "postcss",
+        "vue"
       ]
     }
   }
