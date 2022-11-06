@@ -11,9 +11,9 @@
   ],
   "scripts": {
     "dev": "nuxi prepare && nuxt dev .demo",
-    "build": "nuxt build .demo",
-    "generate": "nuxt generate .demo",
-    "preview": "nuxt preview .demo",
+    "build": "nuxi prepare && nuxi build .demo",
+    "generate": "nuxi prepare && nuxi generate .demo",
+    "preview": "nuxi preview .demo",
     "lint": "eslint ."
   },
   "dependencies": {
