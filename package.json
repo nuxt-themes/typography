@@ -24,6 +24,7 @@
   },
   "devDependencies": {
     "@nuxt/content": "^2.2.1",
+    "@nuxthq/studio": "^0.1.4",
     "@nuxtjs/eslint-config-typescript": "^11.0.0",
     "eslint": "^8.27.0",
     "nuxt": "^3.0.0-rc.13",
