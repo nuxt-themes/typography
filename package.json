@@ -20,8 +20,8 @@
     "build": "nuxi prepare && nuxi build .demo",
     "generate": "nuxi prepare && nuxi generate .demo",
     "preview": "nuxi preview .demo",
-    "lint": "eslint .",
-    "release": "npm run lint && standard-version && git push --follow-tags && npm publish"
+    "lint": "eslint --ext .ts,.js,.vue .",
+    "release": "standard-version && git push --follow-tags && npm publish"
   },
   "dependencies": {
     "@nuxt-themes/tokens": "latest",
