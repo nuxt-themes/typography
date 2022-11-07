@@ -1,10 +1,10 @@
 # Nuxt Typography
 
-A list of prose components currently implemented.
+> A Nuxt theme to get a beautiful a customisable typography with a set a prose components for [Nuxt Content](https://content.nuxtjs.org).
 
-Checkout [nuxt-themes/typography](https://github.com/nuxt-themes/typography) for the documentation, don't forget to give a :icon{name=ph:star}!
+Repository is on GitHub: [nuxt-themes/typography](https://github.com/nuxt-themes/typography)
 
-See also the [online playground](https://stackblitz.com/edit/nuxt-theme-typography?file=content/index.md) or with the example of [Tailwind Typograhy content](/tailwind).
+See also the [online playground](https://stackblitz.com/edit/nuxt-theme-typography?file=content/index.md) or using [Tailwind Typograhy content](/tailwind).
 
 ## Installation
 
@@ -22,13 +22,28 @@ export default defineNuxtConfig({
 })
 ```
 
-Enjoy a beautiful typography with [Nuxt Content](https://content.nuxtjs.org).
+## Configuration
+
+You can configure the typography by creating a `tokens.config.ts` in your project:
+
+```ts
+import { defineTheme, palette } from 'pinceau'
+
+// Checkout all the properties to overwrite: https://github.com/nuxt-themes/prose/blob/main/tokens.config.ts
+export default defineTheme({
+  colors: {
+    primary: palette('teal')
+  }
+})
+```
+
+## Prose Components
+
+Nuxt Typography expose a set of prose components that work seamlessly with [Nuxt Content](https://content.nuxtjs.org).
 
 To overwrite a prose component, create a component with the same name in your project `components/content/` directory (ex: `components/content/ProseA.vue`).
 
-## Components
-
-## `<ProseA>`
+### `<ProseA>`
 
 ```md [Code]
 [Link](/api/components/prose)
@@ -36,7 +51,7 @@ To overwrite a prose component, create a component with the same name in your pr
 
 [Link](/api/components/prose)
 
-## `<ProseBlockquote>`
+### `<ProseBlockquote>`
 
 ```md [Code]
 > Block quote
@@ -44,7 +59,7 @@ To overwrite a prose component, create a component with the same name in your pr
 
 > Block quote
 
-## `<ProseCode>`
+### `<ProseCode>`
 
 ```md [Code]
 \```javascript
@@ -62,7 +77,7 @@ export default () => {
 
 Check out the [highlight options](https://content.nuxtjs.org/api/configuration#highlight) for more about the syntax highlighting.
 
-## `<ProseCodeInline>`
+### `<ProseCodeInline>`
 
 ```md [Code]
 `code inline`.
@@ -74,7 +89,7 @@ Check out the [highlight options](https://content.nuxtjs.org/api/configuration#h
 
 `const codeInline: string = 'highlighted code inline'`{lang="ts"}
 
-## `<ProseH1>`
+### `<ProseH1>`
 
 
 # H1 Heading
@@ -83,7 +98,7 @@ Check out the [highlight options](https://content.nuxtjs.org/api/configuration#h
 # H1 Heading
 ```
 
-## `<ProseH2>`
+### `<ProseH2>`
 
 ```md [Code]
 ## H2 Heading
@@ -91,7 +106,7 @@ Check out the [highlight options](https://content.nuxtjs.org/api/configuration#h
 
   ## H2 Heading
 
-## `<ProseH3>`
+### `<ProseH3>`
 
 ```md [Code]
 ### H3 Heading
@@ -99,7 +114,7 @@ Check out the [highlight options](https://content.nuxtjs.org/api/configuration#h
 
 ### H3 Heading
 
-## `<ProseH4>`
+### `<ProseH4>`
 
 ```md [Code]
 #### H4 Heading
@@ -107,7 +122,7 @@ Check out the [highlight options](https://content.nuxtjs.org/api/configuration#h
   
 #### H4 Heading
 
-## `<ProseH5>`
+### `<ProseH5>`
 
 ```md [Code]
 ##### H5 Heading
@@ -115,7 +130,7 @@ Check out the [highlight options](https://content.nuxtjs.org/api/configuration#h
 
 ##### H5 Heading
 
-## `<ProseH6>`
+### `<ProseH6>`
 
 ```md [Code]
 ###### H6 Heading
@@ -123,7 +138,7 @@ Check out the [highlight options](https://content.nuxtjs.org/api/configuration#h
 
 ###### H6 Heading
 
-## `<ProseHr>`
+### `<ProseHr>`
 
 ```md [Code]
 ---
@@ -131,7 +146,7 @@ Check out the [highlight options](https://content.nuxtjs.org/api/configuration#h
 
 ---
 
-## `<ProseImg>`
+### `<ProseImg>`
 
 ```md [Code]
 ![A Cool Image](/preview.png)
@@ -139,7 +154,7 @@ Check out the [highlight options](https://content.nuxtjs.org/api/configuration#h
 
 ![A Cool Image](/preview.png) 
 
-## `<ProseUl>`
+### `<ProseUl>`
 
 ```md [Code]
 - Just
@@ -153,15 +168,9 @@ Check out the [highlight options](https://content.nuxtjs.org/api/configuration#h
 - Unordered
 - List
 
-## `<ProseLi>`
+It also include the `<ProseLi>` component.
 
-```md [Code]
-- List element
-```
-
-- List element
-
-## `<ProseOl>`
+### `<ProseOl>`
 
 ```md [Code]
 1. Foo
@@ -173,7 +182,9 @@ Check out the [highlight options](https://content.nuxtjs.org/api/configuration#h
 2. Bar
 3. Baz
 
-## `<ProseP>`
+It also include the `<ProseLi>` component.
+
+### `<ProseP>`
 
 ```md [Code]
 Just a paragraph.
@@ -181,7 +192,7 @@ Just a paragraph.
 
 Just a paragraph.
 
-## `<ProseStrong>`
+### `<ProseStrong>`
 
 ```md [Code]
 **Just a strong paragraph.**
@@ -189,7 +200,7 @@ Just a paragraph.
 
 **Just a strong paragraph.**
 
-## `<ProseEm>`
+### `<ProseEm>`
 
 ```md [Code]
 _Just an italic paragraph._
@@ -197,7 +208,7 @@ _Just an italic paragraph._
 
 _Just an italic paragraph._
 
-## `<ProseTable>`
+### `<ProseTable>`
 
 ```md [Code]
 | Key | Type | Description |
