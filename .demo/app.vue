@@ -41,7 +41,9 @@ css({
     padding: '{space.16} {space.24}',
     minHeight: '100vh',
     display: 'flex',
-    flexDirection: 'column'
+    flexDirection: 'column',
+    maxWidth: '80ch',
+    margin: 'auto'
   },
 })
 </style>
