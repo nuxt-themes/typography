@@ -1,8 +1,12 @@
 {
   "name": "@nuxt-themes/prose",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Prose & typography components to use with Nuxt Content.",
-  "keywords": ["nuxt", "nuxt-content", "nuxt-theme"],
+  "keywords": [
+    "nuxt",
+    "nuxt-content",
+    "nuxt-theme"
+  ],
   "type": "module",
   "exports": "./theme/nuxt.config.ts",
   "files": [
