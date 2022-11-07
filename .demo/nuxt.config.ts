@@ -2,9 +2,13 @@ export default defineNuxtConfig({
   extends: '..',
   modules: ['@nuxt/content', '@nuxthq/studio'],
   content: {
+    documentDriven: true,
     highlight: {
       preload: ['ts'],
-      theme: 'github-dark'
+      theme: {
+        dark: 'github-dark',
+        default: 'github-light'
+      }
     }
   }
 })

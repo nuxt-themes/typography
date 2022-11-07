@@ -4,6 +4,8 @@ A list of Prose components currently implemented.
 
 To overwrite a prose component, create a component with the same name in your project `components/content/` directory (ex: `components/content/ProseA.vue`).
 
+[Try Tailwind Typograhy content](/tailwind)
+
 ## A big paragraph
 
 Lorem ipsum dolor sit amet, **consectetur adipiscing elit**. Maecenas at sollicitudin sapien. Etiam sit amet aliquet sapien. Vestibulum tristique maximus luctus. Cras sem mi, semper non nisi sit amet, rutrum bibendum dui. Quisque dictum lectus vel diam gravida interdum. Proin `const test = 'test'`{lang="ts"}. Aliquam erat volutpat. Nunc volutpat pulvinar viverra. Proin lacinia fringilla fermentum. Duis nec purus orci. In _hac habitasse platea_ dictumst. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor diam a eros maximus, at commodo odio pellentesque.
