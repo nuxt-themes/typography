@@ -33,6 +33,9 @@ css({
     zIndex: 1000,
     cursor: 'pointer',
     padding: '{space.8}',
+    svg: {
+      cursor: 'pointer',
+    }
   },
   '.page': {
     padding: '{space.16} {space.24}',
