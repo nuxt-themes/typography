@@ -10,5 +10,8 @@ export default defineNuxtConfig({
         default: 'github-light'
       }
     }
+  },
+  generate: {
+    routes: ['/tailwind']
   }
 })
