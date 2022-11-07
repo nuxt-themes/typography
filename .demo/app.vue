@@ -38,7 +38,7 @@ css({
     }
   },
   '.page': {
-    padding: '{space.16} {space.24}',
+    padding: '{space.64} {space.24}',
     minHeight: '100vh',
     display: 'flex',
     flexDirection: 'column',
