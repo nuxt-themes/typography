@@ -72,7 +72,7 @@ export default defineTheme({
       }
     },
     h1: {
-      margin: '3rem 0 2rem',
+      margin: '0 0 2rem',
       fontSize: '{typo.5xl.fontSize}',
       lineHeight: '{typo.5xl.lineHeight}',
       fontWeight: '{fontWeights.bold}',
