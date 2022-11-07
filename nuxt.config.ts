@@ -1,4 +1,5 @@
-import { createResolver } from '@nuxt/kit'
+import { logger, createResolver } from '@nuxt/kit'
+import { version } from './package.json'
 
 const { resolve } = createResolver(import.meta.url)
 
@@ -7,5 +8,10 @@ export default defineNuxtConfig({
   components: [
     { path: resolve('./components'), global: true, prefix: '' }
   ],
-  modules: ['nuxt-icon', '@nuxt-themes/tokens']
+  modules: ['nuxt-icon', '@nuxt-themes/tokens'],
+  hooks: {
+    'modules:before' () {
+      logger.success(`Using Nuxt Typography v${version}`)
+    }
+  }
 })
