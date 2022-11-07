@@ -1,6 +1,8 @@
 {
   "name": "@nuxt-themes/prose",
-  "private": true,
+  "version": "0.0.0",
+  "description": "Prose & typography components to use with Nuxt Content.",
+  "keywords": ["nuxt", "nuxt-content", "nuxt-theme"],
   "type": "module",
   "exports": "./theme/nuxt.config.ts",
   "files": [
@@ -14,7 +16,9 @@
     "build": "nuxi prepare && nuxi build .demo",
     "generate": "nuxi prepare && nuxi generate .demo",
     "preview": "nuxi preview .demo",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "prepack": "yarn build",
+    "release": "standard-version && git push --follow-tags && npm publish"
   },
   "dependencies": {
     "@nuxt-themes/tokens": "latest",
@@ -28,6 +32,7 @@
     "@nuxtjs/eslint-config-typescript": "^11.0.0",
     "eslint": "^8.27.0",
     "nuxt": "^3.0.0-rc.13",
+    "standard-version": "^9.5.0",
     "typescript": "^4.8.4"
   },
   "pnpm": {
