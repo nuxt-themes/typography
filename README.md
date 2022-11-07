@@ -3,7 +3,7 @@
 > A Nuxt theme to get a beautiful a customisable typography with [Nuxt Content](https://content.nuxtjs.org)
 
 - [Documentation](https://prose.nuxt.space)
-- [Online playground](https://stackblitz.com/edit/nuxt-themes-prose?file=content/index.md)
+- [Online playground](https://stackblitz.com/edit/nuxt-theme-prose?file=content/index.md)
 
 ## Installation
 
