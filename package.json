@@ -21,7 +21,6 @@
     "generate": "nuxi prepare && nuxi generate .demo",
     "preview": "nuxi preview .demo",
     "lint": "eslint .",
-    "prepack": "yarn build",
     "release": "standard-version && git push --follow-tags && npm publish"
   },
   "dependencies": {
