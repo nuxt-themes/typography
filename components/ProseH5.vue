@@ -24,10 +24,9 @@ css({
       marginRight: '{space.12}',
     },
     ':deep(.icon)': {
-      position: 'absolute',
       display: 'inline-block',
       opacity: '0',
-      transition: 'all 100ms',
+      transition: 'opacity 100ms',
     },
     '&:hover': {
       ':deep(.icon)': {
