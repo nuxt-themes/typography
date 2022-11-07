@@ -1,6 +1,6 @@
 # Nuxt Typography
 
-> A Nuxt theme to get a beautiful a customisable typography with a set a prose components for [Nuxt Content](https://content.nuxtjs.org).
+> A Nuxt theme to get a beautiful and customisable typography with a set of prose components for [Nuxt Content](https://content.nuxtjs.org).
 
 Repository is on GitHub: [nuxt-themes/typography](https://github.com/nuxt-themes/typography)
 
