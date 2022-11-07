@@ -8,7 +8,7 @@ See also the [online playground](https://stackblitz.com/edit/nuxt-theme-typograp
 
 ## Installation
 
-```bash
+```bash[npm]
 npm install --save-dev @nuxt-themes/typography
 ```
 

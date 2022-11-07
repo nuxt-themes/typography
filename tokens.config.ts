@@ -264,6 +264,16 @@ export default defineTheme({
       }
     },
     code: {
+      block: {
+        color: {
+          light: '{colors.gray.700}',
+          dark: '{colors.gray.200}'
+        },
+        backgroundColor: {
+          light: '{colors.gray.100}',
+          dark: '{colors.gray.800}'
+        }
+      },
       inline: {
         borderRadius: '{radii.sm}',
         padding: '0.25rem 0.375rem 0.25rem 0.375rem',

@@ -5,20 +5,20 @@ import type { Lang } from 'shiki-es'
 defineProps({
   code: {
     type: String,
-    default: '',
+    default: ''
   },
   language: {
     type: String as PropType<Lang>,
-    default: null,
+    default: null
   },
   filename: {
     type: String,
-    default: null,
+    default: null
   },
   highlights: {
     type: Array as () => number[],
-    default: () => [],
-  },
+    default: () => []
+  }
 })
 </script>
 
@@ -40,9 +40,14 @@ css({
     position: "relative",
     overflow: "hidden",
     width: "100%",
-    color: "{colors.gray.200}", /* {prose.code.color} */
     margin: "{space.32} 0", /* {prose.code.margin.default} */
-    borderRadius: "{radii.lg}", /* {prose.code.border-radius} */
+    borderRadius: "{radii.md}", /* {prose.code.border-radius} */
+    color: "{prose.code.block.color.light}",
+    backgroundColor: "{prose.code.block.backgroundColor.light}",
+    "@dark": {
+      color: "{prose.code.block.color.dark}",
+      backgroundColor: "{prose.code.block.backgroundColor.dark}",
+    },
 
     "&:hover": {
       ".copy-button": {
@@ -92,7 +97,7 @@ css({
 
   ".filename": {
     position: "absolute",
-    right: "0.5rem",
+    right: "1rem",
     top: "0.5rem",
     fontFamily: "{fonts.code}",
     color: "{colors.gray.400}", /* {prose.code.filename.color} */
@@ -106,9 +111,8 @@ css({
     flex: 1,
     overflowX: "auto",
     margin: "0",
-    padding: "{space.8}", /* {prose.code.padding.default} */
-    backgroundColor: "{colors.gray.800}", /* {prose.code.background-color} */
-    lineHeight: "{leads.relaxed}" /* {prose.code.line-height} */
+    padding: "{space.16}", /* {prose.code.padding.default} */
+    lineHeight: "{leads.relaxed}", /* {prose.code.line-height} */
   },
 
   ":deep(.line.highlight)": {
