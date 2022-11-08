@@ -5,6 +5,15 @@ export default defineTheme({
   colors: {
     primary: colors.indigoblue
   },
+  surface: {
+    base: {},
+    elevated: {
+      background: {
+        initial: '{colors.gray.200}',
+        dark: '{colors.gray.700}'
+      }
+    }
+  },
   typo: {
     xs: {
       fontSize: '{fontSizes.xs}',
