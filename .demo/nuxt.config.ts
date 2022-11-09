@@ -2,7 +2,6 @@ export default defineNuxtConfig({
   extends: '..',
   modules: [
     '@nuxt/content',
-    '@nuxtjs/color-mode',
     '@nuxthq/studio',
     'nuxt-plausible'
   ],

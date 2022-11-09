@@ -2,19 +2,19 @@
 defineProps({
   href: {
     type: String,
-    default: '',
+    default: ''
   },
   blank: {
     type: Boolean,
-    default: false,
+    default: false
   },
   /**
    * `true` if `href` points to a static file
    */
   static: {
     type: Boolean,
-    default: false,
-  },
+    default: false
+  }
 })
 </script>
 
