@@ -16,6 +16,44 @@ See also the [online playground](https://stackblitz.com/edit/nuxt-theme-typograp
 npm install --save-dev @nuxt-themes/typography
 ```
 
+## Configuration
+
+You can change the whole appearance of Prose components via `tokens.config.ts` file.
+
+You can check out all the available keys by looking at the [source of this file](https://github.com/nuxt-themes/typography/tree/main/tokens.config.ts).
+
+Tokens are divided between two keys:
+
+- `typography` rules general style tokens reused in the other category
+- `prose` rules per-component style tokens, that feeds from `typography`
+
+Editing `typography` is more suited if you want to modify or adapt the general appearance of your typography.
+
+Editing `prose` is more suited if you want to modify or adapt the appearance of a specific prose component.
+
+### Configuration example
+
+```ts [tokens.config.ts]
+import { defineTheme } from pinceau
+
+
+export default defineTheme({
+  typography: {
+    // This will change the general line-break size
+    letterSpacings: {
+      tight: '-0.035em',
+      wide: '0.035em'
+    },
+  },
+  prose: {
+    // This will change the fontSize of the `<ProseH1>` component
+    h1: {
+      fontSize: '{typography.2xl.fontSize}'
+    }
+  }
+})
+```
+
 ## Usage
 
 Add it to the `nuxt.config`:
