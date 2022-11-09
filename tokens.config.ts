@@ -44,59 +44,6 @@ export default defineTheme({
       relaxed: '1.625',
       loose: '2'
     },
-    xs: {
-      fontSize: '{typography.fontSizes.xs}',
-      lineHeight: '{typography.leads.normal}',
-      letterSpacing: '{typography.letterSpacings.wide}'
-    },
-    sm: {
-      fontSize: '{typography.fontSizes.sm}',
-      lineHeight: '{typography.leads.relaxed}'
-    },
-    base: {
-      fontSize: '{typography.fontSizes.base}',
-      lineHeight: '{typography.leads.relaxed}'
-    },
-    lg: {
-      fontSize: '{typography.fontSizes.lg}',
-      lineHeight: '{typography.leads.normal}'
-    },
-    xl: {
-      fontSize: '{typography.fontSizes.xl}',
-      lineHeight: '{typography.leads.snug}'
-    },
-    '2xl': {
-      fontSize: '{typography.fontSizes.2xl}',
-      lineHeight: '{typography.leads.snug}'
-    },
-    '3xl': {
-      fontSize: '{typography.fontSizes.3xl}',
-      lineHeight: '{typography.leads.snug}'
-    },
-    '4xl': {
-      fontSize: '{typography.fontSizes.4xl}',
-      lineHeight: '{typography.leads.tight}'
-    },
-    '5xl': {
-      fontSize: '{typography.fontSizes.5xl}',
-      lineHeight: '{typography.leads.tight}'
-    },
-    '6xl': {
-      fontSize: '{typography.fontSizes.6xl}',
-      lineHeight: '{typography.leads.tight}'
-    },
-    '7xl': {
-      fontSize: '{typography.fontSizes.7xl}',
-      lineHeight: '{typography.leads.tight}'
-    },
-    '8xl': {
-      fontSize: '{typography.fontSizes.8xl}',
-      lineHeight: '{typography.leads.tight}'
-    },
-    '9xl': {
-      fontSize: '{typography.fontSizes.9xl}',
-      lineHeight: '{typography.leads.tight}'
-    },
     colors: {
       primary: {
         50: '#d9e5ff',
@@ -122,6 +69,14 @@ export default defineTheme({
         800: '#27272A',
         900: '#18181B'
       }
+    },
+    surface: {
+      elevated: {
+        background: {
+          initial: '{colors.gray.200}',
+          dark: '{colors.gray.700}'
+        }
+      }
     }
   },
   prose: {
@@ -133,47 +88,47 @@ export default defineTheme({
     },
     h1: {
       margin: '0 0 2rem',
-      fontSize: '{typography.5xl.fontSize}',
-      lineHeight: '{typography.5xl.lineHeight}',
+      fontSize: '{typography.fontSizes.5xl}',
+      lineHeight: '{typography.leads.tight}',
       fontWeight: '{typography.fontWeights.bold}',
       letterSpacing: '{typography.letterSpacings.tight}',
       iconSize: '{typography.3xl.fontSize}'
     },
     h2: {
       margin: '3rem 0 2rem',
-      fontSize: '{typography.4xl.fontSize}',
-      lineHeight: '{typography.4xl.lineHeight}',
+      fontSize: '{typography.fontSizes.4xl}',
+      lineHeight: '{typography.leads.tight}',
       fontWeight: '{typography.fontWeights.semibold}',
       letterSpacing: '{typography.letterSpacings.tight}',
       iconSize: '{typography.2xl.fontSize}'
     },
     h3: {
       margin: '3rem 0 2rem',
-      fontSize: '{typography.3xl.fontSize}',
-      lineHeight: '{typography.3xl.lineHeight}',
+      fontSize: '{typography.fontSizes.3xl}',
+      lineHeight: '{typography.leads.snug}',
       fontWeight: '{typography.fontWeights.semibold}',
       letterSpacing: '{typography.letterSpacings.tight}',
       iconSize: '{typography.xl.fontSize}'
     },
     h4: {
       margin: '3rem 0 2rem',
-      fontSize: '{typography.2xl.fontSize}',
-      lineHeight: '{typography.2xl.lineHeight}',
+      fontSize: '{typography.fontSizes.2xl}',
+      lineHeight: '{typography.leads.snug}',
       fontWeight: '{typography.fontWeights.semibold}',
       letterSpacing: '{typography.letterSpacings.tight}',
       iconSize: '{typography.lg.fontSize}'
     },
     h5: {
       margin: '3rem 0 2rem',
-      fontSize: '{typography.xl.fontSize}',
-      lineHeight: '{typography.xl.lineHeight}',
+      fontSize: '{typography.fontSizes.xl}',
+      lineHeight: '{typography.leads.snug}',
       fontWeight: '{typography.fontWeights.semibold}',
       iconSize: '{typography.lg.fontSize}'
     },
     h6: {
       margin: '3rem 0 2rem',
-      fontSize: '{typography.lg.fontSize}',
-      lineHeight: '{typography.lg.lineHeight}',
+      fontSize: '{typography.fontSizes.lg}',
+      lineHeight: '{typography.leads.normal}',
       fontWeight: '{typography.fontWeights.semibold}',
       iconSize: '{typography.base.fontSize}'
     },

@@ -20,17 +20,19 @@ defineProps({
     default: () => []
   }
 })
+
+const hovered = ref(false)
 </script>
 
 <template>
-  <div :class="[`highlight-${language}`]" class="prose-code">
+  <div :class="[`highlight-${language}`]" class="prose-code" @mouseenter="hovered = true" @mouseleave="hovered = false">
     <span v-if="filename" class="filename">
       {{ filename }}
     </span>
 
     <slot />
 
-    <CopyButton :content="code" class="copy-button" />
+    <ProseCodeCopyButton :show="hovered" :content="code" class="copy-button" />
   </div>
 </template>
 
@@ -40,20 +42,15 @@ css({
     position: "relative",
     overflow: "hidden",
     width: "100%",
-    margin: "{space.32} 0", /* {prose.code.margin.default} */
-    borderRadius: "{radii.md}", /* {prose.code.border-radius} */
+    margin: "{space.32} 0",
+    borderRadius: "{radii.md}",
+    border: '1px solid {colors.gray.200}',
     color: "{prose.code.block.color.light}",
     backgroundColor: "{prose.code.block.backgroundColor.light}",
     "@dark": {
       color: "{prose.code.block.color.dark}",
       backgroundColor: "{prose.code.block.backgroundColor.dark}",
-    },
-
-    "&:hover": {
-      ".copy-button": {
-        transform: "scale(1)",
-        opacity: 1
-      }
+      borderColor: '{colors.gray.700}'
     },
 
     "&.highlight-zsh, &.highlight-sh, &.highlight-bash, &.highlight-shell, &.highlight-shellscript": {
@@ -77,18 +74,10 @@ css({
     }
   },
 
-  ".copy-button": {
+  '.copy-button': {
     position: "absolute",
-    background: "none",
-    border: "none",
-    right: "0.75rem",
-    bottom: "0.5rem",
-    top: "0.75rem",
-    transform: "scale(0)",
-    opacity: 0,
-    transitionProperty: "color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter",
-    transitionTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)",
-    transitionDuration: "150ms"
+    right: 0,
+    bottom: 0,
   },
 
   ":deep(code)": { display: "flex", flexDirection: "column" },
@@ -100,10 +89,10 @@ css({
     right: "1rem",
     top: "0.5rem",
     fontFamily: "{fonts.code}",
-    color: "{colors.gray.400}", /* {prose.code.filename.color} */
-    borderRadius: "border.size.lg", /* {prose.code.filename.border-radius} */
-    fontSize: "{fontSizes.xs}", /* {prose.code.filename.font-size} */
-    lineHeight: "{leads.normal}" /* {prose.code.filename.line-height} */
+    color: "{colors.gray.400}",
+    borderRadius: "{radii.lg}",
+    fontSize: "{fontSizes.xs}",
+    lineHeight: "{leads.normal}"
   },
 
   ":deep(pre)": {
@@ -111,12 +100,12 @@ css({
     flex: 1,
     overflowX: "auto",
     margin: "0",
-    padding: "{space.16}", /* {prose.code.padding.default} */
-    lineHeight: "{leads.relaxed}", /* {prose.code.line-height} */
+    padding: "{space.16}",
+    lineHeight: "{leads.relaxed}",
   },
 
   ":deep(.line.highlight)": {
-    backgroundColor: "{colors.gray.700}" /* {prose.code.line.highlight-background-color} */
+    backgroundColor: "{colors.gray.700}"
   }
 })
 </style>
