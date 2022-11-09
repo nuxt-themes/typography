@@ -66,7 +66,7 @@ export default defineTheme({
 
 ### Headings icons
 
-To customize the anchor icon used for each heading on hover, use the `prose` property in your `app.config.ts`:
+To customize the icon used on each heading on hover, use the `prose` property in your `app.config.ts`:
 
 ```ts [app.config.ts]
 export default defineAppConfig({
@@ -78,6 +78,10 @@ export default defineAppConfig({
     // Icon used for h1 headings
     h1: {
       icon: 'ph:link'
+    },
+    // Remove icon on h2 headings
+    h2: {
+      icon: false
     }
   }
 })

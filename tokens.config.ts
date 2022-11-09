@@ -92,7 +92,7 @@ export default defineTheme({
       lineHeight: '{typography.leads.tight}',
       fontWeight: '{typography.fontWeights.bold}',
       letterSpacing: '{typography.letterSpacings.tight}',
-      iconSize: '{typography.3xl.fontSize}'
+      iconSize: '{typography.fontSizes.3xl}'
     },
     h2: {
       margin: '3rem 0 2rem',
@@ -100,7 +100,7 @@ export default defineTheme({
       lineHeight: '{typography.leads.tight}',
       fontWeight: '{typography.fontWeights.semibold}',
       letterSpacing: '{typography.letterSpacings.tight}',
-      iconSize: '{typography.2xl.fontSize}'
+      iconSize: '{typography.fontSizes.2xl}'
     },
     h3: {
       margin: '3rem 0 2rem',
@@ -108,7 +108,7 @@ export default defineTheme({
       lineHeight: '{typography.leads.snug}',
       fontWeight: '{typography.fontWeights.semibold}',
       letterSpacing: '{typography.letterSpacings.tight}',
-      iconSize: '{typography.xl.fontSize}'
+      iconSize: '{typography.fontSizes.xl}'
     },
     h4: {
       margin: '3rem 0 2rem',
@@ -116,21 +116,21 @@ export default defineTheme({
       lineHeight: '{typography.leads.snug}',
       fontWeight: '{typography.fontWeights.semibold}',
       letterSpacing: '{typography.letterSpacings.tight}',
-      iconSize: '{typography.lg.fontSize}'
+      iconSize: '{typography.fontSizes.lg}'
     },
     h5: {
       margin: '3rem 0 2rem',
       fontSize: '{typography.fontSizes.xl}',
       lineHeight: '{typography.leads.snug}',
       fontWeight: '{typography.fontWeights.semibold}',
-      iconSize: '{typography.lg.fontSize}'
+      iconSize: '{typography.fontSizes.lg}'
     },
     h6: {
       margin: '3rem 0 2rem',
       fontSize: '{typography.fontSizes.lg}',
       lineHeight: '{typography.leads.normal}',
       fontWeight: '{typography.fontWeights.semibold}',
-      iconSize: '{typography.base.fontSize}'
+      iconSize: '{typography.fontSizes.base}'
     },
     strong: {
       fontWeight: '{typography.fontWeights.semibold}'

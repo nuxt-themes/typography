@@ -1,10 +1,10 @@
 export default defineAppConfig({
   prose: {
     headings: {
-      icon: 'ph:anchor'
+      // icon: 'ph:anchor'
     },
     h1: {
-      icon: 'ph:link'
+      icon: 'ph:anchor'
     }
   }
 })

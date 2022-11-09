@@ -2,13 +2,15 @@
 defineProps<{ id: string }>()
 
 const { prose } = useAppConfig()
+const hasIcon = computed(() => prose.h4?.icon !== false && prose.headings?.icon !== false)
+const icon = computed(() => prose.h4?.icon || prose.headings?.icon)
 </script>
 
 <template>
   <h4 :id="id">
     <NuxtLink :href="`#${id}`">
       <slot />
-      <Icon :name="prose.h4?.icon || prose.headings?.icon" />
+      <Icon v-if="hasIcon" :name="icon" />
     </NuxtLink>
   </h4>
 </template>
