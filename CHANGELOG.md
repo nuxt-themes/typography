@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.7](https://github.com/nuxt-themes/typography/compare/v0.0.6...v0.0.7) (2022-11-09)
+
+
+### Features
+
+* **global-styles:** do not rely on external token dependency ([#11](https://github.com/nuxt-themes/typography/issues/11)) ([9d1ed2b](https://github.com/nuxt-themes/typography/commit/9d1ed2b07afd6c76a15fce673cad6527166c1cb3))
+* ProseCode updates ([#10](https://github.com/nuxt-themes/typography/issues/10)) ([1be8660](https://github.com/nuxt-themes/typography/commit/1be8660c1779e94b7c170f4fed9853f5729050f9))
+
 ### [0.0.6](https://github.com/nuxt-themes/typography/compare/v0.0.5...v0.0.6) (2022-11-09)
 
 ### [0.0.5](https://github.com/nuxt-themes/typography/compare/v0.0.4...v0.0.5) (2022-11-07)
