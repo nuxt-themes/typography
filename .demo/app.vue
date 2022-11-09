@@ -1,7 +1,15 @@
 <template>
-  <nav @click="$colorMode.preference = $colorMode.preference === 'dark' ? 'light' : 'dark'" >
-    <Icon name="ph:sun" v-if="$colorMode.preference === 'light'" />
-    <Icon name="ph:moon" v-else />
+  <nav>
+    <NuxtLink to="/" v-if="$route.path !== '/'">
+      <Icon name="ph:house-simple" />
+    </NuxtLink>
+    <a href="https://github.com/nuxt-themes/typography" target="_blank" rel="noopener">
+      <Icon name="carbon:logo-github" />
+    </a>
+    <button @click="$colorMode.preference = $colorMode.preference === 'dark' ? 'light' : 'dark'" >
+      <Icon name="ph:sun" v-if="$colorMode.preference === 'light'" />
+      <Icon name="ph:moon" v-else />
+    </button>
   </nav>
   <article class="page">
     <NuxtPage />
@@ -15,7 +23,6 @@ css({
     color: '{colors.gray.900}',
     '-webkit-font-smoothing': 'antialiased',
     '-moz-osx-font-smoothing': 'grayscale',
-
     '@dark': {
       backgroundColor: '{colors.gray.900}',
       color: '{colors.gray.100}'
@@ -24,24 +31,33 @@ css({
   nav: {
     position: 'fixed',
     display: 'flex',
-    right: '10px',
     top: '10px',
+    right: '10px',
+    alignItems: 'center',
     borderRadius: '{space.8}',
-    justifyContent: 'flex-end',
-    // backgroundColor: '{colors.neutral.white}',
+    justifyContent: 'center',
     backdropFilter: 'blur(20px)',
     zIndex: 1000,
-    cursor: 'pointer',
-    padding: '{space.8}',
-    svg: {
+    'a, button': {
+      display: 'flex',
+      padding: '{space.8}',
+      alignItems: 'center',
       cursor: 'pointer',
+      color: '{colors.gray.600}',
+      '@dark': {
+        color: '{colors.gray.400}'
+      },
+      '&:hover': {
+        color: '{colors.gray.900}',
+        '@dark': {
+          color: '{colors.gray.100}'
+        }
+      }
     }
   },
   '.page': {
     padding: '{space.64} {space.24}',
     minHeight: '100vh',
-    display: 'flex',
-    flexDirection: 'column',
     maxWidth: '80ch',
     margin: 'auto'
   },

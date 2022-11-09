@@ -1,17 +1,14 @@
 export default defineNuxtConfig({
   extends: '..',
-  modules: ['@nuxt/content', '@nuxthq/studio'],
+  modules: ['@nuxt/content', '@nuxthq/studio', 'nuxt-plausible'],
   content: {
     documentDriven: true,
     highlight: {
-      preload: ['ts'],
+      preload: ['vue', 'ts'],
       theme: {
         dark: 'github-dark',
         default: 'github-light'
       }
     }
-  },
-  generate: {
-    routes: ['/tailwind']
   }
 })
