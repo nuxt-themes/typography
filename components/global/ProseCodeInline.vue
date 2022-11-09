@@ -13,7 +13,8 @@ css({
     fontWeight: '{prose.code.inline.fontWeight}',
     color: '{prose.code.inline.color.light}',
     backgroundColor: '{prose.code.inline.backgroundColor.light}',
-    whiteSpace: 'nowrap',
+    whiteSpace: 'pre-wrap',
+    wordBreak: 'break-all',
     "@dark": {
       color: '{prose.code.inline.color.dark}',
       backgroundColor: '{prose.code.inline.backgroundColor.dark}'
