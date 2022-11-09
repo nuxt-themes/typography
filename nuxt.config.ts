@@ -8,15 +8,8 @@ const { resolve } = createResolver(import.meta.url)
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   css: [resolve('./main.css')],
-
-  modules: ['@nuxtjs/color-mode', 'nuxt-icon', 'pinceau/nuxt'],
-
-  // @ts-ignore
-  pinceau: {
-    configFileName: 'tokens.config'
-  },
-
-  colorMode: {
-    classSuffix: ''
-  }
+  modules: [
+    '@nuxt-themes/tokens',
+    'nuxt-icon'
+  ]
 })

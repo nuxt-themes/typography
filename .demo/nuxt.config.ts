@@ -2,6 +2,7 @@ export default defineNuxtConfig({
   extends: '..',
   modules: [
     '@nuxt/content',
+    '@nuxtjs/color-mode',
     '@nuxthq/studio',
     'nuxt-plausible'
   ],
@@ -14,5 +15,8 @@ export default defineNuxtConfig({
         default: 'github-light'
       }
     }
+  },
+  colorMode: {
+    classSuffix: ''
   }
 })
