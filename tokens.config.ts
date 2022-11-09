@@ -122,6 +122,14 @@ export default defineTheme({
         800: '#27272A',
         900: '#18181B'
       }
+    },
+    surface: {
+      elevated: {
+        background: {
+          initial: '{colors.gray.200}',
+          dark: '{colors.gray.700}'
+        }
+      }
     }
   },
   prose: {
