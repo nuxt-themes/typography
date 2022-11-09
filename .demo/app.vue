@@ -24,10 +24,8 @@
 css({
   html: {
     backgroundColor: '{colors.neutral.white}',
-    color: '{colors.gray.900}',
     '@dark': {
       backgroundColor: '{colors.gray.900}',
-      color: '{colors.gray.100}'
     },
   },
 

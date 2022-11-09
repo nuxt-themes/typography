@@ -3,7 +3,7 @@ import { defineTheme } from 'pinceau'
 export default defineTheme({
   typography: {
     verticalMargin: {
-      sm: '26px',
+      sm: '16px',
       base: '26px'
     },
     letterSpacings: {
@@ -208,21 +208,21 @@ export default defineTheme({
     },
     ul: {
       listStyleType: 'disc',
-      margin: '{typography.verticalMargin.base} 0 {typography.verticalMargin.base} {typography.verticalMargin.sm}',
+      padding: '0 0 0 1rem',
       li: {
         markerColor: {
-          light: '{typography.colors.secondary.200}',
+          light: '{typography.colors.secondary.300}',
           dark: '{typography.colors.secondary.800}'
         }
       }
     },
     ol: {
       listStyleType: 'decimal',
-      margin: '{typography.verticalMargin.base} 0 {typography.verticalMargin.base} {typography.verticalMargin.sm}',
+      padding: '0 0 0 1rem',
       li: {
         markerColor: {
-          light: '{typography.colors.secondary.400}',
-          dark: '{typography.colors.secondary.600}'
+          light: '{typography.colors.secondary.500}',
+          dark: '{typography.colors.secondary.500}'
         }
       }
     },

@@ -13,7 +13,8 @@
     "components",
     "app.config.ts",
     "nuxt.config.ts",
-    "tokens.config.ts"
+    "tokens.config.ts",
+    "main.css"
   ],
   "scripts": {
     "dev": "nuxi prepare && nuxt dev .demo",

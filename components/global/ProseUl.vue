@@ -8,7 +8,7 @@
 css({
   ul: {
     listStyleType: '{prose.ul.listStyleType}',
-    margin: '{prose.ul.margin}',
+    padding: '{prose.ul.padding}',
     "& > :deep(li)": {
       "&::marker": {
         color: '{prose.ul.li.markerColor.light}',
