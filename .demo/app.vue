@@ -21,13 +21,12 @@ css({
   html: {
     backgroundColor: '{colors.neutral.white}',
     color: '{colors.gray.900}',
-    '-webkit-font-smoothing': 'antialiased',
-    '-moz-osx-font-smoothing': 'grayscale',
     '@dark': {
       backgroundColor: '{colors.gray.900}',
       color: '{colors.gray.100}'
     },
   },
+
   nav: {
     position: 'fixed',
     display: 'flex',
@@ -55,6 +54,7 @@ css({
       }
     }
   },
+
   '.page': {
     padding: '{space.64} {space.24}',
     minHeight: '100vh',

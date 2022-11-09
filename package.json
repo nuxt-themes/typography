@@ -24,12 +24,12 @@
     "release": "standard-version && git push --follow-tags && npm publish"
   },
   "dependencies": {
-    "@nuxt-themes/tokens": "latest",
     "@nuxtjs/color-mode": "^3.1.8",
     "nuxt-icon": "^0.1.7",
     "pinceau": "latest"
   },
   "devDependencies": {
+    "@nuxt-themes/tokens": "latest",
     "@nuxt/content": "^2.2.1",
     "@nuxthq/studio": "^0.1.4",
     "@nuxtjs/eslint-config-typescript": "^11.0.0",
