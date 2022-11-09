@@ -8,8 +8,8 @@ const { prose } = useAppConfig()
   <h1 :id="id">
     <NuxtLink :href="`#${id}`">
       <slot />
+      <Icon :name="prose.h1?.icon || prose.headings?.icon" />
     </NuxtLink>
-    <Icon :name="prose.icon" size="20px" />
   </h1>
 </template>
 
@@ -22,13 +22,13 @@ css({
     lineHeight: '{prose.h1.lineHeight}',
     fontWeight: "{prose.h1.fontWeight}",
     letterSpacing: '{prose.h1.letterSpacing}',
-    a: {
-      marginRight: '{space.12}',
-    },
     ':deep(.icon)': {
+      marginLeft: '{space.12}',
       display: 'inline-block',
       opacity: '0',
       transition: 'opacity 100ms',
+      width: '{prose.h1.iconSize}',
+      height: '{prose.h1.iconSize}',
     },
     '&:hover': {
       ':deep(.icon)': {

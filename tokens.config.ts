@@ -136,38 +136,46 @@ export default defineTheme({
       fontSize: '{typography.5xl.fontSize}',
       lineHeight: '{typography.5xl.lineHeight}',
       fontWeight: '{typography.fontWeights.bold}',
-      letterSpacing: '{typography.letterSpacings.tight}'
+      letterSpacing: '{typography.letterSpacings.tight}',
+      iconSize: '{typography.3xl.fontSize}'
     },
     h2: {
       margin: '3rem 0 2rem',
       fontSize: '{typography.4xl.fontSize}',
       lineHeight: '{typography.4xl.lineHeight}',
       fontWeight: '{typography.fontWeights.semibold}',
-      letterSpacing: '{typography.letterSpacings.tight}'
+      letterSpacing: '{typography.letterSpacings.tight}',
+      iconSize: '{typography.2xl.fontSize}'
     },
     h3: {
       margin: '3rem 0 2rem',
       fontSize: '{typography.3xl.fontSize}',
       lineHeight: '{typography.3xl.lineHeight}',
       fontWeight: '{typography.fontWeights.semibold}',
-      letterSpacing: '{typography.letterSpacings.tight}'
+      letterSpacing: '{typography.letterSpacings.tight}',
+      iconSize: '{typography.xl.fontSize}'
     },
     h4: {
       margin: '3rem 0 2rem',
       fontSize: '{typography.2xl.fontSize}',
       lineHeight: '{typography.2xl.lineHeight}',
       fontWeight: '{typography.fontWeights.semibold}',
-      letterSpacing: '{typography.letterSpacings.tight}'
+      letterSpacing: '{typography.letterSpacings.tight}',
+      iconSize: '{typography.lg.fontSize}'
     },
     h5: {
       margin: '3rem 0 2rem',
       fontSize: '{typography.xl.fontSize}',
-      lineHeight: '{typography.xl.lineHeight}'
+      lineHeight: '{typography.xl.lineHeight}',
+      fontWeight: '{typography.fontWeights.semibold}',
+      iconSize: '{typography.lg.fontSize}'
     },
     h6: {
       margin: '3rem 0 2rem',
       fontSize: '{typography.lg.fontSize}',
-      lineHeight: '{typography.lg.lineHeight}'
+      lineHeight: '{typography.lg.lineHeight}',
+      fontWeight: '{typography.fontWeights.semibold}',
+      iconSize: '{typography.base.fontSize}'
     },
     strong: {
       fontWeight: '{typography.fontWeights.semibold}'

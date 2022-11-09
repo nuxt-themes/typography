@@ -1,5 +1,10 @@
 export default defineAppConfig({
   prose: {
-    icon: 'heroicons-outline:link'
+    headings: {
+      icon: 'ph:anchor'
+    },
+    h1: {
+      icon: 'ph:link'
+    }
   }
 })

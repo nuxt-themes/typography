@@ -8,12 +8,22 @@ A Nuxt theme to get a beautiful and customisable typography with a set of prose 
 
 Repository is on GitHub: [nuxt-themes/typography](https://github.com/nuxt-themes/typography)
 
-See also the [online playground](https://stackblitz.com/edit/nuxt-theme-typography?file=content/index.md), [Tailwind Typograhy content](/tailwind) or [Pinceau readme](/pinceau).
+See also the [online playground](https://stackblitz.com/edit/nuxt-theme-typography?file=content/index.md), [Content example](/example), [Tailwind Typograhy content](/tailwind) or [Pinceau readme](/pinceau).
 
 ## Installation
 
 ```bash[npm]
 npm install --save-dev @nuxt-themes/typography
+```
+
+## Usage
+
+Add it to the `nuxt.config`:
+
+```ts
+export default defineNuxtConfig({
+  extends: '@nuxt-themes/typography'
+})
 ```
 
 ## Configuration
@@ -54,27 +64,21 @@ export default defineTheme({
 })
 ```
 
-## Usage
+### Headings icons
 
-Add it to the `nuxt.config`:
+To customize the anchor icon used for each heading on hover, use the `prose` property in your `app.config.ts`:
 
-```ts
-export default defineNuxtConfig({
-  extends: '@nuxt-themes/typography'
-})
-```
-
-## Configuration
-
-You can configure the typography by creating a `tokens.config.ts` in your project:
-
-```ts
-import { defineTheme, palette } from 'pinceau'
-
-// Checkout all the properties to overwrite: https://github.com/nuxt-themes/prose/blob/main/tokens.config.ts
-export default defineTheme({
-  colors: {
-    primary: palette('teal')
+```ts [app.config.ts]
+export default defineAppConfig({
+  prose: {
+    // Default icon for all headings
+    headings: {
+      icon: 'ph:anchor'
+    },
+    // Icon used for h1 headings
+    h1: {
+      icon: 'ph:link'
+    }
   }
 })
 ```
