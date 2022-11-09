@@ -15,8 +15,5 @@ export default defineNuxtConfig({
         default: 'github-light'
       }
     }
-  },
-  colorMode: {
-    classSuffix: ''
   }
 })
