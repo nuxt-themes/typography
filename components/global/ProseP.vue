@@ -7,11 +7,11 @@ css({
   p: {
     fontSize: '{typography.base.fontSize}',
     lineHeight: '{typography.base.lineHeight}',
-    margin: "{prose.p.margin}",
-    ":deep(br)": {
+    margin: '{prose.p.margin}',
+    ':deep(br)': {
       display: "block",
       content: "''",
-      margin: "{prose.p.br.margin}"
+      margin: '{prose.p.br.margin}'
     }
   }
 })

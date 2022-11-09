@@ -64,14 +64,14 @@ export default defineTheme({
 })
 ```
 
-### Headings icons
+### Icons
 
-To customize the icon used on each heading on hover, use the `prose` property in your `app.config.ts`:
+To customize the icons used in Nuxt Typography, use the `prose` property in your `app.config.ts`:
 
 ```ts [app.config.ts]
 export default defineAppConfig({
   prose: {
-    // Default icon for all headings
+    // Default icon for all headings on hover
     headings: {
       icon: 'ph:anchor'
     },
@@ -82,10 +82,17 @@ export default defineAppConfig({
     // Remove icon on h2 headings
     h2: {
       icon: false
+    },
+    // Icon used for the copy button on code blocks
+    copyButton: {
+      iconCopy: 'ph:copy',
+      iconCopied: 'ph:check'
     }
   }
 })
 ```
+
+Note that under the hood, Nuxt Typography uses [nuxt-icon](https://github.com/nuxt-modules/icon), this mean that you can use a custom component name or any name coming from [icones.js.org](https://icones.js.org).
 
 ## Prose Components
 

@@ -22,7 +22,7 @@ css({
     margin: '{prose.h6.margin}',
     fontSize: '{prose.h6.fontSize}',
     lineHeight: '{prose.h6.lineHeight}',
-    fontWeight: "{prose.h6.fontWeight}",
+    fontWeight: '{prose.h6.fontWeight}',
     ':deep(.icon)': {
       marginLeft: '{space.8}',
       display: 'inline-block',

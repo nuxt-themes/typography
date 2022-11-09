@@ -42,14 +42,14 @@ css({
     position: "relative",
     overflow: "hidden",
     width: "100%",
-    margin: "{space.32} 0",
-    borderRadius: "{radii.md}",
+    margin: '{space.32} 0',
+    borderRadius: '{radii.md}',
     border: '1px solid {colors.gray.200}',
-    color: "{prose.code.block.color.light}",
-    backgroundColor: "{prose.code.block.backgroundColor.light}",
+    color: '{prose.code.block.color.light}',
+    backgroundColor: '{prose.code.block.backgroundColor.light}',
     "@dark": {
-      color: "{prose.code.block.color.dark}",
-      backgroundColor: "{prose.code.block.backgroundColor.dark}",
+      color: '{prose.code.block.color.dark}',
+      backgroundColor: '{prose.code.block.backgroundColor.dark}',
       borderColor: '{colors.gray.700}'
     },
 
@@ -67,8 +67,8 @@ css({
           display: "block",
           userSelect: "none",
           fontWeight: 700,
-          color: "{colors.primary.500}",
-          fontFamily: "{fonts.code}"
+          color: '{colors.primary.500}',
+          fontFamily: '{fonts.code}'
         }
       }
     }
@@ -88,11 +88,11 @@ css({
     position: "absolute",
     right: "1rem",
     top: "0.5rem",
-    fontFamily: "{fonts.code}",
-    color: "{colors.gray.400}",
-    borderRadius: "{radii.lg}",
-    fontSize: "{fontSizes.xs}",
-    lineHeight: "{leads.normal}"
+    fontFamily: '{fonts.code}',
+    color: '{colors.gray.400}',
+    borderRadius: '{radii.lg}',
+    fontSize: '{fontSizes.xs}',
+    lineHeight: '{leads.normal}'
   },
 
   ":deep(pre)": {
@@ -100,12 +100,12 @@ css({
     flex: 1,
     overflowX: "auto",
     margin: "0",
-    padding: "{space.16}",
-    lineHeight: "{leads.relaxed}",
+    padding: '{space.16}',
+    lineHeight: '{leads.relaxed}',
   },
 
   ":deep(.line.highlight)": {
-    backgroundColor: "{colors.gray.700}"
+    backgroundColor: '{colors.gray.700}'
   }
 })
 </style>

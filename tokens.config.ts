@@ -3,8 +3,8 @@ import { defineTheme } from 'pinceau'
 export default defineTheme({
   typography: {
     verticalMargin: {
-      sm: '32px',
-      base: '32px'
+      sm: '26px',
+      base: '26px'
     },
     letterSpacings: {
       tight: '-0.025em',

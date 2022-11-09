@@ -22,7 +22,7 @@ css({
     margin: '{prose.h1.margin}',
     fontSize: '{prose.h1.fontSize}',
     lineHeight: '{prose.h1.lineHeight}',
-    fontWeight: "{prose.h1.fontWeight}",
+    fontWeight: '{prose.h1.fontWeight}',
     letterSpacing: '{prose.h1.letterSpacing}',
     ':deep(.icon)': {
       marginLeft: '{space.12}',

@@ -3,6 +3,10 @@ export default defineAppConfig({
     // Default heading
     headings: {
       icon: 'ph:link'
+    },
+    copyButton: {
+      iconCopy: 'ph:copy',
+      iconCopied: 'ph:check'
     }
   }
 })
@@ -39,6 +43,13 @@ declare module '@nuxt/schema' {
       }
       h6?: {
         icon?: string
+      },
+      /**
+       * Configuration for copy button in code blocks
+       */
+      copyButton?: {
+        iconCopy?: string
+        iconCopied?: string
       }
     }
   }
