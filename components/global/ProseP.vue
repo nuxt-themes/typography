@@ -5,13 +5,13 @@
 <style lang="ts" scoped>
 css({
   p: {
-    fontSize: '{typo.base.fontSize}',
-    lineHeight: '{typo.base.lineHeight}',
-    margin: "{prose.p.margin}",
-    ":deep(br)": {
+    fontSize: '{typography.base.fontSize}',
+    lineHeight: '{typography.base.lineHeight}',
+    margin: '{prose.p.margin}',
+    ':deep(br)': {
       display: "block",
       content: "''",
-      margin: "{prose.p.br.margin}"
+      margin: '{prose.p.br.margin}'
     }
   }
 })

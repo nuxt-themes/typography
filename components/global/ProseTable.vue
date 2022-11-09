@@ -11,14 +11,14 @@ css({
   ".table-wrapper": {
     overflowX: "auto",
     maxWidth: "100%",
-    margin: "{prose.table.margin}"
+    margin: '{prose.table.margin}'
   },
   table: {
     width: "100%",
     tableLayout: "auto",
-    textAlign: "{prose.table.textAlign}",
-    fontSize: "{prose.table.fontSize}",
-    lineHeight: "{prose.table.lineHeight}"
+    textAlign: '{prose.table.textAlign}',
+    fontSize: '{prose.table.fontSize}',
+    lineHeight: '{prose.table.lineHeight}'
   }
 })
 </style>

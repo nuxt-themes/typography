@@ -2,14 +2,16 @@
 defineProps<{ id: string }>()
 
 const { prose } = useAppConfig()
+const hasIcon = computed(() => prose.h3?.icon !== false && prose.headings?.icon !== false)
+const icon = computed(() => prose.h3?.icon || prose.headings?.icon)
 </script>
 
 <template>
   <h3 :id="id">
     <NuxtLink :href="`#${id}`">
       <slot />
+      <Icon v-if="hasIcon" :name="icon" />
     </NuxtLink>
-    <Icon :name="prose.icon" size="20px" />
   </h3>
 </template>
 
@@ -20,15 +22,15 @@ css({
     margin: '{prose.h3.margin}',
     fontSize: '{prose.h3.fontSize}',
     lineHeight: '{prose.h3.lineHeight}',
-    fontWeight: "{prose.h3.fontWeight}",
+    fontWeight: '{prose.h3.fontWeight}',
     letterSpacing: '{prose.h3.letterSpacing}',
-    a: {
-      marginRight: '{space.12}',
-    },
     ':deep(.icon)': {
+      marginLeft: '{space.12}',
       display: 'inline-block',
       opacity: '0',
       transition: 'opacity 100ms',
+      width: '{prose.h3.iconSize}',
+      height: '{prose.h3.iconSize}',
     },
     '&:hover': {
       ':deep(.icon)': {

@@ -1,6 +1,10 @@
 export default defineNuxtConfig({
   extends: '..',
-  modules: ['@nuxt/content', '@nuxthq/studio', 'nuxt-plausible'],
+  modules: [
+    '@nuxt/content',
+    '@nuxthq/studio',
+    'nuxt-plausible'
+  ],
   content: {
     documentDriven: true,
     highlight: {

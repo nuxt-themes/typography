@@ -7,13 +7,13 @@
 <style lang="ts" scoped>
 css({
   ol: {
-    listStyleType: "{prose.ol.listStyleType}",
-    margin: "{prose.ol.margin}",
+    listStyleType: '{prose.ol.listStyleType}',
+    margin: '{prose.ol.margin}',
     "& > :deep(li)": {
       "&::marker": {
-        color: "{prose.ol.li.markerColor.light}",
+        color: '{prose.ol.li.markerColor.light}',
         "@dark": {
-          color: "{prose.ol.li.markerColor.dark}"
+          color: '{prose.ol.li.markerColor.dark}'
         }
       }
     }

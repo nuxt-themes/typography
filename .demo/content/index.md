@@ -8,7 +8,7 @@ A Nuxt theme to get a beautiful and customisable typography with a set of prose 
 
 Repository is on GitHub: [nuxt-themes/typography](https://github.com/nuxt-themes/typography)
 
-See also the [online playground](https://stackblitz.com/edit/nuxt-theme-typography?file=content/index.md), [Tailwind Typograhy content](/tailwind) or [Pinceau readme](/pinceau).
+See also the [online playground](https://stackblitz.com/edit/nuxt-theme-typography?file=content/index.md), [Content example](/example), [Tailwind Typograhy content](/tailwind) or [Pinceau readme](/pinceau).
 
 ## Installation
 
@@ -28,18 +28,71 @@ export default defineNuxtConfig({
 
 ## Configuration
 
-You can configure the typography by creating a `tokens.config.ts` in your project:
+You can change the whole appearance of Prose components via `tokens.config.ts` file.
 
-```ts
-import { defineTheme, palette } from 'pinceau'
+You can check out all the available keys by looking at the [source of this file](https://github.com/nuxt-themes/typography/tree/main/tokens.config.ts).
 
-// Checkout all the properties to overwrite: https://github.com/nuxt-themes/prose/blob/main/tokens.config.ts
+Tokens are divided between two keys:
+
+- `typography` rules general style tokens reused in the other category
+- `prose` rules per-component style tokens, that feeds from `typography`
+
+Editing `typography` is more suited if you want to modify or adapt the general appearance of your typography.
+
+Editing `prose` is more suited if you want to modify or adapt the appearance of a specific prose component.
+
+### Configuration example
+
+```ts [tokens.config.ts]
+import { defineTheme } from pinceau
+
+
 export default defineTheme({
-  colors: {
-    primary: palette('teal')
+  typography: {
+    // This will change the general line-break size
+    letterSpacings: {
+      tight: '-0.035em',
+      wide: '0.035em'
+    },
+  },
+  prose: {
+    // This will change the fontSize of the `<ProseH1>` component
+    h1: {
+      fontSize: '{typography.2xl.fontSize}'
+    }
   }
 })
 ```
+
+### Icons
+
+To customize the icons used in Nuxt Typography, use the `prose` property in your `app.config.ts`:
+
+```ts [app.config.ts]
+export default defineAppConfig({
+  prose: {
+    // Default icon for all headings on hover
+    headings: {
+      icon: 'ph:anchor'
+    },
+    // Icon used for h1 headings
+    h1: {
+      icon: 'ph:link'
+    },
+    // Remove icon on h2 headings
+    h2: {
+      icon: false
+    },
+    // Icon used for the copy button on code blocks
+    copyButton: {
+      iconCopy: 'ph:copy',
+      iconCopied: 'ph:check'
+    }
+  }
+})
+```
+
+Note that under the hood, Nuxt Typography uses [nuxt-icon](https://github.com/nuxt-modules/icon), this mean that you can use a custom component name or any name coming from [icones.js.org](https://icones.js.org).
 
 ## Prose Components
 
