@@ -46,7 +46,6 @@ const copy = (e: MouseEvent) => {
 css({
   button: {
     padding: '{space.8}',
-    background: '{surface.elevated.background}',
     margin: '{space.8}',
     borderRadius: '{radii.sm}',
     transition: 'all 100ms',
