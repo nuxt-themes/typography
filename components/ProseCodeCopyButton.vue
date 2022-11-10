@@ -59,8 +59,8 @@ css({
     '.icon-wrapper': {
       display: 'block',
       position: 'relative',
-      width: '{space.18}',
-      height: '{space.18}',
+      width: '18px',
+      height: '18px',
       '.icon': {
         display: 'block',
         position: 'absolute'
