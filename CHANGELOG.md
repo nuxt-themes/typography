@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.10](https://github.com/nuxt-themes/typography/compare/v0.0.9...v0.0.10) (2022-11-10)
+
+
+### Features
+
+* support custom border style on hover ([d5612d4](https://github.com/nuxt-themes/typography/commit/d5612d4d4ef10f3cd69353c1efea1ba02e94f3d8))
+
 ### [0.0.9](https://github.com/nuxt-themes/typography/compare/v0.0.8...v0.0.9) (2022-11-09)
 
 
