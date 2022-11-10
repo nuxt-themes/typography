@@ -155,7 +155,8 @@ export default defineTheme({
         }
       },
       borderStyle: {
-        value: 'dashed'
+        default: 'dashed',
+        hover: 'solid'
       },
       borderDistance: '2px',
       fontWeight: '{typography.fontWeights.medium}',

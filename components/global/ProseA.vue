@@ -30,11 +30,13 @@ css({
     fontWeight: '{prose.a.fontWeight}',
     textDecoration: '{prose.a.textDecoration}',
     borderBottom: '{prose.a.borderBottom}',
+    borderStyle: '{prose.a.borderStyle.default}',
     paddingBottom: '{prose.a.borderDistance}',
     color: '{prose.a.color.light.default}',
     '&:hover': {
       color: '{prose.a.color.light.hover}',
       borderColor: '{prose.a.borderColor.light.hover}',
+      borderStyle: '{prose.a.borderStyle.hover}',
     },
     '@dark': {
       color: '{prose.a.color.dark.default}',
