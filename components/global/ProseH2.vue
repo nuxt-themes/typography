@@ -25,7 +25,7 @@ css({
     fontWeight: '{prose.h2.fontWeight}',
     letterSpacing: '{prose.h2.letterSpacing}',
     ':deep(.icon)': {
-      marginLeft: '{space.12}',
+      marginLeft: '12px',
       display: 'inline-block',
       opacity: '0',
       transition: 'opacity 100ms',

@@ -42,9 +42,9 @@ css({
     position: "relative",
     overflow: "hidden",
     width: "100%",
-    margin: '{space.32} 0',
+    margin: '{prose.code.block.margin}',
     borderRadius: '{radii.md}',
-    border: '1px solid {colors.gray.200}',
+    border: '{prose.code.block.border}',
     color: '{prose.code.block.color.light}',
     backgroundColor: '{prose.code.block.backgroundColor.light}',
     "@dark": {
@@ -100,7 +100,7 @@ css({
     flex: 1,
     overflowX: "auto",
     margin: "0",
-    padding: '{space.16}',
+    padding: '{prose.code.block.pre.padding}',
     lineHeight: '{leads.relaxed}',
   },
 
