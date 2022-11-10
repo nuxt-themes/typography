@@ -45,8 +45,8 @@ const copy = (e: MouseEvent) => {
 <style scoped lang="ts">
 css({
   button: {
-    padding: '{space.8}',
-    margin: '{space.8}',
+    padding: '8px',
+    margin: '8px',
     borderRadius: '{radii.sm}',
     transition: 'all 100ms',
     transform: "scale(0.75)",

@@ -4,7 +4,7 @@ export default defineTheme({
   typography: {
     verticalMargin: {
       sm: '16px',
-      base: '26px'
+      base: '32px'
     },
     letterSpacings: {
       tight: '-0.025em',
@@ -73,6 +73,8 @@ export default defineTheme({
   },
   prose: {
     p: {
+      fontSize: '{typography.fontSizes.base}',
+      lineHeight: '{typography.leads.normal}',
       margin: '{typography.verticalMargin.base} 0',
       br: {
         margin: '{typography.verticalMargin.base} 0 0 0'
@@ -142,7 +144,7 @@ export default defineTheme({
           hover: '{typography.colors.primary.400}'
         }
       },
-      borderBottom: '{prose.a.borderWidth} {prose.a.borderStyle} {prose.a.borderColor.light.default}',
+      borderBottom: '{prose.a.borderWidth} {prose.a.borderStyle.default} {prose.a.borderColor.light.default}',
       borderWidth: '1px',
       borderColor: {
         light: {
@@ -209,7 +211,7 @@ export default defineTheme({
     },
     ul: {
       listStyleType: 'disc',
-      padding: '0 0 0 1rem',
+      margin: '{typography.verticalMargin.base} 0',
       li: {
         markerColor: {
           light: '{typography.colors.secondary.300}',
@@ -219,7 +221,7 @@ export default defineTheme({
     },
     ol: {
       listStyleType: 'decimal',
-      padding: '0 0 0 1rem',
+      margin: '{typography.verticalMargin.base} 0',
       li: {
         markerColor: {
           light: '{typography.colors.secondary.500}',
@@ -259,7 +261,7 @@ export default defineTheme({
         light: '{typography.colors.secondary.600}',
         dark: '{typography.colors.secondary.400}'
       },
-      padding: '0 8px {typography.verticalMargin.sm} 8px',
+      padding: '0 {typography.verticalMargin.sm} {typography.verticalMargin.sm} {typography.verticalMargin.sm}',
       fontWeight: '{typography.fontWeights.semibold}'
     },
     tbody: {
@@ -281,6 +283,8 @@ export default defineTheme({
     },
     code: {
       block: {
+        margin: '{typography.verticalMargin.base} 0',
+        border: '1px solid {colors.gray.200}',
         color: {
           light: '{typography.colors.secondary.700}',
           dark: '{typography.colors.secondary.200}'
@@ -288,6 +292,9 @@ export default defineTheme({
         backgroundColor: {
           light: '{typography.colors.secondary.100}',
           dark: '{typography.colors.secondary.800}'
+        },
+        pre: {
+          padding: '{typography.verticalMargin.sm}'
         }
       },
       inline: {

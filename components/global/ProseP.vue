@@ -5,8 +5,8 @@
 <style lang="ts" scoped>
 css({
   p: {
-    fontSize: '{typography.base.fontSize}',
-    lineHeight: '{typography.base.lineHeight}',
+    fontSize: '{prose.p.fontSize}',
+    lineHeight: '{prose.p.lineHeight}',
     margin: '{prose.p.margin}',
     ':deep(br)': {
       display: "block",

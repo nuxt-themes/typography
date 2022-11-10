@@ -24,7 +24,7 @@ css({
     lineHeight: '{prose.h5.lineHeight}',
     fontWeight: '{prose.h5.fontWeight}',
     ':deep(.icon)': {
-      marginLeft: '{space.8}',
+      marginLeft: '8px',
       display: 'inline-block',
       opacity: '0',
       transition: 'opacity 100ms',
