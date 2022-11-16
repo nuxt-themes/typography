@@ -1,3 +1,5 @@
+[![Nuxt Typography](https://typography.nuxt.space/preview.png)](https://typography.nuxt.space)
+
 # Nuxt Typography
 
 > A Nuxt theme to get a beautiful and customisable typography with a set of prose components for [Nuxt Content](https://content.nuxtjs.org).
