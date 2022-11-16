@@ -33,6 +33,7 @@ const copy = (e: MouseEvent) => {
 
 <template>
   <button :class="[(show || state === 'copied') && 'show' ]" @click="copy">
+    <span class="sr-only">Copy to clipboard</span>
     <span class="icon-wrapper">
       <Transition name="fade">
         <Icon v-if="state === 'copied'" :name="prose.copyButton?.iconCopied" size="18" class="copied" />
