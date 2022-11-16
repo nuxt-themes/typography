@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.13](https://github.com/nuxt-themes/typography/compare/v0.0.12...v0.0.13) (2022-11-16)
+
+
+### Features
+
+* **copy-button:** add alt text for screen readers ([#13](https://github.com/nuxt-themes/typography/issues/13)) ([19da40d](https://github.com/nuxt-themes/typography/commit/19da40da82bab1cf2cfa0afc604f5a05fa85cb55))
+
 ### [0.0.12](https://github.com/nuxt-themes/typography/compare/v0.0.11...v0.0.12) (2022-11-11)
 
 
