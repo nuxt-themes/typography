@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.15](https://github.com/nuxt-themes/typography/compare/v0.0.14...v0.0.15) (2022-11-17)
+
+
+### Features
+
+* **ProseCode:** expose borderColor ([a6a9520](https://github.com/nuxt-themes/typography/commit/a6a9520453f797f4a1f949b2437cc448e8ee04e5))
+
 ### [0.0.14](https://github.com/nuxt-themes/typography/compare/v0.0.13...v0.0.14) (2022-11-17)
 
 
