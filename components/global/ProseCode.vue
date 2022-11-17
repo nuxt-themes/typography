@@ -45,13 +45,13 @@ css({
     fontSize: '{prose.code.block.fontSize}',
     margin: '{prose.code.block.margin}',
     borderRadius: '{radii.md}',
-    border: '{prose.code.block.border}',
+    border: '1px solid {prose.code.block.borderColor.light}',
     color: '{prose.code.block.color.light}',
     backgroundColor: '{prose.code.block.backgroundColor.light}',
     "@dark": {
       color: '{prose.code.block.color.dark}',
       backgroundColor: '{prose.code.block.backgroundColor.dark}',
-      borderColor: '{colors.gray.700}'
+      borderColor: '{prose.code.block.borderColor.dark}',
     },
 
     "&.highlight-zsh, &.highlight-sh, &.highlight-bash, &.highlight-shell, &.highlight-shellscript": {
@@ -90,10 +90,13 @@ css({
     right: "1rem",
     top: "0.5rem",
     fontFamily: '{fonts.code}',
-    color: '{colors.gray.400}',
+    color: '{prose.code.block.color.light}',
     borderRadius: '{radii.lg}',
     fontSize: '{fontSizes.xs}',
-    lineHeight: '{leads.normal}'
+    lineHeight: '{leads.normal}',
+    '@dark': {
+      color: '{prose.code.block.color.dark}'
+    }
   },
 
   ":deep(pre)": {
@@ -106,7 +109,11 @@ css({
   },
 
   ":deep(.line.highlight)": {
-    backgroundColor: '{colors.gray.700}'
+    backgroundColor: '{prose.code.block.borderColor.light}',
+    // No working right now
+    // '@dark': {
+    //   backgroundColor: '{prose.code.block.borderColor.dark}'
+    // }
   }
 })
 </style>

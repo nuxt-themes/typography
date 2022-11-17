@@ -285,7 +285,10 @@ export default defineTheme({
       block: {
         fontSize: '{typography.fontSizes.sm}',
         margin: '{typography.verticalMargin.base} 0',
-        border: '1px solid {colors.gray.200}',
+        borderColor: {
+          light: '{typography.colors.secondary.300}',
+          dark: '{typography.colors.secondary.700}'
+        },
         color: {
           light: '{typography.colors.secondary.700}',
           dark: '{typography.colors.secondary.200}'
