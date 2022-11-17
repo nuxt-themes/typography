@@ -283,6 +283,7 @@ export default defineTheme({
     },
     code: {
       block: {
+        fontSize: '{typography.fontSizes.sm}',
         margin: '{typography.verticalMargin.base} 0',
         border: '1px solid {colors.gray.200}',
         color: {

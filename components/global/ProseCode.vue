@@ -42,6 +42,7 @@ css({
     position: "relative",
     overflow: "hidden",
     width: "100%",
+    fontSize: '{prose.code.block.fontSize}',
     margin: '{prose.code.block.margin}',
     borderRadius: '{radii.md}',
     border: '{prose.code.block.border}',
