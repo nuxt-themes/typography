@@ -32,11 +32,11 @@
   },
   "devDependencies": {
     "@nuxt/content": "^2.2.2",
-    "@nuxthq/studio": "^0.2.3",
-    "@nuxtjs/eslint-config-typescript": "^11.0.0",
+    "@nuxthq/studio": "^0.2.4",
+    "@nuxtjs/eslint-config-typescript": "^12.0.0",
     "eslint": "^8.27.0",
     "nuxt": "^3.0.0",
-    "nuxt-plausible": "^0.1.1",
+    "nuxt-plausible": "^0.1.2",
     "standard-version": "^9.5.0",
     "typescript": "^4.9.3"
   },
