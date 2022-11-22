@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import { useAppConfig } from '#imports'
 import { useClipboard } from '@vueuse/core'
 
 const props = defineProps({
