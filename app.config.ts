@@ -1,3 +1,5 @@
+import { defineAppConfig } from '#imports'
+
 export default defineAppConfig({
   prose: {
     // Default heading
