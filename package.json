@@ -8,7 +8,12 @@
     "nuxt-theme"
   ],
   "type": "module",
-  "exports": "./nuxt.config.ts",
+  "exports": {
+    ".": "./nuxt.config.ts",
+    "./app-config": "./app.config.ts",
+    "./tokens": "./tokens.config.ts",
+    "./css": "./main.css"
+  },
   "files": [
     "components",
     "app.config.ts",
