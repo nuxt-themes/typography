@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.20](https://github.com/nuxt-themes/typography/compare/v0.0.19...v0.0.20) (2022-11-22)
+
+
+### Bug Fixes
+
+* **app.config:** add missing import ([f498c6e](https://github.com/nuxt-themes/typography/commit/f498c6eead233cbb916a3b294929ff1012afa7ac))
+
 ### [0.0.19](https://github.com/nuxt-themes/typography/compare/v0.0.18...v0.0.19) (2022-11-22)
 
 
