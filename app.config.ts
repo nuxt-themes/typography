@@ -1,4 +1,4 @@
-import { defineAppConfig } from '#imports'
+import { defineAppConfig } from 'nuxt/app'
 
 export default defineAppConfig({
   prose: {
