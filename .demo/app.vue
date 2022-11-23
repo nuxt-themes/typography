@@ -41,7 +41,7 @@ css({
     zIndex: 1000,
     'a, button': {
       display: 'flex',
-      padding: '{space.8}',
+      padding: '{space.2}',
       alignItems: 'center',
       cursor: 'pointer',
       color: '{colors.gray.600}',
@@ -58,7 +58,7 @@ css({
   },
 
   '.page': {
-    padding: '{space.64} {space.24}',
+    padding: '{space.16} {space.8}',
     minHeight: '100vh',
     maxWidth: '80ch',
     margin: 'auto'
