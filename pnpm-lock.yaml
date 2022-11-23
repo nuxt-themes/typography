@@ -15,7 +15,7 @@ specifiers:
   typescript: ^4.9.3
 
 dependencies:
-  '@nuxt-themes/tokens': 1.1.10
+  '@nuxt-themes/tokens': 1.1.11
   '@nuxtjs/color-mode': 3.1.8
   nuxt-icon: 0.1.7
   pinceau: 0.6.26
@@ -471,8 +471,8 @@ packages:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.13.0
 
-  /@nuxt-themes/tokens/1.1.10:
-    resolution: {integrity: sha512-yzgxsWB+TznrZ5RiQPhurAXg/hZ3Nr0ZcZ70tEd4sWh+QVaWtMwZBI0Dknc8u0p8l/UrvS2SyMwyjH3CuZueOw==}
+  /@nuxt-themes/tokens/1.1.11:
+    resolution: {integrity: sha512-aJb5SlAwvZBcj6Ax8oiljnQt9VufoPbu/gyb3Vf4btnRUeNhTNxcnNtNg70uu2xLX5sB2UDPuJekLpo3EiFc1g==}
     dependencies:
       '@nuxtjs/color-mode': 3.1.8
       '@vueuse/core': 9.6.0

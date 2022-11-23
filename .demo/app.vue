@@ -23,7 +23,7 @@
 <style lang="ts">
 css({
   html: {
-    backgroundColor: '{colors.neutral.white}',
+    backgroundColor: '{colors.white}',
     '@dark': {
       backgroundColor: '{colors.gray.900}',
     },

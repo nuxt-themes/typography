@@ -1,10 +1,10 @@
 html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: $dt('colors.neutral.black')
+  color: $dt('colors.black')
 }
 html.dark {
-  color: $dt('colors.neutral.white')
+  color: $dt('colors.white')
 }
 .sr-only {
   position: absolute !important;
