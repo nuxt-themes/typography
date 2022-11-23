@@ -3,9 +3,11 @@ html {
   -moz-osx-font-smoothing: grayscale;
   color: $dt('colors.black')
 }
+
 html.dark {
   color: $dt('colors.white')
 }
+
 .sr-only {
   position: absolute !important;
   width: 1px !important;

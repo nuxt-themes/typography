@@ -70,7 +70,7 @@ css({
           userSelect: "none",
           fontWeight: 700,
           color: '{colors.primary.500}',
-          fontFamily: '{fonts.code}'
+          fontFamily: '{fonts.mono}'
         }
       }
     }
@@ -90,7 +90,7 @@ css({
     position: "absolute",
     right: "1rem",
     top: "0.5rem",
-    fontFamily: '{fonts.code}',
+    fontFamily: '{fonts.mono}',
     color: '{prose.code.block.color.light}',
     borderRadius: '{radii.lg}',
     fontSize: '{fontSizes.xs}',
