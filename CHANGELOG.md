@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.24](https://github.com/nuxt-themes/typography/compare/v0.0.23...v0.0.24) (2022-11-23)
+
+
+### Features
+
+* **fonts:** update fonts usage from @nuxt-themes/tokens update ([f78c4af](https://github.com/nuxt-themes/typography/commit/f78c4afb8074ac54f0367621b047b783d2b05a3d))
+
 ### [0.0.23](https://github.com/nuxt-themes/typography/compare/v0.0.22...v0.0.23) (2022-11-23)
 
 ### [0.0.22](https://github.com/nuxt-themes/typography/compare/v0.0.21...v0.0.22) (2022-11-22)
