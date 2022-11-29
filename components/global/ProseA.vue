@@ -46,6 +46,9 @@ css({
         borderColor: '{prose.a.borderColor.dark.hover}',
       }
     },
+    '&:has(img)': {
+      borderWidth: '0'
+    },
     '&:has(code)': {
       borderBottom: '{prose.a.hasCode.borderBottom}',
       ':deep(code)': {
