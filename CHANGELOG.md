@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.25](https://github.com/nuxt-themes/typography/compare/v0.0.24...v0.0.25) (2022-11-29)
+
+
+### Bug Fixes
+
+* nowrap table code ([#16](https://github.com/nuxt-themes/typography/issues/16)) ([b9539d8](https://github.com/nuxt-themes/typography/commit/b9539d82354d70bc228c0ba0455f6dd50647992b))
+* **proseA:** remove border if wrapping an img ([ad0d292](https://github.com/nuxt-themes/typography/commit/ad0d292241e0abcf035120055d263717c333bdda))
+
 ### [0.0.24](https://github.com/nuxt-themes/typography/compare/v0.0.23...v0.0.24) (2022-11-23)
 
 
