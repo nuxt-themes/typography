@@ -18,7 +18,10 @@ css({
     tableLayout: "auto",
     textAlign: '{prose.table.textAlign}',
     fontSize: '{prose.table.fontSize}',
-    lineHeight: '{prose.table.lineHeight}'
+    lineHeight: '{prose.table.lineHeight}',
+    '& :deep(code)': {
+      whiteSpace: 'nowrap'
+    }
   }
 })
 </style>

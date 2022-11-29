@@ -270,14 +270,14 @@ _Just an italic paragraph._
 ```md [Code]
 | Key | Type | Description |
 |-----|------| ------------|
-| 1 | Wonderful | Table |
+| 1 | Wonderful | Table with `some long code snippet example` |
 | 2 | Wonderful | Data |
 | 3 | Wonderful | Website |
 ```
 
 | Key | Type | Description |
 |-----|------| ------------|
-| 1 | Wonderful | Table |
+| 1 | Wonderful | Table with `some long code snippet example` |
 | 2 | Wonderful | Data |
 | 3 | Wonderful | Website |
 
