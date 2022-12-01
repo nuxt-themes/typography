@@ -20,6 +20,7 @@ export default defineNuxtConfigSchema({
       headings: {
         /**
          * Default icon for anchor link on hover
+         * @type {string|false}
          */
         icon: 'ph:link'
       },
@@ -27,42 +28,60 @@ export default defineNuxtConfigSchema({
        * First heading configuration
        */
       h1: {
-        /** Icon displayed for anchor link on hover */
+        /**
+         * Icon displayed for anchor link on hover
+         * @type {string|false}
+         * */
         icon: ''
       },
       /**
        * Second heading configuration
        */
       h2: {
-        /** Icon displayed for anchor link on hover */
+        /**
+         * Icon displayed for anchor link on hover
+         * @type {string|false}
+         * */
         icon: ''
       },
       /**
        * Third heading configuration
        */
       h3: {
-        /** Icon displayed for anchor link on hover */
+        /**
+         * Icon displayed for anchor link on hover
+         * @type {string|false}
+         * */
         icon: ''
       },
       /**
        * Fourth heading configuration
        */
       h4: {
-        /** Icon displayed for anchor link on hover */
+        /**
+         * Icon displayed for anchor link on hover
+         * @type {string|false}
+         * */
         icon: ''
       },
       /**
        * Fifth heading configuration
        */
       h5: {
-        /** Icon displayed for anchor link on hover */
+        /**
+         * Icon displayed for anchor link on hover
+         * @type {string|false}
+         * */
         icon: ''
       },
       /**
        * Sixth heading configuration
        */
       h6: {
-        /** Icon displayed for anchor link on hover */
+        /**
+         * Icon displayed for anchor link on hover
+         * @type {string|false}
+         * */
         icon: ''
       }
     }
