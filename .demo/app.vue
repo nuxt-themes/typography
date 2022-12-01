@@ -22,11 +22,11 @@
 
 <style lang="ts">
 css({
-  html: {
-    backgroundColor: '{colors.white}',
+  'html, body': {
+    backgroundColor: '{color.white}',
     '@dark': {
-      backgroundColor: '{colors.gray.900}',
-    },
+      backgroundColor: '{color.gray.900}'
+    }
   },
 
   nav: {
@@ -44,14 +44,14 @@ css({
       padding: '{space.2}',
       alignItems: 'center',
       cursor: 'pointer',
-      color: '{colors.gray.600}',
+      color: '{color.gray.600}',
       '@dark': {
-        color: '{colors.gray.400}'
+        color: '{color.gray.400}'
       },
       '&:hover': {
-        color: '{colors.gray.900}',
+        color: '{color.gray.900}',
         '@dark': {
-          color: '{colors.gray.100}'
+          color: '{color.gray.100}'
         }
       }
     }

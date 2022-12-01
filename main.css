@@ -1,11 +1,11 @@
 html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: $dt('colors.black')
+  color: $dt('color.black');
 }
 
 html.dark {
-  color: $dt('colors.white')
+  color: $dt('color.white');
 }
 
 .sr-only {

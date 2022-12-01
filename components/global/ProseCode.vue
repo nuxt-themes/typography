@@ -69,8 +69,8 @@ css({
           display: "block",
           userSelect: "none",
           fontWeight: 700,
-          color: '{colors.primary.500}',
-          fontFamily: '{fonts.mono}'
+          color: '{typography.color.primary.500}',
+          fontFamily: '{font.mono}'
         }
       }
     }
@@ -90,11 +90,11 @@ css({
     position: "absolute",
     right: "1rem",
     top: "0.5rem",
-    fontFamily: '{fonts.mono}',
+    fontFamily: '{font.mono}',
     color: '{prose.code.block.color.light}',
     borderRadius: '{radii.lg}',
-    fontSize: '{fontSizes.xs}',
-    lineHeight: '{leads.normal}',
+    fontSize: '{fontSize.xs}',
+    lineHeight: '{lead.normal}',
     '@dark': {
       color: '{prose.code.block.color.dark}'
     }
@@ -106,7 +106,7 @@ css({
     overflowX: "auto",
     margin: "0",
     padding: '{prose.code.block.pre.padding}',
-    lineHeight: '{leads.relaxed}',
+    lineHeight: '{lead.relaxed}',
   },
 
   ":deep(.line.highlight)": {
