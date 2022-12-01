@@ -27,7 +27,7 @@
     "generate": "nuxi generate .demo",
     "preview": "nuxi preview .demo",
     "lint": "eslint --ext .ts,.js,.vue .",
-    "release": "standard-version && git push --follow-tags && npm publish"
+    "release": "release-it"
   },
   "dependencies": {
     "@nuxt-themes/tokens": "latest",
@@ -43,7 +43,7 @@
     "eslint": "^8.28.0",
     "nuxt": "^3.0.0",
     "nuxt-plausible": "^0.1.2",
-    "standard-version": "^9.5.0",
+    "release-it": "^15.5.0",
     "typescript": "^4.9.3"
   },
   "pnpm": {
