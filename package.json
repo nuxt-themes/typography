@@ -27,6 +27,7 @@
     "generate": "nuxi generate .demo",
     "preview": "nuxi preview .demo",
     "lint": "eslint --ext .ts,.js,.vue .",
+    "prepublishOnly": "pnpm lint",
     "release": "release-it"
   },
   "dependencies": {
