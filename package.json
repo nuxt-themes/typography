@@ -16,15 +16,15 @@
   },
   "files": [
     "components",
-    "app.config.ts",
     "nuxt.config.ts",
+    "nuxt.schema.ts",
     "tokens.config.ts",
     "main.css"
   ],
   "scripts": {
-    "dev": "nuxi prepare && nuxt dev .demo",
-    "build": "nuxi prepare && nuxi build .demo",
-    "generate": "nuxi prepare && nuxi generate .demo",
+    "dev": "nuxt dev .demo",
+    "build": "nuxi build .demo",
+    "generate": "nuxi generate .demo",
     "preview": "nuxi preview .demo",
     "lint": "eslint --ext .ts,.js,.vue .",
     "release": "standard-version && git push --follow-tags && npm publish"
@@ -32,7 +32,8 @@
   "dependencies": {
     "@nuxt-themes/tokens": "latest",
     "@nuxtjs/color-mode": "^3.2.0",
-    "nuxt-icon": "^0.1.7",
+    "nuxt-config-schema": "^0.3.4",
+    "nuxt-icon": "^0.1.8",
     "pinceau": "latest"
   },
   "devDependencies": {

@@ -5,7 +5,7 @@ export default defineAppConfig({
     },
     h1: {
       icon: 'ph:anchor'
-    },
+    }
     // copyButton: {
     //   iconCopy: 'ph:copy-simple-duotone'
     // }

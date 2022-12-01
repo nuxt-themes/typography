@@ -14,6 +14,7 @@ export default defineNuxtConfig({
   css: [resolve('./main.css')],
   modules: [
     envModules.tokens,
-    'nuxt-icon'
+    'nuxt-icon',
+    'nuxt-config-schema'
   ]
 })
