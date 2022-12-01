@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { useAppConfig } from '#imports'
 import { useClipboard } from '@vueuse/core'
+import { useAppConfig } from '#imports'
 
 const props = defineProps({
   content: {
@@ -19,7 +19,7 @@ const { prose } = useAppConfig()
 
 const state = ref('init')
 
-const copy = (e: MouseEvent) => {
+const copy = (_e: MouseEvent) => {
   copyToClipboard(props.content)
     .then(() => {
       state.value = 'copied'
@@ -27,8 +27,9 @@ const copy = (e: MouseEvent) => {
         state.value = 'init'
       }, 1000)
     })
-    .catch(() => {
-      console.warn("Couldn't copy to clipboard!")
+    .catch((err) => {
+      // eslint-disable-next-line no-console
+      console.warn("Couldn't copy to clipboard!", err)
     })
 }
 </script>

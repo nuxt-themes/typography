@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { useAppConfig } from '#imports'
 import { computed } from 'vue'
+import { useAppConfig } from '#imports'
 
 defineProps<{ id: string }>()
 
