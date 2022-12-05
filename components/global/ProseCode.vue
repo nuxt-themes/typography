@@ -106,6 +106,9 @@ css({
   '.prose-code:hover .filename': {
     opacity: 0
   },
+  '.prose-code:hover .filename:hover': {
+    opacity: 1
+  },
   ":deep(pre)": {
     display: "flex",
     flex: 1,
