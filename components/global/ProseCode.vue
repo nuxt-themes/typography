@@ -88,18 +88,24 @@ css({
 
   ".filename": {
     position: "absolute",
-    right: "1rem",
-    top: "0.5rem",
+    top: 0,
+    right: 0,
+    padding: '0.25rem 0.5rem',
     fontFamily: '{font.mono}',
     color: '{prose.code.block.color.light}',
     borderRadius: '{radii.lg}',
     fontSize: '{fontSize.xs}',
     lineHeight: '{lead.normal}',
+    transition: 'opacity 200ms',
+    backdropFilter: 'blur(4px)',
     '@dark': {
       color: '{prose.code.block.color.dark}'
     }
   },
 
+  '.prose-code:hover .filename': {
+    opacity: 0
+  },
   ":deep(pre)": {
     display: "flex",
     flex: 1,
@@ -107,6 +113,9 @@ css({
     margin: "0",
     padding: '{prose.code.block.pre.padding}',
     lineHeight: '{lead.relaxed}',
+  },
+  ":deep(pre code)": {
+    paddingRight: '30px',
   },
 
   ":deep(.line.highlight)": {

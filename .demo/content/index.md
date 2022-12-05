@@ -20,7 +20,7 @@ npm install --save-dev @nuxt-themes/typography
 
 Add it to the `nuxt.config`:
 
-```ts
+```ts [nuxt.config.ts]
 export default defineNuxtConfig({
   extends: '@nuxt-themes/typography'
 })
