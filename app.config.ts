@@ -1,5 +1,3 @@
-import { defineAppConfig } from 'nuxt/app'
-
 export default defineAppConfig({
   /**
    * Default are defined in nuxt.schema.ts for best typing and Studio integration
