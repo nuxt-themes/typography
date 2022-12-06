@@ -1,4 +1,4 @@
-[![Nuxt Typography](https://typography.nuxt.space/preview.png)](https://typography.nuxt.space)
+[![Nuxt Typography](https://typography.nuxt.space/preview.jpg)](https://typography.nuxt.space)
 
 # Nuxt Typography
 

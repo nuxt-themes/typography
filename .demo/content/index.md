@@ -1,5 +1,5 @@
 ---
-image: preview.png
+image: preview.jpg
 ---
 
 # Nuxt Typography
@@ -211,10 +211,10 @@ Check out the [highlight options](https://content.nuxtjs.org/api/configuration#h
 ### `<ProseImg>`
 
 ```md [Code]
-![A Cool Image](/preview.png)
+![A Cool Image](/preview.jpg)
 ```
 
-![A Cool Image](/preview.png) 
+![A Cool Image](/preview.jpg) 
 
 ### `<ProseUl>`
 
