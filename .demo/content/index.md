@@ -8,7 +8,12 @@ A Nuxt theme to get a beautiful and customisable typography with a set of prose 
 
 Repository is on GitHub: [nuxt-themes/typography](https://github.com/nuxt-themes/typography)
 
-See also the [online playground](https://stackblitz.com/edit/nuxt-theme-typography?file=content/index.md), [Content example](/example), [Tailwind Typograhy content](/tailwind) or [Pinceau readme](/pinceau).
+See also the [online playground](https://stackblitz.com/edit/nuxt-theme-typography?file=content/index.md).
+
+Some examples:
+- [Basic example](/example)
+- [Tailwind Typograhy content](/tailwind)
+- [Dynamic GitHub Readme viewer](https://nuxt-typo-readme.vercel.app)
 
 ## Installation
 
