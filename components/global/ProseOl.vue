@@ -8,6 +8,7 @@
 css({
   ol: {
     listStyleType: '{prose.ol.listStyleType}',
+    padding: '{prose.ol.padding}',
     margin: '{prose.ol.margin}',
     "& > :deep(li)": {
       "&::marker": {
@@ -15,6 +16,9 @@ css({
         "@dark": {
           color: '{prose.ol.li.markerColor.dark}'
         }
+      },
+      'ul, ol': {
+        margin: 0
       }
     }
   }

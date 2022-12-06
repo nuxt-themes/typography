@@ -212,6 +212,7 @@ export default defineTheme({
     ul: {
       listStyleType: 'disc',
       margin: '{typography.verticalMargin.base} 0',
+      padding: '0 0 0 21px',
       li: {
         markerColor: {
           light: '{typography.color.secondary.300}',
@@ -222,6 +223,7 @@ export default defineTheme({
     ol: {
       listStyleType: 'decimal',
       margin: '{typography.verticalMargin.base} 0',
+      padding: '0 0 0 21px',
       li: {
         markerColor: {
           light: '{typography.color.secondary.500}',
@@ -231,7 +233,7 @@ export default defineTheme({
     },
     li: {
       margin: '{typography.verticalMargin.sm} 0',
-      listStylePosition: 'inside'
+      listStylePosition: 'outside'
     },
     hr: {
       margin: '{typography.verticalMargin.base} 0',
