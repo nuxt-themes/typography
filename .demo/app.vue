@@ -1,8 +1,7 @@
 <template>
-  <!-- <Head>
-    <Link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
-    <Link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swaps" />
-  </Head> -->
+  <Head>
+    <Meta name="twitter:card" content="summary_large_image" />
+  </Head>
   <nav>
     <NuxtLink to="/" v-if="$route.path !== '/'">
       <Icon name="ph:house-simple" />
@@ -22,7 +21,7 @@
 
 <style lang="ts">
 css({
-  'html, body': {
+  'body': {
     backgroundColor: '{color.white}',
     '@dark': {
       backgroundColor: '{color.gray.900}'
