@@ -33,19 +33,19 @@
   "dependencies": {
     "@nuxt-themes/tokens": "latest",
     "@nuxtjs/color-mode": "^3.2.0",
-    "nuxt-config-schema": "^0.3.4",
+    "nuxt-config-schema": "^0.3.6",
     "nuxt-icon": "^0.1.8",
     "pinceau": "latest"
   },
   "devDependencies": {
-    "@nuxt/content": "^2.2.2",
-    "@nuxthq/studio": "^0.3.3",
+    "@nuxt/content": "^2.3.0",
+    "@nuxthq/studio": "^0.3.6",
     "@nuxtjs/eslint-config-typescript": "^12.0.0",
     "eslint": "^8.29.0",
     "nuxt": "^3.0.0",
     "nuxt-plausible": "^0.1.2",
     "release-it": "^15.5.1",
-    "typescript": "^4.9.3"
+    "typescript": "^4.9.4"
   },
   "pnpm": {
     "peerDependencyRules": {
