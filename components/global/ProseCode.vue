@@ -69,7 +69,7 @@ css({
           display: "block",
           userSelect: "none",
           fontWeight: 700,
-          color: '{typography.color.primary.500}',
+          color: '{color.primary.500}',
           fontFamily: '{font.mono}'
         }
       }

@@ -1,6 +1,32 @@
 import { defineTheme } from 'pinceau'
 
 export default defineTheme({
+  color: {
+    primary: {
+      50: '#d9e5ff',
+      100: '#b3cbff',
+      200: '#8db0ff',
+      300: '#6696ff',
+      400: '#407cff',
+      500: '#1a62ff',
+      600: '#0047e1',
+      700: '#0035a9',
+      800: '#002370',
+      900: '#001238'
+    },
+    secondary: {
+      50: '#fafafa',
+      100: '#f4f4f5',
+      200: '#e4e4e7',
+      300: '#D4d4d8',
+      400: '#a1a1aa',
+      500: '#71717A',
+      600: '#52525B',
+      700: '#3f3f46',
+      800: '#27272A',
+      900: '#18181B'
+    }
+  },
   typography: {
     verticalMargin: {
       sm: '16px',
@@ -44,32 +70,6 @@ export default defineTheme({
       relaxed: '1.625',
       loose: '2'
     },
-    color: {
-      primary: {
-        50: '#d9e5ff',
-        100: '#b3cbff',
-        200: '#8db0ff',
-        300: '#6696ff',
-        400: '#407cff',
-        500: '#1a62ff',
-        600: '#0047e1',
-        700: '#0035a9',
-        800: '#002370',
-        900: '#001238'
-      },
-      secondary: {
-        50: '#fafafa',
-        100: '#f4f4f5',
-        200: '#e4e4e7',
-        300: '#D4d4d8',
-        400: '#a1a1aa',
-        500: '#71717A',
-        600: '#52525B',
-        700: '#3f3f46',
-        800: '#27272A',
-        900: '#18181B'
-      }
-    }
   },
   prose: {
     p: {
@@ -137,23 +137,23 @@ export default defineTheme({
       color: {
         light: {
           default: 'inherit',
-          hover: '{typography.color.primary.500}'
+          hover: '{color.primary.500}'
         },
         dark: {
           default: 'inherit',
-          hover: '{typography.color.primary.400}'
+          hover: '{color.primary.400}'
         }
       },
       borderBottom: '{prose.a.borderWidth} {prose.a.borderStyle.default} {prose.a.borderColor.light.default}',
       borderWidth: '1px',
       borderColor: {
         light: {
-          default: '{typography.color.secondary.400}',
-          hover: '{typography.color.primary.500}'
+          default: '{color.secondary.400}',
+          hover: '{color.primary.500}'
         },
         dark: {
-          default: '{typography.color.secondary.400}',
-          hover: '{typography.color.primary.500}'
+          default: '{color.secondary.400}',
+          hover: '{color.primary.500}'
         }
       },
       borderStyle: {
@@ -169,28 +169,28 @@ export default defineTheme({
         border: '{prose.a.borderWidth} {prose.a.borderStyle} {prose.a.code.borderColor.light.default}',
         borderColor: {
           light: {
-            default: '{typography.color.secondary.400}',
-            hover: '{typography.color.primary.500}'
+            default: '{color.secondary.400}',
+            hover: '{color.primary.500}'
           },
           dark: {
-            default: '{typography.color.secondary.600}',
-            hover: '{typography.color.primary.600}'
+            default: '{color.secondary.600}',
+            hover: '{color.primary.600}'
           }
         },
         color: {
           light: {
-            hover: '{typography.color.primary.500}'
+            hover: '{color.primary.500}'
           },
           dark: {
-            hover: '{typography.color.primary.300}'
+            hover: '{color.primary.300}'
           }
         },
         background: {
           light: {
-            hover: '{typography.color.primary.50}'
+            hover: '{color.primary.50}'
           },
           dark: {
-            hover: '{typography.color.primary.900}'
+            hover: '{color.primary.900}'
           }
         }
       }
@@ -200,13 +200,13 @@ export default defineTheme({
       padding: '0 0 0 24px',
       quotes: "'201C' '201D' '2018' '2019'",
       color: {
-        light: '{typography.color.secondary.500}',
-        dark: '{typography.color.secondary.400}'
+        light: '{color.secondary.500}',
+        dark: '{color.secondary.400}'
       },
       borderLeft: '1px solid {prose.blockquote.borderColor.light}',
       borderColor: {
-        light: '{typography.color.secondary.200}',
-        dark: '{typography.color.secondary.700}'
+        light: '{color.secondary.200}',
+        dark: '{color.secondary.700}'
       }
     },
     ul: {
@@ -215,8 +215,8 @@ export default defineTheme({
       padding: '0 0 0 21px',
       li: {
         markerColor: {
-          light: '{typography.color.secondary.300}',
-          dark: '{typography.color.secondary.800}'
+          light: '{color.secondary.300}',
+          dark: '{color.secondary.800}'
         }
       }
     },
@@ -226,8 +226,8 @@ export default defineTheme({
       padding: '0 0 0 21px',
       li: {
         markerColor: {
-          light: '{typography.color.secondary.500}',
-          dark: '{typography.color.secondary.500}'
+          light: '{color.secondary.500}',
+          dark: '{color.secondary.500}'
         }
       }
     },
@@ -240,8 +240,8 @@ export default defineTheme({
       style: 'solid',
       width: '1px',
       color: {
-        light: '{typography.color.secondary.200}',
-        dark: '{typography.color.secondary.800}'
+        light: '{color.secondary.200}',
+        dark: '{color.secondary.800}'
       }
     },
     table: {
@@ -254,14 +254,14 @@ export default defineTheme({
       border: 'none',
       borderBottom: '1px solid {prose.thead.borderColor.light}',
       borderColor: {
-        light: '{typography.color.secondary.300}',
-        dark: '{typography.color.secondary.600}'
+        light: '{color.secondary.300}',
+        dark: '{color.secondary.600}'
       }
     },
     th: {
       color: {
-        light: '{typography.color.secondary.600}',
-        dark: '{typography.color.secondary.400}'
+        light: '{color.secondary.600}',
+        dark: '{color.secondary.400}'
       },
       padding: '0 {typography.verticalMargin.sm} {typography.verticalMargin.sm} {typography.verticalMargin.sm}',
       fontWeight: '{typography.fontWeight.semibold}'
@@ -270,8 +270,8 @@ export default defineTheme({
       tr: {
         borderBottom: '1px dashed {prose.tbody.tr.borderColor.light}',
         borderColor: {
-          light: '{typography.color.secondary.300}',
-          dark: '{typography.color.secondary.700}'
+          light: '{color.secondary.300}',
+          dark: '{color.secondary.700}'
         }
       },
       td: {
@@ -288,16 +288,16 @@ export default defineTheme({
         fontSize: '{typography.fontSize.sm}',
         margin: '{typography.verticalMargin.base} 0',
         borderColor: {
-          light: '{typography.color.secondary.300}',
-          dark: '{typography.color.secondary.700}'
+          light: '{color.secondary.300}',
+          dark: '{color.secondary.700}'
         },
         color: {
-          light: '{typography.color.secondary.700}',
-          dark: '{typography.color.secondary.200}'
+          light: '{color.secondary.700}',
+          dark: '{color.secondary.200}'
         },
         backgroundColor: {
-          light: '{typography.color.secondary.100}',
-          dark: '{typography.color.secondary.800}'
+          light: '{color.secondary.100}',
+          dark: '{color.secondary.800}'
         },
         pre: {
           padding: '{typography.verticalMargin.sm}'
@@ -309,12 +309,12 @@ export default defineTheme({
         fontSize: '{typography.fontSize.sm}',
         fontWeight: '{typography.fontWeight.normal}',
         color: {
-          light: '{typography.color.secondary.700}',
-          dark: '{typography.color.secondary.200}'
+          light: '{color.secondary.700}',
+          dark: '{color.secondary.200}'
         },
         backgroundColor: {
-          light: '{typography.color.secondary.100}',
-          dark: '{typography.color.secondary.800}'
+          light: '{color.secondary.100}',
+          dark: '{color.secondary.800}'
         }
       }
     }
