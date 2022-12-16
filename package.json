@@ -31,11 +31,10 @@
     "release": "release-it"
   },
   "dependencies": {
-    "@nuxt-themes/tokens": "1.2.1",
+    "@nuxt-themes/tokens": "^1.2.2",
     "@nuxtjs/color-mode": "^3.2.0",
     "nuxt-config-schema": "^0.3.6",
-    "nuxt-icon": "^0.1.8",
-    "pinceau": "latest"
+    "nuxt-icon": "^0.1.8"
   },
   "devDependencies": {
     "@nuxt/content": "^2.3.0",
