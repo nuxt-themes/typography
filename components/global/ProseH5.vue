@@ -34,7 +34,7 @@ css({
       width: '{prose.h5.iconSize}',
       height: '{prose.h5.iconSize}',
     },
-    '&:hover': {
+    '& a:hover': {
       ':deep(.icon)': {
         opacity: '1'
       }
