@@ -1,12 +1,15 @@
-
 export default defineNuxtConfigSchema({
   appConfig: {
     /**
      * Prose configuration from Nuxt Typography
+     *
+     * @studio-icon material-symbols:short-text-rounded
      */
     prose: {
       /**
        * Copy button (used in code blocks)
+       *
+       * @studio-icon material-symbols:content-copy
        */
       copyButton: {
         /** Icon displayed to copy */
@@ -16,6 +19,8 @@ export default defineNuxtConfigSchema({
       },
       /**
        * Default configuration for all headings (h1, h2, h3, h4, h5 and h6)
+       *
+       * @studio-icon material-symbols:title
        */
       headings: {
         /**
@@ -26,6 +31,8 @@ export default defineNuxtConfigSchema({
       },
       /**
        * First heading configuration
+       *
+       * @studio-icon material-symbols:format-h1
        */
       h1: {
         /**
@@ -36,6 +43,8 @@ export default defineNuxtConfigSchema({
       },
       /**
        * Second heading configuration
+       *
+       * @studio-icon material-symbols:format-h2
        */
       h2: {
         /**
@@ -46,6 +55,8 @@ export default defineNuxtConfigSchema({
       },
       /**
        * Third heading configuration
+       *
+       * @studio-icon material-symbols:format-h3
        */
       h3: {
         /**
@@ -56,6 +67,8 @@ export default defineNuxtConfigSchema({
       },
       /**
        * Fourth heading configuration
+       *
+       * @studio-icon material-symbols:format-h4
        */
       h4: {
         /**
@@ -66,6 +79,8 @@ export default defineNuxtConfigSchema({
       },
       /**
        * Fifth heading configuration
+       *
+       * @studio-icon material-symbols:format-h5
        */
       h5: {
         /**
@@ -76,6 +91,8 @@ export default defineNuxtConfigSchema({
       },
       /**
        * Sixth heading configuration
+       *
+       * @studio-icon material-symbols:format-h6
        */
       h6: {
         /**
