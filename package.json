@@ -24,6 +24,7 @@
   "scripts": {
     "dev": "nuxt dev .demo",
     "build": "nuxi build .demo",
+    "prepare": "nuxi prepare .demo",
     "generate": "nuxi generate .demo",
     "preview": "nuxi preview .demo",
     "lint": "eslint --ext .ts,.js,.vue .",
