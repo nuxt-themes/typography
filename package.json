@@ -1,7 +1,7 @@
 {
   "name": "@nuxt-themes/typography",
-  "version": "0.1.7",
-  "description": "A beautifuk typography with a set of prose components to use with Nuxt Content.",
+  "version": "0.1.8",
+  "description": "A beautiful typography with a set of prose components to use with Nuxt Content.",
   "keywords": [
     "nuxt",
     "nuxt-content",
