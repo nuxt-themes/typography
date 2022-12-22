@@ -314,8 +314,8 @@ export default defineTheme({
         fontSize: '{typography.fontSize.sm}',
         margin: '{typography.verticalMargin.base} 0',
         borderColor: {
-          light: '{typography.color.secondary.300}',
-          dark: '{typography.color.secondary.700}'
+          light: '{typography.color.secondary.200}',
+          dark: '{typography.color.secondary.800}'
         },
         color: {
           light: '{typography.color.secondary.700}',
@@ -323,7 +323,7 @@ export default defineTheme({
         },
         backgroundColor: {
           light: '{typography.color.secondary.100}',
-          dark: '{typography.color.secondary.800}'
+          dark: '{typography.color.secondary.900}'
         },
         pre: {
           padding: '{typography.verticalMargin.sm}'
