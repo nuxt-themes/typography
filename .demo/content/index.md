@@ -49,8 +49,7 @@ Editing `prose` is more suited if you want to modify or adapt the appearance of 
 ### Configuration example
 
 ```ts [tokens.config.ts]
-import { defineTheme } from pinceau
-
+import { defineTheme } from 'pinceau'
 
 export default defineTheme({
   typography: {
