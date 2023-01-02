@@ -148,7 +148,7 @@ export default defineTheme({
   },
   prose: {
     $schema: {
-      title: 'Deeply configure each Prose component.',
+      title: 'All the configurable tokens for your Prose components.',
       tags: [
         '@studio-input design-token',
         '@studio-input-token-type font-size',
