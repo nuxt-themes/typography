@@ -1,6 +1,7 @@
 import { defineTheme } from 'pinceau'
 
 export default defineTheme({
+  // @ts-ignore
   color: {
     primary: {
       50: '#d9e5ff',
@@ -28,15 +29,47 @@ export default defineTheme({
     }
   },
   typography: {
+    $schema: {
+      title: 'All the configurable tokens for your Typography.',
+      tags: [
+        '@studio-input design-token',
+        '@studio-input-token-type color',
+        '@studio-icon material-symbols:article'
+      ]
+    },
     verticalMargin: {
+      $schema: {
+        title: 'Vertical spacings between paragraphs.',
+        tags: [
+          '@studio-input design-token',
+          '@studio-input-token-type size',
+          '@studio-icon mingcute:line-height-line'
+        ]
+      },
       sm: '16px',
       base: '32px'
     },
     letterSpacing: {
+      $schema: {
+        title: 'Horizontal spacings between letters.',
+        tags: [
+          '@studio-input design-token',
+          '@studio-input-token-type size',
+          '@studio-icon mingcute:letter-spacing-line'
+        ]
+      },
       tight: '-0.025em',
       wide: '0.025em'
     },
     fontSize: {
+      $schema: {
+        title: 'Horizontal spacings between letters.',
+        tags: [
+          '@studio-input design-token',
+          '@studio-input-token-type font-size',
+          '@studio-icon mingcute:font-size-fill'
+        ]
+      },
       xs: '12px',
       sm: '14px',
       base: '16px',
@@ -52,6 +85,14 @@ export default defineTheme({
       '9xl': '128px'
     },
     fontWeight: {
+      $schema: {
+        title: 'Font weights used in typography.',
+        tags: [
+          '@studio-input design-token',
+          '@studio-input-token-type font-size',
+          '@studio-icon mingcute:bold-fill'
+        ]
+      },
       thin: '100',
       extralight: '200',
       light: '300',
@@ -63,6 +104,14 @@ export default defineTheme({
       black: '900'
     },
     lead: {
+      $schema: {
+        title: 'Line heights used in your typography.',
+        tags: [
+          '@studio-input design-token',
+          '@studio-input-token-type font-size',
+          '@studio-icon material-symbols:height-rounded'
+        ]
+      },
       none: '1',
       tight: '1.25',
       snug: '1.375',
@@ -98,6 +147,14 @@ export default defineTheme({
     }
   },
   prose: {
+    $schema: {
+      title: 'Deeply configure each Prose component.',
+      tags: [
+        '@studio-input design-token',
+        '@studio-input-token-type font-size',
+        '@studio-icon lucide:component'
+      ]
+    },
     p: {
       fontSize: '{typography.fontSize.base}',
       lineHeight: '{typography.lead.normal}',
