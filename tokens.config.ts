@@ -249,7 +249,7 @@ export default defineTheme({
         borderBottom: 'none'
       },
       code: {
-        border: '{prose.a.borderWidth} {prose.a.borderStyle} {prose.a.code.borderColor.light.default}',
+        border: '{prose.a.borderWidth} {prose.a.borderStyle.default} {prose.a.code.borderColor.light.default}',
         borderColor: {
           light: {
             default: '{typography.color.secondary.400}',
