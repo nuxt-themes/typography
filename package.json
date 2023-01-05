@@ -16,6 +16,7 @@
   },
   "files": [
     "components",
+    "app.config.ts",
     "nuxt.config.ts",
     "nuxt.schema.ts",
     "tokens.config.ts",
@@ -32,9 +33,9 @@
     "release": "release-it"
   },
   "dependencies": {
-    "@nuxt-themes/tokens": "^1.5.0",
+    "@nuxt-themes/tokens": "^1.5.2",
     "@nuxtjs/color-mode": "^3.2.0",
-    "nuxt-config-schema": "^0.3.7",
+    "nuxt-config-schema": "^0.4.0",
     "nuxt-icon": "^0.1.8"
   },
   "devDependencies": {
