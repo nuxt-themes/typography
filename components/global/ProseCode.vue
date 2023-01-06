@@ -90,7 +90,7 @@ css({
     position: "absolute",
     top: 0,
     right: 0,
-    padding: '0.25rem 0.5rem',
+    padding: '0.5rem 0.75rem',
     fontFamily: '{font.mono}',
     color: '{prose.code.block.color.light}',
     borderRadius: '{radii.lg}',

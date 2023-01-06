@@ -24,7 +24,7 @@ css({
   'body': {
     backgroundColor: '{color.white}',
     '@dark': {
-      backgroundColor: '{color.gray.900}'
+      backgroundColor: '{color.black}'
     }
   },
 

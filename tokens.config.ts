@@ -298,8 +298,8 @@ export default defineTheme({
       padding: '0 0 0 21px',
       li: {
         markerColor: {
-          light: '{typography.color.secondary.300}',
-          dark: '{typography.color.secondary.800}'
+          light: '{typography.color.secondary.400}',
+          dark: '{typography.color.secondary.500}'
         }
       }
     },
@@ -397,7 +397,7 @@ export default defineTheme({
         },
         backgroundColor: {
           light: '{typography.color.secondary.100}',
-          dark: '{typography.color.secondary.800}'
+          dark: '{typography.color.secondary.900}'
         }
       }
     }
