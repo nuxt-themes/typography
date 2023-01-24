@@ -13,12 +13,14 @@ specifiers:
   nuxt-plausible: ^0.1.2
   release-it: ^15.6.0
   typescript: ^4.9.4
+  ufo: ^1.0.1
 
 dependencies:
   '@nuxt-themes/tokens': 1.5.3
   '@nuxtjs/color-mode': 3.2.0
   nuxt-config-schema: 0.4.2
   nuxt-icon: 0.2.5
+  ufo: 1.0.1
 
 devDependencies:
   '@nuxt/content': 2.3.0
