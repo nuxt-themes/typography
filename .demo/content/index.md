@@ -6,6 +6,8 @@ image: preview.jpg
 
 A Nuxt theme to get a beautiful and customisable typography with a set of prose components for [Nuxt Content](https://content.nuxtjs.org).
 
+![Nuxt Typography](/preview.jpg)
+
 Repository is on GitHub: [nuxt-themes/typography](https://github.com/nuxt-themes/typography)
 
 See also the [online playground](https://stackblitz.com/edit/nuxt-theme-typography?file=content/index.md).
