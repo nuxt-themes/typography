@@ -27,12 +27,12 @@ css({
     'a code': {
       color: "inherit",
       fontSize: "0.777777em",
-      backgroundColor: '{color.gray.100}',
-      borderRadius: "0.333333em",
+      backgroundColor: '{prose.code.inline.backgroundColor.light}',
+      borderRadius: "{prose.code.inline.borderRadius}",
       padding: "0.15em 0.5em",
       "@dark": {
         color: '{color.gray.200}',
-        backgroundColor: '{color.gray.800}'
+        backgroundColor: '{prose.code.inline.backgroundColor.dark}'
       }
     }
   }

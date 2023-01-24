@@ -5,6 +5,7 @@
 [![npm version][npm-version-src]][npm-version-href]
 [![License][license-src]][license-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
+[![Volta][volta-src]][volta-href]
 
 > A Nuxt theme to get a beautiful and customisable typography with a set of prose components for [Nuxt Content](https://content.nuxtjs.org).
 
@@ -35,11 +36,14 @@ Enjoy a beautiful typography with [Nuxt Content](https://content.nuxtjs.org).
 
 
 <!-- Badges -->
-[npm-version-src]: https://img.shields.io/npm/v/@nuxt-themes/typography/latest.svg?style=flat&colorA=002438&colorB=28CF8D
+[npm-version-src]: https://img.shields.io/npm/v/@nuxt-themes/typography/latest.svg?style=flat&colorA=18181B&colorB=28CF8D
 [npm-version-href]: https://npmjs.com/package/@nuxt-themes/typography
 
-[npm-downloads-src]: https://img.shields.io/npm/dt/@nuxt-themes/typography.svg?style=flat&colorA=002438&colorB=28CF8D
+[npm-downloads-src]: https://img.shields.io/npm/dt/@nuxt-themes/typography.svg?style=flat&colorA=18181B&colorB=28CF8D
 [npm-downloads-href]: https://npmjs.com/package/@nuxt-themes/typography
 
-[license-src]: https://img.shields.io/github/license/nuxt-themes/typography.svg?style=flat&colorA=002438&colorB=28CF8D
+[license-src]: https://img.shields.io/github/license/nuxt-themes/typography.svg?style=flat&colorA=18181B&colorB=28CF8D
 [license-href]: https://github.com/nuxt-themes/typography/blob/main/LICENSE
+
+[volta-src]: https://user-images.githubusercontent.com/904724/209143798-32345f6c-3cf8-4e06-9659-f4ace4a6acde.svg
+[volta-href]: https://volta.net/nuxt-themes/typography?utm_source=readme_nuxt_typography

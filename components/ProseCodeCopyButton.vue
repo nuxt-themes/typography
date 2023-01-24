@@ -56,6 +56,7 @@ css({
     transform: "scale(0.75)",
     opacity: 0,
     backdropFilter: 'blur(4px)',
+
     '&.show': {
       transform: "scale(1)",
       opacity: 1

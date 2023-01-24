@@ -4,6 +4,7 @@ export default defineNuxtConfigSchema({
      * Prose configuration from Nuxt Typography
      *
      * @studio-icon material-symbols:short-text-rounded
+     * @studio-input icon
      */
     prose: {
       /**

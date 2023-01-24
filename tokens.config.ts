@@ -1,16 +1,75 @@
 import { defineTheme } from 'pinceau'
 
 export default defineTheme({
+  // @ts-ignore
+  color: {
+    primary: {
+      50: '#d9e5ff',
+      100: '#b3cbff',
+      200: '#8db0ff',
+      300: '#6696ff',
+      400: '#407cff',
+      500: '#1a62ff',
+      600: '#0047e1',
+      700: '#0035a9',
+      800: '#002370',
+      900: '#001238'
+    },
+    secondary: {
+      50: '#fafafa',
+      100: '#f4f4f5',
+      200: '#e4e4e7',
+      300: '#D4d4d8',
+      400: '#a1a1aa',
+      500: '#71717A',
+      600: '#52525B',
+      700: '#3f3f46',
+      800: '#27272A',
+      900: '#18181B'
+    }
+  },
   typography: {
+    $schema: {
+      title: 'All the configurable tokens for your Typography.',
+      tags: [
+        '@studio-input design-token',
+        '@studio-input-token-type color',
+        '@studio-icon material-symbols:article'
+      ]
+    },
     verticalMargin: {
+      $schema: {
+        title: 'Vertical spacings between paragraphs.',
+        tags: [
+          '@studio-input design-token',
+          '@studio-input-token-type size',
+          '@studio-icon mingcute:line-height-line'
+        ]
+      },
       sm: '16px',
       base: '32px'
     },
     letterSpacing: {
+      $schema: {
+        title: 'Horizontal spacings between letters.',
+        tags: [
+          '@studio-input design-token',
+          '@studio-input-token-type size',
+          '@studio-icon mingcute:letter-spacing-line'
+        ]
+      },
       tight: '-0.025em',
       wide: '0.025em'
     },
     fontSize: {
+      $schema: {
+        title: 'Horizontal spacings between letters.',
+        tags: [
+          '@studio-input design-token',
+          '@studio-input-token-type font-size',
+          '@studio-icon mingcute:font-size-fill'
+        ]
+      },
       xs: '12px',
       sm: '14px',
       base: '16px',
@@ -26,6 +85,14 @@ export default defineTheme({
       '9xl': '128px'
     },
     fontWeight: {
+      $schema: {
+        title: 'Font weights used in typography.',
+        tags: [
+          '@studio-input design-token',
+          '@studio-input-token-type font-size',
+          '@studio-icon mingcute:bold-fill'
+        ]
+      },
       thin: '100',
       extralight: '200',
       light: '300',
@@ -37,6 +104,14 @@ export default defineTheme({
       black: '900'
     },
     lead: {
+      $schema: {
+        title: 'Line heights used in your typography.',
+        tags: [
+          '@studio-input design-token',
+          '@studio-input-token-type font-size',
+          '@studio-icon material-symbols:height-rounded'
+        ]
+      },
       none: '1',
       tight: '1.25',
       snug: '1.375',
@@ -46,32 +121,40 @@ export default defineTheme({
     },
     color: {
       primary: {
-        50: '#d9e5ff',
-        100: '#b3cbff',
-        200: '#8db0ff',
-        300: '#6696ff',
-        400: '#407cff',
-        500: '#1a62ff',
-        600: '#0047e1',
-        700: '#0035a9',
-        800: '#002370',
-        900: '#001238'
+        50: '{color.primary.50}',
+        100: '{color.primary.100}',
+        200: '{color.primary.200}',
+        300: '{color.primary.300}',
+        400: '{color.primary.400}',
+        500: '{color.primary.500}',
+        600: '{color.primary.600}',
+        700: '{color.primary.700}',
+        800: '{color.primary.800}',
+        900: '{color.primary.900}'
       },
       secondary: {
-        50: '#fafafa',
-        100: '#f4f4f5',
-        200: '#e4e4e7',
-        300: '#D4d4d8',
-        400: '#a1a1aa',
-        500: '#71717A',
-        600: '#52525B',
-        700: '#3f3f46',
-        800: '#27272A',
-        900: '#18181B'
+        50: '{color.secondary.50}',
+        100: '{color.secondary.100}',
+        200: '{color.secondary.200}',
+        300: '{color.secondary.300}',
+        400: '{color.secondary.400}',
+        500: '{color.secondary.500}',
+        600: '{color.secondary.600}',
+        700: '{color.secondary.700}',
+        800: '{color.secondary.800}',
+        900: '{color.secondary.900}'
       }
     }
   },
   prose: {
+    $schema: {
+      title: 'All the configurable tokens for your Prose components.',
+      tags: [
+        '@studio-input design-token',
+        '@studio-input-token-type font-size',
+        '@studio-icon lucide:component'
+      ]
+    },
     p: {
       fontSize: '{typography.fontSize.base}',
       lineHeight: '{typography.lead.normal}',
@@ -166,7 +249,7 @@ export default defineTheme({
         borderBottom: 'none'
       },
       code: {
-        border: '{prose.a.borderWidth} {prose.a.borderStyle} {prose.a.code.borderColor.light.default}',
+        border: '{prose.a.borderWidth} {prose.a.borderStyle.default} {prose.a.code.borderColor.light.default}',
         borderColor: {
           light: {
             default: '{typography.color.secondary.400}',
@@ -215,8 +298,8 @@ export default defineTheme({
       padding: '0 0 0 21px',
       li: {
         markerColor: {
-          light: '{typography.color.secondary.300}',
-          dark: '{typography.color.secondary.800}'
+          light: '{typography.color.secondary.400}',
+          dark: '{typography.color.secondary.500}'
         }
       }
     },
@@ -288,8 +371,8 @@ export default defineTheme({
         fontSize: '{typography.fontSize.sm}',
         margin: '{typography.verticalMargin.base} 0',
         borderColor: {
-          light: '{typography.color.secondary.300}',
-          dark: '{typography.color.secondary.700}'
+          light: '{typography.color.secondary.200}',
+          dark: '{typography.color.secondary.800}'
         },
         color: {
           light: '{typography.color.secondary.700}',
@@ -297,7 +380,7 @@ export default defineTheme({
         },
         backgroundColor: {
           light: '{typography.color.secondary.100}',
-          dark: '{typography.color.secondary.800}'
+          dark: '{typography.color.secondary.900}'
         },
         pre: {
           padding: '{typography.verticalMargin.sm}'
@@ -314,7 +397,7 @@ export default defineTheme({
         },
         backgroundColor: {
           light: '{typography.color.secondary.100}',
-          dark: '{typography.color.secondary.800}'
+          dark: '{typography.color.secondary.900}'
         }
       }
     }

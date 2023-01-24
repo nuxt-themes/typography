@@ -1,7 +1,7 @@
 {
   "name": "@nuxt-themes/typography",
-  "version": "0.1.7",
-  "description": "A beautifuk typography with a set of prose components to use with Nuxt Content.",
+  "version": "0.4.2",
+  "description": "A beautiful typography with a set of prose components to use with Nuxt Content.",
   "keywords": [
     "nuxt",
     "nuxt-content",
@@ -16,6 +16,7 @@
   },
   "files": [
     "components",
+    "app.config.ts",
     "nuxt.config.ts",
     "nuxt.schema.ts",
     "tokens.config.ts",
@@ -24,6 +25,7 @@
   "scripts": {
     "dev": "nuxt dev .demo",
     "build": "nuxi build .demo",
+    "prepare": "nuxi prepare .demo",
     "generate": "nuxi generate .demo",
     "preview": "nuxi preview .demo",
     "lint": "eslint --ext .ts,.js,.vue .",
@@ -31,19 +33,20 @@
     "release": "release-it"
   },
   "dependencies": {
-    "@nuxt-themes/tokens": "^1.2.2",
+    "@nuxt-themes/tokens": "^1.5.3",
     "@nuxtjs/color-mode": "^3.2.0",
-    "nuxt-config-schema": "^0.3.6",
-    "nuxt-icon": "^0.1.8"
+    "nuxt-config-schema": "^0.4.2",
+    "nuxt-icon": "^0.2.5",
+    "ufo": "^1.0.1"
   },
   "devDependencies": {
     "@nuxt/content": "^2.3.0",
-    "@nuxthq/studio": "^0.3.6",
+    "@nuxthq/studio": "^0.5.5",
     "@nuxtjs/eslint-config-typescript": "^12.0.0",
-    "eslint": "^8.29.0",
+    "eslint": "^8.32.0",
     "nuxt": "^3.0.0",
     "nuxt-plausible": "^0.1.2",
-    "release-it": "^15.5.1",
+    "release-it": "^15.6.0",
     "typescript": "^4.9.4"
   },
   "pnpm": {
