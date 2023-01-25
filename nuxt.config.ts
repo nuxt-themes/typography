@@ -16,5 +16,8 @@ export default defineNuxtConfig({
     envModules.tokens,
     'nuxt-icon',
     'nuxt-config-schema'
-  ]
+  ],
+  pinceau: {
+    configFileName: 'tokens.config'
+  }
 })
