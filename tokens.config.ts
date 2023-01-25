@@ -383,6 +383,14 @@ export default defineTheme({
    * If used with @nuxt-themes/tokens, you don't need to change anything, these tokens will be merged with it.
    */
   color: {
+    $schema: {
+      title: 'Your website color palette.',
+      tags: [
+        '@studioInput design-token',
+        '@studioInputTokenType color',
+        '@studioIcon ph:palette'
+      ]
+    },
     white: '#ffffff',
     black: '#0c0c0d',
     primary: {
@@ -398,6 +406,18 @@ export default defineTheme({
       900: '#001238'
     },
     secondary: {
+      50: '{color.gray.50}',
+      100: '{color.gray.100}',
+      200: '{color.gray.200}',
+      300: '{color.gray.300}',
+      400: '{color.gray.400}',
+      500: '{color.gray.500}',
+      600: '{color.gray.600}',
+      700: '{color.gray.700}',
+      800: '{color.gray.800}',
+      900: '{color.gray.900}'
+    },
+    gray: {
       50: '#fafafa',
       100: '#f4f4f5',
       200: '#e4e4e7',
@@ -411,11 +431,80 @@ export default defineTheme({
     }
   },
   radii: {
+    $schema: {
+      title: 'Your website border radiuses.',
+      tags: [
+        '@studioInput design-token',
+        '@studioInpuTokenType size',
+        '@studioIcon material-symbols:rounded-corner'
+      ]
+    },
     sm: '0.375rem',
     md: '0.5rem',
     lg: '0.75rem'
   },
+  fontSize: {
+    $schema: {
+      title: 'Your website font sizes.',
+      tags: [
+        '@studioInput design-token',
+        '@studioInputTokenType font-size',
+        '@studioIcon radix-icons:font-style'
+      ]
+    },
+    xs: {
+      value: '0.75rem'
+    },
+    sm: {
+      value: '0.875rem'
+    },
+    base: {
+      value: '1rem'
+    },
+    lg: {
+      value: '1.125rem'
+    },
+    xl: {
+      value: '1.25rem'
+    }
+  },
+  lead: {
+    $schema: {
+      title: 'Your website line heights.',
+      tags: [
+        '@studioInput design-token',
+        '@studioInputTokenType size',
+        '@studioIcon icon-park-outline:auto-line-height'
+      ]
+    },
+    none: {
+      value: '1'
+    },
+    tight: {
+      value: '1.25'
+    },
+    snug: {
+      value: '1.375'
+    },
+    normal: {
+      value: '1.5'
+    },
+    relaxed: {
+      value: '1.625'
+    },
+    loose: {
+      value: '2'
+    }
+  },
   font: {
+    $schema: {
+      title: 'Your website fonts',
+      tags: [
+        '@studioInput design-token',
+        '@studioInputTokenType font',
+        '@studioIcon material-symbols:font-download-rounded'
+      ]
+    },
     sans: 'ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji',
     serif: 'ui-serif, Georgia, Cambria, Times New Roman, Times, serif',
     mono: 'ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace'
