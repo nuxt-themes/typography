@@ -4,7 +4,8 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/content',
     '@nuxthq/studio',
-    'nuxt-plausible'
+    'nuxt-plausible',
+    '@nuxtjs/color-mode'
   ],
   content: {
     documentDriven: true,
@@ -15,5 +16,14 @@ export default defineNuxtConfig({
         default: 'github-light'
       }
     }
+  },
+  pinceau: {
+    configFileName: 'tokens.config'
+  },
+  typescript: {
+    includeWorkspace: true
+  },
+  colorMode: {
+    classSuffix: '',
   }
 })

@@ -1,49 +1,22 @@
 import { defineTheme } from 'pinceau'
 
 export default defineTheme({
-  // @ts-ignore
-  color: {
-    primary: {
-      50: '#d9e5ff',
-      100: '#b3cbff',
-      200: '#8db0ff',
-      300: '#6696ff',
-      400: '#407cff',
-      500: '#1a62ff',
-      600: '#0047e1',
-      700: '#0035a9',
-      800: '#002370',
-      900: '#001238'
-    },
-    secondary: {
-      50: '#fafafa',
-      100: '#f4f4f5',
-      200: '#e4e4e7',
-      300: '#D4d4d8',
-      400: '#a1a1aa',
-      500: '#71717A',
-      600: '#52525B',
-      700: '#3f3f46',
-      800: '#27272A',
-      900: '#18181B'
-    }
-  },
   typography: {
     $schema: {
       title: 'All the configurable tokens for your Typography.',
       tags: [
-        '@studio-input design-token',
-        '@studio-input-token-type color',
-        '@studio-icon material-symbols:article'
+        '@studioInput design-token',
+        '@studioInputTokenType color',
+        '@studioIcon material-symbols:article'
       ]
     },
     verticalMargin: {
       $schema: {
         title: 'Vertical spacings between paragraphs.',
         tags: [
-          '@studio-input design-token',
-          '@studio-input-token-type size',
-          '@studio-icon mingcute:line-height-line'
+          '@studioInput design-token',
+          '@studioInputTokenType size',
+          '@studioIcon mingcute:line-height-line'
         ]
       },
       sm: '16px',
@@ -53,9 +26,9 @@ export default defineTheme({
       $schema: {
         title: 'Horizontal spacings between letters.',
         tags: [
-          '@studio-input design-token',
-          '@studio-input-token-type size',
-          '@studio-icon mingcute:letter-spacing-line'
+          '@studioInput design-token',
+          '@studioInputTokenType size',
+          '@studioIcon mingcute:letter-spacing-line'
         ]
       },
       tight: '-0.025em',
@@ -65,9 +38,9 @@ export default defineTheme({
       $schema: {
         title: 'Horizontal spacings between letters.',
         tags: [
-          '@studio-input design-token',
-          '@studio-input-token-type font-size',
-          '@studio-icon mingcute:font-size-fill'
+          '@studioInput design-token',
+          '@studioInputTokenType font-size',
+          '@studioIcon mingcute:font-size-fill'
         ]
       },
       xs: '12px',
@@ -88,9 +61,9 @@ export default defineTheme({
       $schema: {
         title: 'Font weights used in typography.',
         tags: [
-          '@studio-input design-token',
-          '@studio-input-token-type font-size',
-          '@studio-icon mingcute:bold-fill'
+          '@studioInput design-token',
+          '@studioInputTokenType font-size',
+          '@studioIcon mingcute:bold-fill'
         ]
       },
       thin: '100',
@@ -107,9 +80,9 @@ export default defineTheme({
       $schema: {
         title: 'Line heights used in your typography.',
         tags: [
-          '@studio-input design-token',
-          '@studio-input-token-type font-size',
-          '@studio-icon material-symbols:height-rounded'
+          '@studioInput design-token',
+          '@studioInputTokenType font-size',
+          '@studioIcon material-symbols:height-rounded'
         ]
       },
       none: '1',
@@ -150,9 +123,9 @@ export default defineTheme({
     $schema: {
       title: 'All the configurable tokens for your Prose components.',
       tags: [
-        '@studio-input design-token',
-        '@studio-input-token-type font-size',
-        '@studio-icon lucide:component'
+        '@studioInput design-token',
+        '@studioInputTokenType font-size',
+        '@studioIcon lucide:component'
       ]
     },
     p: {
@@ -401,5 +374,50 @@ export default defineTheme({
         }
       }
     }
+  },
+  /**
+   * Tokens import from @nuxt-themes/tokens.
+   *
+   * This is made for this package not to depend on @nuxt-themes/tokens globally.
+   *
+   * If used with @nuxt-themes/tokens, you don't need to change anything, these tokens will be merged with it.
+   */
+  color: {
+    white: '#ffffff',
+    black: '#0c0c0d',
+    primary: {
+      50: '#d9e5ff',
+      100: '#b3cbff',
+      200: '#8db0ff',
+      300: '#6696ff',
+      400: '#407cff',
+      500: '#1a62ff',
+      600: '#0047e1',
+      700: '#0035a9',
+      800: '#002370',
+      900: '#001238'
+    },
+    secondary: {
+      50: '#fafafa',
+      100: '#f4f4f5',
+      200: '#e4e4e7',
+      300: '#D4d4d8',
+      400: '#a1a1aa',
+      500: '#71717A',
+      600: '#52525B',
+      700: '#3f3f46',
+      800: '#27272A',
+      900: '#18181B'
+    }
+  },
+  radii: {
+    sm: '0.375rem',
+    md: '0.5rem',
+    lg: '0.75rem'
+  },
+  font: {
+    sans: 'ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji',
+    serif: 'ui-serif, Georgia, Cambria, Times New Roman, Times, serif',
+    mono: 'ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace'
   }
 })

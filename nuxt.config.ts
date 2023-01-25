@@ -4,7 +4,7 @@ import { version } from './package.json'
 logger.success(`Using Nuxt Typography v${version}`)
 
 const envModules = {
-  tokens: process?.env?.THEME_DEV_TOKENS_PATH || '@nuxt-themes/tokens'
+  tokens: process?.env?.THEME_DEV_TOKENS_PATH || 'pinceau/nuxt'
 }
 
 const { resolve } = createResolver(import.meta.url)
