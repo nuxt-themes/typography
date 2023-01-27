@@ -7,6 +7,7 @@
 <style lang="ts" scoped>
 css({
   ol: {
+    fontFamily: '{typography.font.body}',
     listStyleType: '{prose.ol.listStyleType}',
     padding: '{prose.ol.padding}',
     margin: '{prose.ol.margin}',

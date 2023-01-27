@@ -91,7 +91,7 @@ css({
     top: 0,
     right: 0,
     padding: '0.5rem 0.75rem',
-    fontFamily: '{font.mono}',
+    fontFamily: '{typography.font.code}',
     color: '{prose.code.block.color.light}',
     borderRadius: '{radii.lg}',
     fontSize: '{fontSize.xs}',

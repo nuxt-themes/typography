@@ -7,6 +7,7 @@
 <style lang="ts" scoped>
 css({
   th: {
+    fontFamily: '{typography.font.display}',
     color: '{prose.th.color.light}',
     padding: '{prose.th.padding}',
     fontWeight: '{prose.th.fontWeight}',

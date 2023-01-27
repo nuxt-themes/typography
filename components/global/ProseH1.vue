@@ -4,9 +4,9 @@ import { useAppConfig } from '#imports'
 
 defineProps<{ id: string }>()
 
-const { prose } = useAppConfig()
-const hasIcon = computed(() => prose.h1?.icon !== false && prose.headings?.icon !== false)
-const icon = computed(() => prose.h1?.icon || prose.headings?.icon)
+const { prose } = useAppConfig() as any
+const hasIcon = computed(() => prose?.h1?.icon && prose?.headings?.icon)
+const icon = computed(() => prose?.h1?.icon || prose?.headings?.icon)
 </script>
 
 <template>
@@ -21,6 +21,7 @@ const icon = computed(() => prose.h1?.icon || prose.headings?.icon)
 <style scoped lang="ts">
 css({
   h1: {
+    fontFamily: '{typography.font.display}',
     display: 'block',
     margin: '{prose.h1.margin}',
     fontSize: '{prose.h1.fontSize}',

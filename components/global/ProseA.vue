@@ -27,6 +27,7 @@ defineProps({
 <style lang="ts" scoped>
 css({
   a: {
+    fontFamily: '{typography.font.body}',
     fontWeight: '{prose.a.fontWeight}',
     textDecoration: '{prose.a.textDecoration}',
     borderBottom: '{prose.a.borderBottom}',

@@ -7,6 +7,7 @@
 <style lang="ts" scoped>
 css({
   code: {
+    fontFamily: '{typography.font.code}',
     borderRadius: '{prose.code.inline.borderRadius}',
     padding: '{prose.code.inline.padding}',
     fontSize: '{prose.code.inline.fontSize}',

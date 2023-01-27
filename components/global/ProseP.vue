@@ -5,6 +5,7 @@
 <style lang="ts" scoped>
 css({
   p: {
+    fontFamily: '{typography.font.body}',
     fontSize: '{prose.p.fontSize}',
     lineHeight: '{prose.p.lineHeight}',
     margin: '{prose.p.margin}',

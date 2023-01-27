@@ -7,6 +7,7 @@
 <style lang="ts" scoped>
 css({
   blockquote: {
+    fontFamily: '{typography.font.body}',
     margin: '{prose.blockquote.margin}',
     padding: '{prose.blockquote.padding}',
     quotes: '{prose.blockquote.quotes}',

@@ -14,6 +14,7 @@ css({
     margin: '{prose.table.margin}'
   },
   table: {
+    fontFamily: '{typography.font.body}',
     width: "100%",
     tableLayout: "auto",
     textAlign: '{prose.table.textAlign}',

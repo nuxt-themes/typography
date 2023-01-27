@@ -92,7 +92,28 @@ export default defineTheme({
       relaxed: '1.625',
       loose: '2'
     },
+    font: {
+      $schema: {
+        title: 'Your typography fonts',
+        tags: [
+          '@studioInput design-token',
+          '@studioInputTokenType font',
+          '@studioIcon material-symbols:font-download-rounded'
+        ]
+      },
+      display: '{font.sans}',
+      body: '{font.sans}',
+      code: '{font.mono}'
+    },
     color: {
+      $schema: {
+        title: 'Your typography color palette.',
+        tags: [
+          '@studioInput design-token',
+          '@studioInputTokenType color',
+          '@studioIcon ph:palette'
+        ]
+      },
       primary: {
         50: '{color.primary.50}',
         100: '{color.primary.100}',
