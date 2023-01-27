@@ -20,9 +20,6 @@ export default defineNuxtConfig({
   pinceau: {
     configFileName: 'tokens.config'
   },
-  typescript: {
-    includeWorkspace: true
-  },
   colorMode: {
     classSuffix: '',
   }
