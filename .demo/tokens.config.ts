@@ -1,9 +1,9 @@
 import { defineTheme } from 'pinceau'
-import tokens from '@nuxt-themes/tokens/tokens'
+import theme from '@nuxt-themes/tokens/config'
 
 export default defineTheme({
-  space: tokens.space,
+  space: theme.space,
   color: {
-    gray: tokens.color.gray
+    gray: theme.color.gray
   }
 })
