@@ -17,9 +17,6 @@ export default defineNuxtConfig({
       }
     }
   },
-  pinceau: {
-    configFileName: 'tokens.config'
-  },
   colorMode: {
     classSuffix: '',
   }
