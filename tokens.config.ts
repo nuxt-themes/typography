@@ -225,12 +225,12 @@ export default defineTheme({
       borderWidth: '1px',
       borderColor: {
         light: {
-          default: '{typography.color.secondary.400}',
-          hover: '{typography.color.primary.500}'
+          default: 'currentColor',
+          hover: 'currentColor'
         },
         dark: {
-          default: '{typography.color.secondary.400}',
-          hover: '{typography.color.primary.500}'
+          default: 'currentColor',
+          hover: 'currentColor'
         }
       },
       borderStyle: {
