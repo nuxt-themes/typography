@@ -212,48 +212,63 @@ export default defineTheme({
     a: {
       textDecoration: 'none',
       color: {
-        light: {
-          default: 'inherit',
-          hover: '{typography.color.primary.500}'
+        static: {
+          initial: 'inherit',
+          dark: 'inherit'
         },
-        dark: {
-          default: 'inherit',
-          hover: '{typography.color.primary.400}'
+        hover: {
+          initial: '{typography.color.primary.500}',
+          dark: '{typography.color.primary.400}'
         }
       },
-      borderBottom: '{prose.a.borderWidth} {prose.a.borderStyle.default} {prose.a.borderColor.light.default}',
-      borderWidth: '1px',
-      borderColor: {
-        light: {
-          default: '{typography.color.secondary.400}',
-          hover: '{typography.color.primary.500}'
+      border: {
+        width: '1px',
+        style: {
+          static: 'dashed',
+          hover: 'solid'
         },
-        dark: {
-          default: '{typography.color.secondary.400}',
-          hover: '{typography.color.primary.500}'
-        }
+        color: {
+          static: {
+            initial: '{typography.color.secondary.400}',
+            dark: '{typography.color.secondary.400}'
+          },
+          hover: {
+            initial: '{typography.color.primary.500}',
+            dark: '{typography.color.primary.500}'
+          }
+        },
+        distance: '2px'
       },
-      borderStyle: {
-        default: 'dashed',
-        hover: 'solid'
-      },
-      borderDistance: '2px',
       fontWeight: '{typography.fontWeight.medium}',
       hasCode: {
         borderBottom: 'none'
       },
       code: {
-        border: '{prose.a.borderWidth} {prose.a.borderStyle.default} {prose.a.code.borderColor.light.default}',
-        borderColor: {
-          light: {
-            default: '{typography.color.secondary.400}',
-            hover: '{typography.color.primary.500}'
-          },
-          dark: {
-            default: '{typography.color.secondary.600}',
-            hover: '{typography.color.primary.600}'
+        // border: '{prose.a.border.width} {prose.a.border.style.static} {prose.a.code.borderColor.light.default}',
+        border: {
+          width: '{prose.a.border.width}',
+          style: '{prose.a.border.style.static}',
+          color: {
+            static: {
+              initial: '{typography.color.secondary.400}',
+              dark: '{typography.color.secondary.600}'
+            },
+            hover: {
+              initial: '{typography.color.primary.500}',
+              dark: '{typography.color.primary.600}'
+            }
           }
         },
+        // borderColor: {
+        //   light: {
+        //     default: '{typography.color.secondary.400}',
+        //     hover: '{typography.color.primary.500}'
+        //   },
+        //   dark: {
+        //     default: '{typography.color.secondary.600}',
+        //     hover: '{typography.color.primary.600}'
+        //   }
+        // },
         color: {
           light: {
             hover: '{typography.color.primary.500}'

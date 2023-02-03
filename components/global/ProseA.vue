@@ -30,22 +30,15 @@ css({
     fontFamily: '{typography.font.body}',
     fontWeight: '{prose.a.fontWeight}',
     textDecoration: '{prose.a.textDecoration}',
-    borderBottom: '{prose.a.borderBottom}',
-    borderStyle: '{prose.a.borderStyle.default}',
-    paddingBottom: '{prose.a.borderDistance}',
-    color: '{prose.a.color.light.default}',
+    borderBottomWidth: '{prose.a.border.width}',
+    borderBottomStyle: '{prose.a.border.style.static}',
+    borderBottomColor: '{prose.a.border.color.static}',
+    paddingBottom: '{prose.a.border.distance}',
+    color: '{prose.a.color.static}',
     '&:hover': {
-      color: '{prose.a.color.light.hover}',
-      borderColor: '{prose.a.borderColor.light.hover}',
-      borderStyle: '{prose.a.borderStyle.hover}',
-    },
-    '@dark': {
-      color: '{prose.a.color.dark.default}',
-      borderColor: '{prose.a.borderColor.dark.default}',
-      '&:hover': {
-        color: '{prose.a.color.dark.hover}',
-        borderColor: '{prose.a.borderColor.dark.hover}',
-      }
+      color: '{prose.a.color.hover}',
+      borderBottomColor: '{prose.a.border.color.hover}',
+      borderBottomStyle: '{prose.a.border.style.hover}',
     },
     '&:has(img)': {
       borderWidth: '0'
@@ -53,17 +46,19 @@ css({
     '&:has(code)': {
       borderBottom: '{prose.a.hasCode.borderBottom}',
       ':deep(code)': {
-        border: '{prose.a.code.border}',
+        borderWidth: '{prose.a.code.border.width}',
+        borderStyle: '{prose.a.code.border.style}',
+        borderColor: '{prose.a.code.border.color.static}',
         '&:hover': {
           color: '{prose.a.code.color.light.hover}',
-          borderColor: '{prose.a.code.borderColor.light.hover}',
+          borderColor: '{prose.a.code.border.color.hover}',
           background: '{prose.a.code.background.light.hover}',
         },
         '@dark': {
-          borderColor: '{prose.a.code.borderColor.dark.default}',
+          // borderColor: '{prose.a.code.borderColor.dark.default}',
           '&:hover': {
             color: '{prose.a.code.color.dark.hover}',
-            borderColor: '{prose.a.code.borderColor.dark.hover}',
+            // borderColor: '{prose.a.code.borderColor.dark.hover}',
             background: '{prose.a.code.background.dark.hover}'
           }
         }
