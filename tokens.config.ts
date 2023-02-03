@@ -229,12 +229,12 @@ export default defineTheme({
         },
         color: {
           static: {
-            initial: '{typography.color.secondary.400}',
-            dark: '{typography.color.secondary.400}'
+            initial: 'currentColor',
+            dark: 'currentColor'
           },
           hover: {
-            initial: '{typography.color.primary.500}',
-            dark: '{typography.color.primary.500}'
+            initial: 'currentColor',
+            dark: 'currentColor'
           }
         },
         distance: '2px'

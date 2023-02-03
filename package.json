@@ -1,6 +1,6 @@
 {
   "name": "@nuxt-themes/typography",
-  "version": "0.7.1",
+  "version": "0.7.2",
   "description": "A beautiful typography with a set of prose components to use with Nuxt Content.",
   "keywords": [
     "nuxt",
@@ -33,7 +33,7 @@
     "release": "release-it"
   },
   "dependencies": {
-    "@nuxt-themes/tokens": "^1.7.2",
+    "@nuxt-themes/tokens": "^1.7.3",
     "@nuxtjs/color-mode": "^3.2.0",
     "nuxt-config-schema": "^0.4.4",
     "nuxt-icon": "^0.2.10",
@@ -44,7 +44,7 @@
     "@nuxthq/studio": "^0.7.0",
     "@nuxtjs/eslint-config-typescript": "^12.0.0",
     "eslint": "^8.33.0",
-    "nuxt": "3.1.1",
+    "nuxt": "3.1.2",
     "nuxt-plausible": "^0.1.2",
     "release-it": "^15.6.0",
     "typescript": "^4.9.5"
