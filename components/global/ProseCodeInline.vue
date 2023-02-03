@@ -12,12 +12,8 @@ css({
     padding: '{prose.code.inline.padding}',
     fontSize: '{prose.code.inline.fontSize}',
     fontWeight: '{prose.code.inline.fontWeight}',
-    color: '{prose.code.inline.color.light}',
-    backgroundColor: '{prose.code.inline.backgroundColor.light}',
-    "@dark": {
-      color: '{prose.code.inline.color.dark}',
-      backgroundColor: '{prose.code.inline.backgroundColor.dark}'
-    }
+    color: '{prose.code.inline.color}',
+    backgroundColor: '{prose.code.inline.backgroundColor}',
   },
   "tbody code": {
     fontSize: '{prose.tbody.code.inline.fontSize}'
@@ -26,13 +22,8 @@ css({
     'a code': {
       color: "inherit",
       fontSize: "0.777777em",
-      backgroundColor: '{prose.code.inline.backgroundColor.light}',
       borderRadius: "{prose.code.inline.borderRadius}",
       padding: "0.15em 0.5em",
-      "@dark": {
-        color: '{color.gray.200}',
-        backgroundColor: '{prose.code.inline.backgroundColor.dark}'
-      }
     }
   }
 })

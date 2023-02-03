@@ -244,7 +244,6 @@ export default defineTheme({
         borderBottom: 'none'
       },
       code: {
-        // border: '{prose.a.border.width} {prose.a.border.style.static} {prose.a.code.borderColor.light.default}',
         border: {
           width: '{prose.a.border.width}',
           style: '{prose.a.border.style.static}',
@@ -259,30 +258,21 @@ export default defineTheme({
             }
           }
         },
-        // borderColor: {
-        //   light: {
-        //     default: '{typography.color.secondary.400}',
-        //     hover: '{typography.color.primary.500}'
-        //   },
-        //   dark: {
-        //     default: '{typography.color.secondary.600}',
-        //     hover: '{typography.color.primary.600}'
-        //   }
-        // },
         color: {
-          light: {
-            hover: '{typography.color.primary.500}'
+          static: {
+            initial: 'currentColor',
+            dark: 'currentColor'
           },
-          dark: {
-            hover: '{typography.color.primary.300}'
+          hover: {
+            initial: 'currentColor',
+            dark: 'currentColor'
           }
         },
         background: {
-          light: {
-            hover: '{typography.color.primary.50}'
-          },
-          dark: {
-            hover: '{typography.color.primary.900}'
+          static: {},
+          hover: {
+            initial: '{typography.color.primary.50}',
+            dark: '{typography.color.primary.900}'
           }
         }
       }
@@ -401,11 +391,11 @@ export default defineTheme({
         fontSize: '{typography.fontSize.sm}',
         fontWeight: '{typography.fontWeight.normal}',
         color: {
-          light: '{typography.color.secondary.700}',
+          initial: '{typography.color.secondary.700}',
           dark: '{typography.color.secondary.200}'
         },
         backgroundColor: {
-          light: '{typography.color.secondary.100}',
+          initial: '{typography.color.secondary.100}',
           dark: '{typography.color.secondary.900}'
         }
       }

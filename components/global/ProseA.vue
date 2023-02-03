@@ -36,45 +36,28 @@ css({
     paddingBottom: '{prose.a.border.distance}',
     color: '{prose.a.color.static}',
     '&:hover': {
-      color: '{prose.a.color.light.hover}',
-      borderColor: '{prose.a.borderColor.light.hover}',
-      borderStyle: '{prose.a.borderStyle.hover}',
+      color: '{prose.a.color.hover}',
+      borderColor: '{prose.a.border.color.hover}',
+      borderStyle: '{prose.a.border.style.hover}',
     },
     '&:has(img)': {
       borderWidth: '0'
     },
     '&:has(code)': {
       borderBottom: '{prose.a.hasCode.borderBottom} !important',
-      '&:hover': {
-        ':deep(code)': {
-          color: '{prose.a.code.color.light.hover}',
-            borderColor: '{prose.a.code.borderColor.light.hover}',
-            backgroundColor: '{prose.a.code.background.light.hover}',
-        },
-      },
       ':deep(code)': {
-        border: '{prose.a.code.border}',
-      }
-    },
-    '@dark': {
-      color: '{prose.a.color.dark.default}',
-      borderColor: '{prose.a.borderColor.dark.default}',
-      '&:hover': {
-        color: '{prose.a.color.dark.hover}',
-        borderColor: '{prose.a.borderColor.dark.hover}',
+        color: '{prose.a.code.color.static}',
+        borderWidth: '{prose.a.code.border.width}',
+        borderStyle: '{prose.a.code.border.style}',
+        borderColor: '{prose.a.code.border.color.static}',
       },
-      '&:has(code)': {
+      '&:hover': {
         ':deep(code)': {
-          borderColor: '{prose.a.code.borderColor.dark.default}',
+          color: '{prose.a.code.color.hover}',
+          borderColor: '{prose.a.code.border.color.hover}',
+          backgroundColor: '{prose.a.code.background.hover}',
         },
-        '&:hover': {
-          ':deep(code)': {
-            color: '{prose.a.code.color.dark.hover}',
-              borderColor: '{prose.a.code.borderColor.dark.hover}',
-              backgroundColor: '{prose.a.code.background.dark.hover}'
-          }
-        }
-      }
+      },
     },
   },
 })
