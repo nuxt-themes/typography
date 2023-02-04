@@ -8,11 +8,12 @@
 css({
   thead: {
     fontFamily: '{typography.font.display}',
-    border: '{prose.thead.border}',
-    borderBottom: '{prose.thead.borderBottom}',
-    '@dark': {
-      borderColor: '{prose.thead.borderColor.dark}'
-    }
+    borderWidth: '{prose.thead.border.width}',
+    borderStyle: '{prose.thead.border.style}',
+    borderColor: '{prose.thead.border.color}',
+    borderBottom: '{prose.thead.borderBottom.width}',
+    borderBottomStyle: '{prose.thead.borderBottom.style}',
+    borderBottomColor: '{prose.thead.borderBottom.color}',
   }
 })
 </style>

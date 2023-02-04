@@ -336,11 +336,21 @@ export default defineTheme({
       lineHeight: 'inherit'
     },
     thead: {
-      border: 'none',
-      borderBottom: '1px solid {prose.thead.borderColor.light}',
-      borderColor: {
-        light: '{typography.color.secondary.300}',
-        dark: '{typography.color.secondary.600}'
+      border: {
+        width: '0px',
+        style: 'solid',
+        color: {
+          initial: '{typography.color.secondary.300}',
+          dark: '{typography.color.secondary.600}'
+        }
+      },
+      borderBottom: {
+        width: '1px',
+        style: 'solid',
+        color: {
+          initial: '{typography.color.secondary.300}',
+          dark: '{typography.color.secondary.600}'
+        }
       }
     },
     th: {
