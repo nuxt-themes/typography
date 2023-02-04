@@ -311,7 +311,7 @@ export default defineTheme({
       padding: '0 0 0 21px',
       li: {
         markerColor: {
-          light: '{typography.color.secondary.500}',
+          initial: '{typography.color.secondary.500}',
           dark: '{typography.color.secondary.500}'
         }
       }

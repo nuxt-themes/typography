@@ -13,10 +13,7 @@ css({
     margin: '{prose.ol.margin}',
     "& > :deep(li)": {
       "&::marker": {
-        color: '{prose.ol.li.markerColor.light}',
-        "@dark": {
-          color: '{prose.ol.li.markerColor.dark}'
-        }
+        color: '{prose.ol.li.markerColor}',
       },
       'ul, ol': {
         margin: 0
