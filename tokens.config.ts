@@ -363,10 +363,13 @@ export default defineTheme({
     },
     tbody: {
       tr: {
-        borderBottom: '1px dashed {prose.tbody.tr.borderColor.light}',
-        borderColor: {
-          light: '{typography.color.secondary.300}',
-          dark: '{typography.color.secondary.700}'
+        borderBottom: {
+          width: '1px',
+          style: 'dashed',
+          color: {
+            initial: '{typography.color.secondary.300}',
+            dark: '{typography.color.secondary.700}'
+          }
         }
       },
       td: {

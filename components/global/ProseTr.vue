@@ -7,10 +7,9 @@
 <style lang="ts" scoped>
 css({
   'tbody tr': {
-    borderBottom: '{prose.tbody.tr.borderBottom}',
-    "@dark": {
-      borderColor: '{prose.tbody.tr.borderColor.dark}'
-    }
+    borderBottomWidth: '{prose.tbody.tr.borderBottom.width}',
+    borderBottomStyle: '{prose.tbody.tr.borderBottom.style}',
+    borderBottomColor: '{prose.tbody.tr.borderBottom.color}',
   }
 })
 </style>
