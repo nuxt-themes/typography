@@ -11,12 +11,10 @@ css({
     margin: '{prose.blockquote.margin}',
     padding: '{prose.blockquote.padding}',
     quotes: '{prose.blockquote.quotes}',
-    color: '{prose.blockquote.color.light}',
-    borderLeft: '{prose.blockquote.borderLeft}',
-    "@dark": {
-      color: '{prose.blockquote.color.dark}',
-      borderColor: '{prose.blockquote.borderColor.dark}',
-    },
+    color: '{prose.blockquote.color}',
+    borderLeftWidth: '{prose.blockquote.border.width}',
+    borderLeftStyle: '{prose.blockquote.border.style}',
+    borderLeftColor: '{prose.blockquote.border.color}',
     "p:first-of-type::before": { content: "''" },
     "p:last-of-type::after": { content: "''" }
   },

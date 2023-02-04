@@ -282,13 +282,16 @@ export default defineTheme({
       padding: '0 0 0 24px',
       quotes: "'201C' '201D' '2018' '2019'",
       color: {
-        light: '{typography.color.secondary.500}',
+        initial: '{typography.color.secondary.500}',
         dark: '{typography.color.secondary.400}'
       },
-      borderLeft: '1px solid {prose.blockquote.borderColor.light}',
-      borderColor: {
-        light: '{typography.color.secondary.200}',
-        dark: '{typography.color.secondary.700}'
+      border: {
+        width: '4px',
+        style: 'solid',
+        color: {
+          initial: '{typography.color.secondary.200}',
+          dark: '{typography.color.secondary.700}'
+        }
       }
     },
     ul: {
