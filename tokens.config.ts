@@ -372,16 +372,20 @@ export default defineTheme({
       block: {
         fontSize: '{typography.fontSize.sm}',
         margin: '{typography.verticalMargin.base} 0',
-        borderColor: {
-          light: '{typography.color.secondary.200}',
-          dark: '{typography.color.secondary.800}'
+        border: {
+          width: '1px',
+          style: 'solid',
+          color: {
+            initial: '{typography.color.secondary.200}',
+            dark: '{typography.color.secondary.800}'
+          }
         },
         color: {
-          light: '{typography.color.secondary.700}',
+          initial: '{typography.color.secondary.700}',
           dark: '{typography.color.secondary.200}'
         },
         backgroundColor: {
-          light: '{typography.color.secondary.100}',
+          initial: '{typography.color.secondary.100}',
           dark: '{typography.color.secondary.900}'
         },
         pre: {
