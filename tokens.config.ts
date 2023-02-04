@@ -300,7 +300,7 @@ export default defineTheme({
       padding: '0 0 0 21px',
       li: {
         markerColor: {
-          light: '{typography.color.secondary.400}',
+          initial: '{typography.color.secondary.400}',
           dark: '{typography.color.secondary.500}'
         }
       }
