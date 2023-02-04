@@ -345,7 +345,7 @@ export default defineTheme({
     },
     th: {
       color: {
-        light: '{typography.color.secondary.600}',
+        initial: '{typography.color.secondary.600}',
         dark: '{typography.color.secondary.400}'
       },
       padding: '0 {typography.verticalMargin.sm} {typography.verticalMargin.sm} {typography.verticalMargin.sm}',
