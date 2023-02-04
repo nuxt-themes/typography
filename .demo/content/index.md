@@ -4,8 +4,6 @@ image: preview.jpg
 
 # Nuxt Typography
 
-Code in link: [Nuxt `code` Content](https://content.nuxtjs.org)
-
 A Nuxt theme to get a beautiful and customisable typography with a set of prose components for [Nuxt Content](https://content.nuxtjs.org).
 
 ![Nuxt Typography](/preview.jpg)

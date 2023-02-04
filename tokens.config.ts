@@ -325,7 +325,7 @@ export default defineTheme({
       style: 'solid',
       width: '1px',
       color: {
-        light: '{typography.color.secondary.200}',
+        initial: '{typography.color.secondary.200}',
         dark: '{typography.color.secondary.800}'
       }
     },
