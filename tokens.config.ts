@@ -212,62 +212,67 @@ export default defineTheme({
     a: {
       textDecoration: 'none',
       color: {
-        light: {
-          default: 'inherit',
-          hover: '{typography.color.primary.500}'
+        static: {
+          initial: 'inherit',
+          dark: 'inherit'
         },
-        dark: {
-          default: 'inherit',
-          hover: '{typography.color.primary.400}'
+        hover: {
+          initial: '{typography.color.primary.500}',
+          dark: '{typography.color.primary.400}'
         }
       },
-      borderBottom: '{prose.a.borderWidth} {prose.a.borderStyle.default} {prose.a.borderColor.light.default}',
-      borderWidth: '1px',
-      borderColor: {
-        light: {
-          default: 'currentColor',
-          hover: 'currentColor'
+      border: {
+        width: '1px',
+        style: {
+          static: 'dashed',
+          hover: 'solid'
         },
-        dark: {
-          default: 'currentColor',
-          hover: 'currentColor'
-        }
+        color: {
+          static: {
+            initial: 'currentColor',
+            dark: 'currentColor'
+          },
+          hover: {
+            initial: 'currentColor',
+            dark: 'currentColor'
+          }
+        },
+        distance: '2px'
       },
-      borderStyle: {
-        default: 'dashed',
-        hover: 'solid'
-      },
-      borderDistance: '2px',
       fontWeight: '{typography.fontWeight.medium}',
       hasCode: {
         borderBottom: 'none'
       },
       code: {
-        border: '{prose.a.borderWidth} {prose.a.borderStyle.default} {prose.a.code.borderColor.light.default}',
-        borderColor: {
-          light: {
-            default: '{typography.color.secondary.400}',
-            hover: '{typography.color.primary.500}'
-          },
-          dark: {
-            default: '{typography.color.secondary.600}',
-            hover: '{typography.color.primary.600}'
+        border: {
+          width: '{prose.a.border.width}',
+          style: '{prose.a.border.style.static}',
+          color: {
+            static: {
+              initial: '{typography.color.secondary.400}',
+              dark: '{typography.color.secondary.600}'
+            },
+            hover: {
+              initial: '{typography.color.primary.500}',
+              dark: '{typography.color.primary.600}'
+            }
           }
         },
         color: {
-          light: {
-            hover: '{typography.color.primary.500}'
+          static: {
+            initial: 'currentColor',
+            dark: 'currentColor'
           },
-          dark: {
-            hover: '{typography.color.primary.300}'
+          hover: {
+            initial: 'currentColor',
+            dark: 'currentColor'
           }
         },
         background: {
-          light: {
-            hover: '{typography.color.primary.50}'
-          },
-          dark: {
-            hover: '{typography.color.primary.900}'
+          static: {},
+          hover: {
+            initial: '{typography.color.primary.50}',
+            dark: '{typography.color.primary.900}'
           }
         }
       }
@@ -277,13 +282,16 @@ export default defineTheme({
       padding: '0 0 0 24px',
       quotes: "'201C' '201D' '2018' '2019'",
       color: {
-        light: '{typography.color.secondary.500}',
+        initial: '{typography.color.secondary.500}',
         dark: '{typography.color.secondary.400}'
       },
-      borderLeft: '1px solid {prose.blockquote.borderColor.light}',
-      borderColor: {
-        light: '{typography.color.secondary.200}',
-        dark: '{typography.color.secondary.700}'
+      border: {
+        width: '4px',
+        style: 'solid',
+        color: {
+          initial: '{typography.color.secondary.200}',
+          dark: '{typography.color.secondary.700}'
+        }
       }
     },
     ul: {
@@ -292,7 +300,7 @@ export default defineTheme({
       padding: '0 0 0 21px',
       li: {
         markerColor: {
-          light: '{typography.color.secondary.400}',
+          initial: '{typography.color.secondary.400}',
           dark: '{typography.color.secondary.500}'
         }
       }
@@ -303,7 +311,7 @@ export default defineTheme({
       padding: '0 0 0 21px',
       li: {
         markerColor: {
-          light: '{typography.color.secondary.500}',
+          initial: '{typography.color.secondary.500}',
           dark: '{typography.color.secondary.500}'
         }
       }
@@ -317,7 +325,7 @@ export default defineTheme({
       style: 'solid',
       width: '1px',
       color: {
-        light: '{typography.color.secondary.200}',
+        initial: '{typography.color.secondary.200}',
         dark: '{typography.color.secondary.800}'
       }
     },
@@ -328,16 +336,26 @@ export default defineTheme({
       lineHeight: 'inherit'
     },
     thead: {
-      border: 'none',
-      borderBottom: '1px solid {prose.thead.borderColor.light}',
-      borderColor: {
-        light: '{typography.color.secondary.300}',
-        dark: '{typography.color.secondary.600}'
+      border: {
+        width: '0px',
+        style: 'solid',
+        color: {
+          initial: '{typography.color.secondary.300}',
+          dark: '{typography.color.secondary.600}'
+        }
+      },
+      borderBottom: {
+        width: '1px',
+        style: 'solid',
+        color: {
+          initial: '{typography.color.secondary.300}',
+          dark: '{typography.color.secondary.600}'
+        }
       }
     },
     th: {
       color: {
-        light: '{typography.color.secondary.600}',
+        initial: '{typography.color.secondary.600}',
         dark: '{typography.color.secondary.400}'
       },
       padding: '0 {typography.verticalMargin.sm} {typography.verticalMargin.sm} {typography.verticalMargin.sm}',
@@ -345,10 +363,13 @@ export default defineTheme({
     },
     tbody: {
       tr: {
-        borderBottom: '1px dashed {prose.tbody.tr.borderColor.light}',
-        borderColor: {
-          light: '{typography.color.secondary.300}',
-          dark: '{typography.color.secondary.700}'
+        borderBottom: {
+          width: '1px',
+          style: 'dashed',
+          color: {
+            initial: '{typography.color.secondary.300}',
+            dark: '{typography.color.secondary.700}'
+          }
         }
       },
       td: {
@@ -364,16 +385,20 @@ export default defineTheme({
       block: {
         fontSize: '{typography.fontSize.sm}',
         margin: '{typography.verticalMargin.base} 0',
-        borderColor: {
-          light: '{typography.color.secondary.200}',
-          dark: '{typography.color.secondary.800}'
+        border: {
+          width: '1px',
+          style: 'solid',
+          color: {
+            initial: '{typography.color.secondary.200}',
+            dark: '{typography.color.secondary.800}'
+          }
         },
         color: {
-          light: '{typography.color.secondary.700}',
+          initial: '{typography.color.secondary.700}',
           dark: '{typography.color.secondary.200}'
         },
         backgroundColor: {
-          light: '{typography.color.secondary.100}',
+          initial: '{typography.color.secondary.100}',
           dark: '{typography.color.secondary.900}'
         },
         pre: {
@@ -386,11 +411,11 @@ export default defineTheme({
         fontSize: '{typography.fontSize.sm}',
         fontWeight: '{typography.fontWeight.normal}',
         color: {
-          light: '{typography.color.secondary.700}',
+          initial: '{typography.color.secondary.700}',
           dark: '{typography.color.secondary.200}'
         },
         backgroundColor: {
-          light: '{typography.color.secondary.100}',
+          initial: '{typography.color.secondary.100}',
           dark: '{typography.color.secondary.900}'
         }
       }

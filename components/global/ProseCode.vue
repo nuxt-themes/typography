@@ -46,14 +46,11 @@ css({
     fontSize: '{prose.code.block.fontSize}',
     margin: '{prose.code.block.margin}',
     borderRadius: '{radii.md}',
-    border: '1px solid {prose.code.block.borderColor.light}',
-    color: '{prose.code.block.color.light}',
-    backgroundColor: '{prose.code.block.backgroundColor.light}',
-    "@dark": {
-      color: '{prose.code.block.color.dark}',
-      backgroundColor: '{prose.code.block.backgroundColor.dark}',
-      borderColor: '{prose.code.block.borderColor.dark}',
-    },
+    borderWidth: '{prose.code.block.border.width}',
+    borderStyle: '{prose.code.block.border.style}',
+    borderColor: '{prose.code.block.border.color}',
+    color: '{prose.code.block.color}',
+    backgroundColor: '{prose.code.block.backgroundColor}',
 
     "&.highlight-zsh, &.highlight-sh, &.highlight-bash, &.highlight-shell, &.highlight-shellscript": {
       ":deep(code)": {
@@ -92,15 +89,12 @@ css({
     right: 0,
     padding: '0.5rem 0.75rem',
     fontFamily: '{typography.font.code}',
-    color: '{prose.code.block.color.light}',
+    color: '{prose.code.block.color}',
     borderRadius: '{radii.lg}',
     fontSize: '{fontSize.xs}',
     lineHeight: '{lead.normal}',
     transition: 'opacity 200ms',
     backdropFilter: 'blur(4px)',
-    '@dark': {
-      color: '{prose.code.block.color.dark}'
-    }
   },
 
   '.prose-code:hover .filename': {
@@ -122,11 +116,7 @@ css({
   },
 
   ":deep(.line.highlight)": {
-    backgroundColor: '{prose.code.block.borderColor.light}',
-    // No working right now
-    // '@dark': {
-    //   backgroundColor: '{prose.code.block.borderColor.dark}'
-    // }
+    backgroundColor: '{prose.code.block.border.color}',
   }
 })
 </style>
