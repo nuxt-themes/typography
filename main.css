@@ -2,10 +2,12 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: $dt('color.black');
+  background-color: $dt('color.white');
 }
 
 html.dark {
   color: $dt('color.white');
+  background-color: $dt('color.black');
 }
 
 .sr-only {
