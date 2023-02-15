@@ -10,8 +10,8 @@
   "type": "module",
   "exports": {
     ".": "./nuxt.config.ts",
-    "./app-config": "./app.config.ts",
-    "./tokens": "./tokens.config.ts",
+    "./app.config": "./app.config.ts",
+    "./tokens.config": "./tokens.config.ts",
     "./css": "./main.css"
   },
   "files": [
