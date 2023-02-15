@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@nuxt-themes/tokens': ^1.8.0
+  '@nuxt-themes/tokens': ^1.8.2
   '@nuxt/content': 2.4.3
   '@nuxthq/studio': ^0.7.2
   '@nuxtjs/color-mode': ^3.2.0
@@ -11,7 +11,7 @@ specifiers:
   nuxt-config-schema: ^0.4.4
   nuxt-icon: ^0.2.11
   nuxt-plausible: ^0.1.2
-  pinceau: ^0.15.3
+  pinceau: ^0.15.4
   release-it: ^15.6.0
   typescript: ^4.9.5
   ufo: ^1.0.1
@@ -20,11 +20,11 @@ dependencies:
   '@nuxtjs/color-mode': 3.2.0
   nuxt-config-schema: 0.4.4
   nuxt-icon: 0.2.11
-  pinceau: 0.15.3
+  pinceau: 0.15.4
   ufo: 1.0.1
 
 devDependencies:
-  '@nuxt-themes/tokens': 1.8.0
+  '@nuxt-themes/tokens': 1.8.2
   '@nuxt/content': 2.4.3
   '@nuxthq/studio': 0.7.2
   '@nuxtjs/eslint-config-typescript': 12.0.0_7kw3g6rralp5ps6mg3uyzz6azm
@@ -842,12 +842,12 @@ packages:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.15.0
 
-  /@nuxt-themes/tokens/1.8.0:
-    resolution: {integrity: sha512-nmgU6dCyCz94Zd6p2BH0yudjYEZT3Xge+rtmtcfWufSHQxL9pFVOCvk/Q7Idqw/b22+liPfz6aTp0LUXyWWxBQ==}
+  /@nuxt-themes/tokens/1.8.2:
+    resolution: {integrity: sha512-gD+diQ8IbiTbHzHCdoe/10Esk+vByEn5TjtLonWN8835Gk+8gTYa3B3m4fzETGY3S3Gw+lCUOX/LpBP7JrqTwA==}
     dependencies:
       '@nuxtjs/color-mode': 3.2.0
       '@vueuse/core': 9.12.0
-      pinceau: 0.15.3
+      pinceau: 0.15.4
     transitivePeerDependencies:
       - '@vue/composition-api'
       - postcss
@@ -6480,8 +6480,8 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /pinceau/0.15.3:
-    resolution: {integrity: sha512-1fo3SLZuFe/dm4JiFVAJaluJbA8ubMOeNEshrO7/edPu8k55hzZoVr2ZBHpfIzXKg/4wBTGyfu6mnvaDGc7AZg==}
+  /pinceau/0.15.4:
+    resolution: {integrity: sha512-QQwmaR7NdMBl0k8ok+Vw2kKl32Gv9nO6JindHQAWsSz/1U68o1L1iriH7u4GXE9GLm0DB8DT6Mn83G2LPd1Pbg==}
     dependencies:
       '@unocss/reset': 0.49.4
       '@volar/vue-language-core': 1.0.24
