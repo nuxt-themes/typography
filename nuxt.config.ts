@@ -1,7 +1,4 @@
-import { createResolver, logger } from '@nuxt/kit'
-import { version } from './package.json'
-
-logger.success(`Using Nuxt Typography v${version}`)
+import { createResolver } from '@nuxt/kit'
 
 const envModules = {
   tokens: process?.env?.THEME_DEV_TOKENS_PATH || 'pinceau/nuxt'
