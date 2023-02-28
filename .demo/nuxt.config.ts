@@ -5,7 +5,8 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@nuxthq/studio',
     'nuxt-plausible',
-    '@nuxtjs/color-mode'
+    '@nuxtjs/color-mode',
+    '@nuxt/devtools'
   ],
   content: {
     documentDriven: true,
