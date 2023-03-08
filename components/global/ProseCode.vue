@@ -40,6 +40,7 @@ const hovered = ref(false)
 <style lang="ts" scoped>
 css({
   ".prose-code": {
+    display: "grid",
     position: "relative",
     overflow: "hidden",
     width: "100%",
