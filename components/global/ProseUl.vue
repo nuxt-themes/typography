@@ -9,7 +9,7 @@ css({
   ul: {
     fontFamily: '{typography.font.body}',
     listStyleType: '{prose.ul.listStyleType}',
-    padding: '{prose.ul.padding}',
+    paddingInlineStart: '{prose.ul.paddingInlineStart}',
     margin: '{prose.ul.margin}',
     "& > :deep(li)": {
       "&::marker": {

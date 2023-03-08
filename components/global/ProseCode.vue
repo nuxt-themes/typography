@@ -56,7 +56,7 @@ css({
       ":deep(code)": {
         ".line": {
           position: "relative",
-          paddingLeft: "1rem"
+          paddingInlineStart: "1rem"
         },
         ".line::before": {
           content: "'>'",
@@ -112,7 +112,7 @@ css({
     lineHeight: '{lead.relaxed}',
   },
   ":deep(pre code)": {
-    paddingRight: '30px',
+    paddingInlineEnd: '30px',
   },
 
   ":deep(.line.highlight)": {

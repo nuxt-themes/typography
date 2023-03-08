@@ -279,7 +279,7 @@ export default defineTheme({
     },
     blockquote: {
       margin: '{typography.verticalMargin.base} 0',
-      padding: '0 0 0 24px',
+      paddingInlineStart: '24px',
       quotes: "'201C' '201D' '2018' '2019'",
       color: {
         initial: '{typography.color.secondary.500}',
@@ -297,7 +297,7 @@ export default defineTheme({
     ul: {
       listStyleType: 'disc',
       margin: '{typography.verticalMargin.base} 0',
-      padding: '0 0 0 21px',
+      paddingInlineStart: '21px',
       li: {
         markerColor: {
           initial: '{typography.color.secondary.400}',
@@ -308,7 +308,7 @@ export default defineTheme({
     ol: {
       listStyleType: 'decimal',
       margin: '{typography.verticalMargin.base} 0',
-      padding: '0 0 0 21px',
+      paddingInlineStart: '21px',
       li: {
         markerColor: {
           initial: '{typography.color.secondary.500}',

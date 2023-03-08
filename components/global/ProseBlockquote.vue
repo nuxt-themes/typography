@@ -9,7 +9,7 @@ css({
   blockquote: {
     fontFamily: '{typography.font.body}',
     margin: '{prose.blockquote.margin}',
-    padding: '{prose.blockquote.padding}',
+    paddingInlineStart: '{prose.blockquote.paddingInlineStart}',
     quotes: '{prose.blockquote.quotes}',
     color: '{prose.blockquote.color}',
     borderLeftWidth: '{prose.blockquote.border.width}',
