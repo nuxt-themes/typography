@@ -331,7 +331,7 @@ export default defineTheme({
     },
     table: {
       margin: '{typography.verticalMargin.base} 0',
-      textAlign: 'left',
+      textAlign: 'start',
       fontSize: '{typography.fontSize.sm}',
       lineHeight: 'inherit'
     },
