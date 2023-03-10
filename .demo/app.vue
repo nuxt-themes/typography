@@ -32,7 +32,7 @@ css({
     position: 'fixed',
     display: 'flex',
     top: '10px',
-    right: '10px',
+    insetInlineEnd: '10px',
     alignItems: 'center',
     borderRadius: '{space.8}',
     justifyContent: 'center',

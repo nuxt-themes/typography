@@ -9,7 +9,7 @@ css({
   ol: {
     fontFamily: '{typography.font.body}',
     listStyleType: '{prose.ol.listStyleType}',
-    padding: '{prose.ol.padding}',
+    paddingInlineStart: '{prose.ol.paddingInlineStart}',
     margin: '{prose.ol.margin}',
     "& > :deep(li)": {
       "&::marker": {

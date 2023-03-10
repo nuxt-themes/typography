@@ -56,13 +56,13 @@ css({
       ":deep(code)": {
         ".line": {
           position: "relative",
-          paddingLeft: "1rem"
+          paddingInlineStart: "1rem"
         },
         ".line::before": {
           content: "'>'",
           position: "absolute",
           top: "0",
-          left: "-0.1rem",
+          insetInlineStart: "-0.1rem",
           display: "block",
           userSelect: "none",
           fontWeight: 700,
@@ -75,7 +75,7 @@ css({
 
   '.copy-button': {
     position: "absolute",
-    right: 0,
+    insetInlineEnd: 0,
     bottom: 0,
   },
 
@@ -86,7 +86,7 @@ css({
   ".filename": {
     position: "absolute",
     top: 0,
-    right: 0,
+    insetInlineEnd: 0,
     padding: '0.5rem 0.75rem',
     fontFamily: '{typography.font.code}',
     color: '{prose.code.block.color}',
@@ -112,7 +112,7 @@ css({
     lineHeight: '{lead.relaxed}',
   },
   ":deep(pre code)": {
-    paddingRight: '30px',
+    paddingInlineEnd: '30px',
   },
 
   ":deep(.line.highlight)": {
