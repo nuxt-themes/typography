@@ -36,19 +36,19 @@
     "@nuxtjs/color-mode": "^3.2.0",
     "nuxt-config-schema": "^0.4.5",
     "nuxt-icon": "^0.3.2",
-    "pinceau": "^0.18.1",
+    "pinceau": "^0.18.8",
     "ufo": "^1.1.1"
   },
   "devDependencies": {
     "@nuxt-themes/tokens": "^1.9.0",
-    "@nuxt/content": "2.4.3",
-    "@nuxt/devtools": "^0.2.4",
-    "@nuxthq/studio": "^0.7.7",
+    "@nuxt/content": "2.5.2",
+    "@nuxt/devtools": "^0.2.5",
+    "@nuxthq/studio": "^0.8.5",
     "@nuxtjs/eslint-config-typescript": "^12.0.0",
-    "eslint": "^8.35.0",
+    "eslint": "^8.36.0",
     "nuxt": "3.2.3",
     "nuxt-plausible": "^0.1.2",
-    "release-it": "^15.6.1",
+    "release-it": "^15.8.0",
     "typescript": "^4.9.5"
   },
   "pnpm": {
