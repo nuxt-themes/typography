@@ -20,7 +20,7 @@ export default defineTheme({
         ]
       },
       sm: '16px',
-      base: '32px'
+      base: '24px'
     },
     letterSpacing: {
       $schema: {
