@@ -10,6 +10,16 @@ export default defineTheme({
         '@studioIcon material-symbols:article'
       ]
     },
+    body: {
+      color: {
+        initial: '{color.black}',
+        dark: '{color.white}',
+      },
+      backgroundColor: {
+        initial: '{color.white}',
+        dark: '{color.black}',
+      }
+    },
     verticalMargin: {
       $schema: {
         title: 'Vertical spacings between paragraphs.',

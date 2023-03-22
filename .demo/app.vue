@@ -22,10 +22,8 @@
 <style lang="ts">
 css({
   'body': {
-    backgroundColor: '{color.white}',
-    '@dark': {
-      backgroundColor: '{color.black}'
-    }
+    backgroundColor: '{typography.body.backgroundColor}',
+    color: '{typography.body.color}',
   },
 
   nav: {
