@@ -398,10 +398,13 @@ export default defineTheme({
           dark: '{typography.color.secondary.200}'
         },
         backgroundColor: {
-          initial: 'rgb(244 244 245 / 80%)', // typography.color.secondary.100 with opacity 0.8
+          initial: 'rgb(244 244 245 / 60%)', // typography.color.secondary.100 with opacity 0.8
           dark: 'rgb(24 24 27 / 80%)' // typography.color.secondary.900 with opacity 0.8
         },
-        backdropFilter: 'contrast(0.7)',
+        backdropFilter: {
+          initial: 'contrast(0.9)',
+          dark: 'contrast(0.7)'
+        },
         pre: {
           padding: '{typography.verticalMargin.sm}'
         }
