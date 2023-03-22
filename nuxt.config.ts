@@ -1,11 +1,4 @@
-import { createResolver, logger } from '@nuxt/kit'
-import { version } from './package.json'
-
-logger.success(`Using Nuxt Typography v${version}`)
-
-const envModules = {
-  tokens: process?.env?.THEME_DEV_TOKENS_PATH || 'pinceau/nuxt'
-}
+import { createResolver } from '@nuxt/kit'
 
 const { resolve } = createResolver(import.meta.url)
 
@@ -13,7 +6,7 @@ const { resolve } = createResolver(import.meta.url)
 export default defineNuxtConfig({
   css: [resolve('./main.css')],
   modules: [
-    envModules.tokens,
+    'pinceau/nuxt',
     'nuxt-icon',
     'nuxt-config-schema'
   ]

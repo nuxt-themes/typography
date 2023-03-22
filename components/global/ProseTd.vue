@@ -9,8 +9,8 @@ css({
   "tbody td": {
     fontFamily: '{typography.font.body}',
     padding: '{prose.tbody.td.padding}',
-    "&:first-child": { paddingLeft: "0" },
-    "&:last-child": { paddingRight: "0" },
+    "&:first-child": { paddingInlineStart: "0" },
+    "&:last-child": { paddingInlineEnd: "0" },
   }
 })
 </style>

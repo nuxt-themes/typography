@@ -20,7 +20,7 @@ export default defineTheme({
         ]
       },
       sm: '16px',
-      base: '32px'
+      base: '24px'
     },
     letterSpacing: {
       $schema: {
@@ -279,7 +279,7 @@ export default defineTheme({
     },
     blockquote: {
       margin: '{typography.verticalMargin.base} 0',
-      padding: '0 0 0 24px',
+      paddingInlineStart: '24px',
       quotes: "'201C' '201D' '2018' '2019'",
       color: {
         initial: '{typography.color.secondary.500}',
@@ -297,7 +297,7 @@ export default defineTheme({
     ul: {
       listStyleType: 'disc',
       margin: '{typography.verticalMargin.base} 0',
-      padding: '0 0 0 21px',
+      paddingInlineStart: '21px',
       li: {
         markerColor: {
           initial: '{typography.color.secondary.400}',
@@ -308,7 +308,7 @@ export default defineTheme({
     ol: {
       listStyleType: 'decimal',
       margin: '{typography.verticalMargin.base} 0',
-      padding: '0 0 0 21px',
+      paddingInlineStart: '21px',
       li: {
         markerColor: {
           initial: '{typography.color.secondary.500}',
@@ -331,7 +331,7 @@ export default defineTheme({
     },
     table: {
       margin: '{typography.verticalMargin.base} 0',
-      textAlign: 'left',
+      textAlign: 'start',
       fontSize: '{typography.fontSize.sm}',
       lineHeight: 'inherit'
     },
@@ -398,8 +398,12 @@ export default defineTheme({
           dark: '{typography.color.secondary.200}'
         },
         backgroundColor: {
-          initial: '{typography.color.secondary.100}',
-          dark: '{typography.color.secondary.900}'
+          initial: 'rgb(244 244 245 / 60%)', // typography.color.secondary.100 with opacity 0.8
+          dark: 'rgb(24 24 27 / 80%)' // typography.color.secondary.900 with opacity 0.8
+        },
+        backdropFilter: {
+          initial: 'contrast(0.9)',
+          dark: 'contrast(0.7)'
         },
         pre: {
           padding: '{typography.verticalMargin.sm}'
