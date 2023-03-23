@@ -398,12 +398,12 @@ export default defineTheme({
           dark: '{typography.color.secondary.200}'
         },
         backgroundColor: {
-          initial: 'rgb(244 244 245 / 60%)', // typography.color.secondary.100 with opacity 0.8
-          dark: 'rgb(24 24 27 / 80%)' // typography.color.secondary.900 with opacity 0.8
+          initial: '{typography.color.secondary.100}',
+          dark: '{typography.color.secondary.900}'
         },
         backdropFilter: {
-          initial: 'contrast(0.9)',
-          dark: 'contrast(0.7)'
+          initial: 'contrast(0)',
+          dark: 'contrast(0)'
         },
         pre: {
           padding: '{typography.verticalMargin.sm}'
