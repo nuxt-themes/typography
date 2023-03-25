@@ -310,8 +310,8 @@ export default defineTheme({
       paddingInlineStart: '21px',
       li: {
         markerColor: {
-          initial: '{typography.color.secondary.400}',
-          dark: '{typography.color.secondary.500}'
+          initial: 'currentColor',
+          dark: 'currentColor'
         }
       }
     },
@@ -321,8 +321,8 @@ export default defineTheme({
       paddingInlineStart: '21px',
       li: {
         markerColor: {
-          initial: '{typography.color.secondary.500}',
-          dark: '{typography.color.secondary.500}'
+          initial: 'currentColor',
+          dark: 'currentColor'
         }
       }
     },
