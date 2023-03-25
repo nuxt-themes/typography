@@ -85,6 +85,16 @@ export default defineTheme({
           '@studioIcon material-symbols:height-rounded'
         ]
       },
+      1: '.025rem',
+      2: '.5rem',
+      3: '.75rem',
+      4: '1rem',
+      5: '1.25rem',
+      6: '1.5rem',
+      7: '1.75rem',
+      8: '2rem',
+      9: '2.25rem',
+      10: '2.5rem',
       none: '1',
       tight: '1.25',
       snug: '1.375',
@@ -333,7 +343,7 @@ export default defineTheme({
       margin: '{typography.verticalMargin.base} 0',
       textAlign: 'start',
       fontSize: '{typography.fontSize.sm}',
-      lineHeight: 'inherit'
+      lineHeight: '{typography.lead.6}',
     },
     thead: {
       border: {
@@ -489,9 +499,16 @@ export default defineTheme({
         '@studioIcon material-symbols:rounded-corner'
       ]
     },
-    sm: '0.375rem',
-    md: '0.5rem',
-    lg: '0.75rem'
+    'none': '0px',
+    '2xs': '0.125rem',
+    'xs': '0.25rem',
+    'sm': '0.375rem',
+    'md': '0.5rem',
+    'lg': '0.75rem',
+    'xl': '1rem',
+    '2xl': '1.5rem',
+    '3xl': '1.75rem',
+    'full': '9999px',
   },
   fontSize: {
     $schema: {
