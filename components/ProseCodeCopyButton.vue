@@ -20,7 +20,6 @@ const { copy: copyToClipboard } = useClipboard()
 onClickOutside(copyButtonRef, (event) => {
   if ( state.value === 'copied') {
     state.value = 'init'
-    console.log(event)
   }
 })
 const { prose } = useAppConfig()
@@ -31,9 +30,6 @@ const copy = (_e: MouseEvent) => {
   copyToClipboard(props.content)
     .then(() => {
       state.value = 'copied'
-      // setTimeout(() => {
-      //   state.value = 'init'
-      // }, 1000)
     })
     .catch((err) => {
       // eslint-disable-next-line no-console
