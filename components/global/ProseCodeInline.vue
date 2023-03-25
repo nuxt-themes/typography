@@ -10,6 +10,7 @@ css({
     fontFamily: '{typography.font.code}',
     borderRadius: '{prose.code.inline.borderRadius}',
     padding: '{prose.code.inline.padding}',
+    mx: '1px',
     fontSize: '{prose.code.inline.fontSize}',
     fontWeight: '{prose.code.inline.fontWeight}',
     color: '{prose.code.inline.color}',

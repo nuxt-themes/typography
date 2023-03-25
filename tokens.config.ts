@@ -348,8 +348,8 @@ export default defineTheme({
         width: '1px',
         style: 'solid',
         color: {
-          initial: '{typography.color.secondary.300}',
-          dark: '{typography.color.secondary.600}'
+          initial: '{typography.color.secondary.200}',
+          dark: '{typography.color.secondary.800}'
         }
       }
     },
@@ -367,8 +367,8 @@ export default defineTheme({
           width: '1px',
           style: 'dashed',
           color: {
-            initial: '{typography.color.secondary.300}',
-            dark: '{typography.color.secondary.700}'
+            initial: '{typography.color.secondary.200}',
+            dark: '{typography.color.secondary.800}'
           }
         }
       },
@@ -402,16 +402,16 @@ export default defineTheme({
           dark: '{typography.color.secondary.900}'
         },
         backdropFilter: {
-          initial: 'contrast(0)',
-          dark: 'contrast(0)'
+          initial: 'contrast(1)',
+          dark: 'contrast(1)'
         },
         pre: {
           padding: '{typography.verticalMargin.sm}'
         }
       },
       inline: {
-        borderRadius: '0.375rem',
-        padding: '0.25rem 0.375rem 0.25rem 0.375rem',
+        borderRadius: '{radii.xs}',
+        padding: '0.2rem 0.375rem 0.2rem 0.375rem',
         fontSize: '{typography.fontSize.sm}',
         fontWeight: '{typography.fontWeight.normal}',
         color: {
@@ -420,7 +420,7 @@ export default defineTheme({
         },
         backgroundColor: {
           initial: '{typography.color.secondary.100}',
-          dark: '{typography.color.secondary.900}'
+          dark: '{typography.color.secondary.800}'
         }
       }
     }
@@ -558,5 +558,24 @@ export default defineTheme({
     sans: 'ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji',
     serif: 'ui-serif, Georgia, Cambria, Times New Roman, Times, serif',
     mono: 'ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace'
-  }
+  },
+  /**
+   * Using Elements tokens convention.
+   */
+  elements: {
+    surface: {
+      primary: {
+        backgroundColor: {
+          initial: '{color.gray.100}',
+          dark: '{color.gray.900}'
+        }
+      },
+      secondary: {
+        backgroundColor: {
+          initial: '{color.gray.200}',
+          dark: '{color.gray.800}'
+        }
+      },
+    },
+  },
 })

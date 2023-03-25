@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { useClipboard } from '@vueuse/core'
+import { useClipboard, onClickOutside } from '@vueuse/core'
 import { useAppConfig } from '#imports'
 
 const props = defineProps({
@@ -14,7 +14,15 @@ const props = defineProps({
   }
 })
 
+const copyButtonRef = ref<HTMLElement>()
+
 const { copy: copyToClipboard } = useClipboard()
+onClickOutside(copyButtonRef, (event) => {
+  if ( state.value === 'copied') {
+    state.value = 'init'
+    console.log(event)
+  }
+})
 const { prose } = useAppConfig()
 
 const state = ref('init')
@@ -23,9 +31,9 @@ const copy = (_e: MouseEvent) => {
   copyToClipboard(props.content)
     .then(() => {
       state.value = 'copied'
-      setTimeout(() => {
-        state.value = 'init'
-      }, 1000)
+      // setTimeout(() => {
+      //   state.value = 'init'
+      // }, 1000)
     })
     .catch((err) => {
       // eslint-disable-next-line no-console
@@ -35,7 +43,7 @@ const copy = (_e: MouseEvent) => {
 </script>
 
 <template>
-  <button :class="[(show || state === 'copied') && 'show' ]" @click="copy">
+  <button ref="copyButtonRef" :class="[(show || state === 'copied') && 'show' ]" @click="copy">
     <span class="sr-only">Copy to clipboard</span>
     <span class="icon-wrapper">
       <Transition name="fade">
@@ -49,13 +57,22 @@ const copy = (_e: MouseEvent) => {
 <style scoped lang="ts">
 css({
   button: {
-    padding: '8px',
-    margin: '8px',
-    borderRadius: '{radii.sm}',
-    transition: 'all 100ms',
+    padding: '4px',
+    margin: '4px',
+    borderRadius: '3px',
+    transition: 'all 200ms',
     transform: "scale(0.75)",
     opacity: 0,
-    backdropFilter: 'blur(4px)',
+
+    '&:hover': {
+      backgroundColor: '{elements.surface.secondary.backgroundColor}',
+    },
+
+    '&:focus': {
+      opacity: 1,
+      outline: 'none',
+      boxShadow: '0 0 0 2px {color.blue.500}',
+    },
 
     '&.show': {
       transform: "scale(1)",
