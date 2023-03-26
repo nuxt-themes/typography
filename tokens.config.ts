@@ -369,7 +369,8 @@ export default defineTheme({
         dark: '{typography.color.secondary.400}'
       },
       padding: '0 {typography.verticalMargin.sm} {typography.verticalMargin.sm} {typography.verticalMargin.sm}',
-      fontWeight: '{typography.fontWeight.semibold}'
+      fontWeight: '{typography.fontWeight.semibold}',
+      textAlign: 'inherit'
     },
     tbody: {
       tr: {
