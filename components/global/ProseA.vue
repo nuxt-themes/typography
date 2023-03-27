@@ -4,22 +4,16 @@ defineProps({
     type: String,
     default: ''
   },
-  blank: {
-    type: Boolean,
-    default: false
-  },
-  /**
-   * `true` if `href` points to a static file
-   */
-  static: {
-    type: Boolean,
-    default: false
+  target: {
+    type: String,
+    default: undefined,
+    required: false
   }
 })
 </script>
 
 <template>
-  <NuxtLink :to="href" :blank="blank" :static="static">
+  <NuxtLink :to="href" :target="target">
     <slot />
   </NuxtLink>
 </template>
