@@ -17,8 +17,8 @@ const props = defineProps({
 const copyButtonRef = ref<HTMLElement>()
 
 const { copy: copyToClipboard } = useClipboard()
-onClickOutside(copyButtonRef, (event) => {
-  if ( state.value === 'copied') {
+onClickOutside(copyButtonRef, () => {
+  if (state.value === 'copied') {
     state.value = 'init'
   }
 })

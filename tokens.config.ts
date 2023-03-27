@@ -13,11 +13,11 @@ export default defineTheme({
     body: {
       color: {
         initial: '{color.black}',
-        dark: '{color.white}',
+        dark: '{color.white}'
       },
       backgroundColor: {
         initial: '{color.white}',
-        dark: '{color.black}',
+        dark: '{color.black}'
       }
     },
     verticalMargin: {
@@ -353,7 +353,7 @@ export default defineTheme({
       margin: '{typography.verticalMargin.base} 0',
       textAlign: 'start',
       fontSize: '{typography.fontSize.sm}',
-      lineHeight: '{typography.lead.6}',
+      lineHeight: '{typography.lead.6}'
     },
     thead: {
       border: {
@@ -510,16 +510,16 @@ export default defineTheme({
         '@studioIcon material-symbols:rounded-corner'
       ]
     },
-    'none': '0px',
+    none: '0px',
     '2xs': '0.125rem',
-    'xs': '0.25rem',
-    'sm': '0.375rem',
-    'md': '0.5rem',
-    'lg': '0.75rem',
-    'xl': '1rem',
+    xs: '0.25rem',
+    sm: '0.375rem',
+    md: '0.5rem',
+    lg: '0.75rem',
+    xl: '1rem',
     '2xl': '1.5rem',
     '3xl': '1.75rem',
-    'full': '9999px',
+    full: '9999px'
   },
   fontSize: {
     $schema: {
@@ -603,7 +603,7 @@ export default defineTheme({
           initial: '{color.gray.200}',
           dark: '{color.gray.800}'
         }
-      },
-    },
-  },
+      }
+    }
+  }
 })
