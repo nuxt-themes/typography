@@ -52,6 +52,9 @@ css({
     color: '{prose.code.block.color}',
     backgroundColor: '{prose.code.block.backgroundColor}',
     backdropFilter: '{prose.code.block.backdropFilter}',
+    ':deep(code)': {
+      width: '100%'
+    },
 
     "&.highlight-zsh, &.highlight-sh, &.highlight-bash, &.highlight-shell, &.highlight-shellscript": {
       ":deep(code)": {
