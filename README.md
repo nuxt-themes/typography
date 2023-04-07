@@ -48,7 +48,7 @@ Enjoy a beautiful typography with [Nuxt Content](https://content.nuxtjs.org).
 [license-href]: https://github.com/nuxt-themes/typography/blob/main/LICENSE
 
 [nuxt-studio-src]: https://img.shields.io/badge/Nuxt%20Studio-18181B?&logo=nuxt.js&logoColor=3BB5EC
-[nuxt-studio-href]: https://nuxt.studio/templates/docus
+[nuxt-studio-href]: https://nuxt.studio/themes/docus
 
 [nuxt-src]: https://img.shields.io/badge/Nuxt-18181B?&logo=nuxt.js
 [nuxt-href]: https://nuxt.com
