@@ -67,7 +67,7 @@ css({
     '&:focus': {
       opacity: 1,
       outline: 'none',
-      boxShadow: '0 0 0 2px {color.blue.500}',
+      boxShadow: '0 0 0 2px {typography.color.primary.500}',
     },
 
     '&.show': {

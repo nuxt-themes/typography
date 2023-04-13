@@ -12,12 +12,12 @@ export default defineTheme({
     },
     body: {
       color: {
-        initial: '{color.black}',
-        dark: '{color.white}'
+        initial: '{typography.color.black}',
+        dark: '{typography.color.white}'
       },
       backgroundColor: {
-        initial: '{color.white}',
-        dark: '{color.black}'
+        initial: '{typography.color.white}',
+        dark: '{typography.color.black}'
       }
     },
     verticalMargin: {
@@ -121,9 +121,12 @@ export default defineTheme({
           '@studioIcon material-symbols:font-download-rounded'
         ]
       },
-      display: '{font.sans}',
-      body: '{font.sans}',
-      code: '{font.mono}'
+      display: '{typography.font.sans}',
+      body: '{typography.font.sans}',
+      code: '{typography.font.mono}',
+      sans: 'ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji',
+      serif: 'ui-serif, Georgia, Cambria, Times New Roman, Times, serif',
+      mono: 'ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace'
     },
     color: {
       $schema: {
@@ -134,30 +137,74 @@ export default defineTheme({
           '@studioIcon ph:palette'
         ]
       },
+      white: '#ffffff',
+      black: '#0c0c0d',
       primary: {
-        50: '{color.primary.50}',
-        100: '{color.primary.100}',
-        200: '{color.primary.200}',
-        300: '{color.primary.300}',
-        400: '{color.primary.400}',
-        500: '{color.primary.500}',
-        600: '{color.primary.600}',
-        700: '{color.primary.700}',
-        800: '{color.primary.800}',
-        900: '{color.primary.900}'
+        // 50: '{color.primary.50}',
+        // 100: '{color.primary.100}',
+        // 200: '{color.primary.200}',
+        // 300: '{color.primary.300}',
+        // 400: '{color.primary.400}',
+        // 500: '{color.primary.500}',
+        // 600: '{color.primary.600}',
+        // 700: '{color.primary.700}',
+        // 800: '{color.primary.800}',
+        // 900: '{color.primary.900}'
+        50: '#d9e5ff',
+        100: '#b3cbff',
+        200: '#8db0ff',
+        300: '#6696ff',
+        400: '#407cff',
+        500: '#1a62ff',
+        600: '#0047e1',
+        700: '#0035a9',
+        800: '#002370',
+        900: '#001238'
       },
       secondary: {
-        50: '{color.secondary.50}',
-        100: '{color.secondary.100}',
-        200: '{color.secondary.200}',
-        300: '{color.secondary.300}',
-        400: '{color.secondary.400}',
-        500: '{color.secondary.500}',
-        600: '{color.secondary.600}',
-        700: '{color.secondary.700}',
-        800: '{color.secondary.800}',
-        900: '{color.secondary.900}'
+        // 50: '{color.secondary.50}',
+        // 100: '{color.secondary.100}',
+        // 200: '{color.secondary.200}',
+        // 300: '{color.secondary.300}',
+        // 400: '{color.secondary.400}',
+        // 500: '{color.secondary.500}',
+        // 600: '{color.secondary.600}',
+        // 700: '{color.secondary.700}',
+        // 800: '{color.secondary.800}',
+        // 900: '{color.secondary.900}'
+        //     50: '{color.gray.50}',
+        //     100: '{color.gray.100}',
+        //     200: '{color.gray.200}',
+        //     300: '{color.gray.300}',
+        //     400: '{color.gray.400}',
+        //     500: '{color.gray.500}',
+        //     600: '{color.gray.600}',
+        //     700: '{color.gray.700}',
+        //     800: '{color.gray.800}',
+        //     900: '{color.gray.900}'
+        50: '#fafafa',
+        100: '#f4f4f5',
+        200: '#e4e4e7',
+        300: '#D4d4d8',
+        400: '#a1a1aa',
+        500: '#71717A',
+        600: '#52525B',
+        700: '#3f3f46',
+        800: '#27272A',
+        900: '#18181B'
       }
+    },
+    radii: {
+      none: '0px',
+      '2xs': '0.125rem',
+      xs: '0.25rem',
+      sm: '0.375rem',
+      md: '0.5rem',
+      lg: '0.75rem',
+      xl: '1rem',
+      '2xl': '1.5rem',
+      '3xl': '1.75rem',
+      full: '9999px'
     }
   },
   prose: {
@@ -431,7 +478,7 @@ export default defineTheme({
         }
       },
       inline: {
-        borderRadius: '{radii.xs}',
+        borderRadius: '{typography.radii.xs}',
         padding: '0.2rem 0.375rem 0.2rem 0.375rem',
         fontSize: '{typography.fontSize.sm}',
         fontWeight: '{typography.fontWeight.normal}',
@@ -445,147 +492,6 @@ export default defineTheme({
         }
       }
     }
-  },
-  /**
-   * Tokens import from @nuxt-themes/tokens.
-   *
-   * This is made for this package not to depend on @nuxt-themes/tokens globally.
-   *
-   * If used with @nuxt-themes/tokens, you don't need to change anything, these tokens will be merged with it.
-   */
-  color: {
-    $schema: {
-      title: 'Your website color palette.',
-      tags: [
-        '@studioInput design-token',
-        '@studioInputTokenType color',
-        '@studioIcon ph:palette'
-      ]
-    },
-    white: '#ffffff',
-    black: '#0c0c0d',
-    primary: {
-      50: '#d9e5ff',
-      100: '#b3cbff',
-      200: '#8db0ff',
-      300: '#6696ff',
-      400: '#407cff',
-      500: '#1a62ff',
-      600: '#0047e1',
-      700: '#0035a9',
-      800: '#002370',
-      900: '#001238'
-    },
-    secondary: {
-      50: '{color.gray.50}',
-      100: '{color.gray.100}',
-      200: '{color.gray.200}',
-      300: '{color.gray.300}',
-      400: '{color.gray.400}',
-      500: '{color.gray.500}',
-      600: '{color.gray.600}',
-      700: '{color.gray.700}',
-      800: '{color.gray.800}',
-      900: '{color.gray.900}'
-    },
-    gray: {
-      50: '#fafafa',
-      100: '#f4f4f5',
-      200: '#e4e4e7',
-      300: '#D4d4d8',
-      400: '#a1a1aa',
-      500: '#71717A',
-      600: '#52525B',
-      700: '#3f3f46',
-      800: '#27272A',
-      900: '#18181B'
-    }
-  },
-  radii: {
-    $schema: {
-      title: 'Your website border radiuses.',
-      tags: [
-        '@studioInput design-token',
-        '@studioInpuTokenType size',
-        '@studioIcon material-symbols:rounded-corner'
-      ]
-    },
-    none: '0px',
-    '2xs': '0.125rem',
-    xs: '0.25rem',
-    sm: '0.375rem',
-    md: '0.5rem',
-    lg: '0.75rem',
-    xl: '1rem',
-    '2xl': '1.5rem',
-    '3xl': '1.75rem',
-    full: '9999px'
-  },
-  fontSize: {
-    $schema: {
-      title: 'Your website font sizes.',
-      tags: [
-        '@studioInput design-token',
-        '@studioInputTokenType font-size',
-        '@studioIcon radix-icons:font-style'
-      ]
-    },
-    xs: {
-      value: '0.75rem'
-    },
-    sm: {
-      value: '0.875rem'
-    },
-    base: {
-      value: '1rem'
-    },
-    lg: {
-      value: '1.125rem'
-    },
-    xl: {
-      value: '1.25rem'
-    }
-  },
-  lead: {
-    $schema: {
-      title: 'Your website line heights.',
-      tags: [
-        '@studioInput design-token',
-        '@studioInputTokenType size',
-        '@studioIcon icon-park-outline:auto-line-height'
-      ]
-    },
-    none: {
-      value: '1'
-    },
-    tight: {
-      value: '1.25'
-    },
-    snug: {
-      value: '1.375'
-    },
-    normal: {
-      value: '1.5'
-    },
-    relaxed: {
-      value: '1.625'
-    },
-    loose: {
-      value: '2'
-    }
-  },
-  font: {
-    $schema: {
-      title: 'Your website fonts',
-      tags: [
-        '@studioInput design-token',
-        '@studioInputTokenType font',
-        '@studioIcon material-symbols:font-download-rounded'
-      ]
-    },
-    sans: 'ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji',
-    serif: 'ui-serif, Georgia, Cambria, Times New Roman, Times, serif',
-    mono: 'ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace'
   },
   /**
    * Using Elements tokens convention.

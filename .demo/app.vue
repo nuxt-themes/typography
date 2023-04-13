@@ -41,14 +41,14 @@ css({
       padding: '{space.2}',
       alignItems: 'center',
       cursor: 'pointer',
-      color: '{color.gray.600}',
+      color: '{typography.color.secondary.600}',
       '@dark': {
-        color: '{color.gray.400}'
+        color: '{typography.color.secondary.400}'
       },
       '&:hover': {
-        color: '{color.gray.900}',
+        color: '{typography.color.secondary.900}',
         '@dark': {
-          color: '{color.gray.100}'
+          color: '{typography.color.secondary.100}'
         }
       }
     }
