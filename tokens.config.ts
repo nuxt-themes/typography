@@ -140,16 +140,6 @@ export default defineTheme({
       white: '#ffffff',
       black: '#0c0c0d',
       primary: {
-        // 50: '{color.primary.50}',
-        // 100: '{color.primary.100}',
-        // 200: '{color.primary.200}',
-        // 300: '{color.primary.300}',
-        // 400: '{color.primary.400}',
-        // 500: '{color.primary.500}',
-        // 600: '{color.primary.600}',
-        // 700: '{color.primary.700}',
-        // 800: '{color.primary.800}',
-        // 900: '{color.primary.900}'
         50: '#d9e5ff',
         100: '#b3cbff',
         200: '#8db0ff',
@@ -162,26 +152,6 @@ export default defineTheme({
         900: '#001238'
       },
       secondary: {
-        // 50: '{color.secondary.50}',
-        // 100: '{color.secondary.100}',
-        // 200: '{color.secondary.200}',
-        // 300: '{color.secondary.300}',
-        // 400: '{color.secondary.400}',
-        // 500: '{color.secondary.500}',
-        // 600: '{color.secondary.600}',
-        // 700: '{color.secondary.700}',
-        // 800: '{color.secondary.800}',
-        // 900: '{color.secondary.900}'
-        //     50: '{color.gray.50}',
-        //     100: '{color.gray.100}',
-        //     200: '{color.gray.200}',
-        //     300: '{color.gray.300}',
-        //     400: '{color.gray.400}',
-        //     500: '{color.gray.500}',
-        //     600: '{color.gray.600}',
-        //     700: '{color.gray.700}',
-        //     800: '{color.gray.800}',
-        //     900: '{color.gray.900}'
         50: '#fafafa',
         100: '#f4f4f5',
         200: '#e4e4e7',
