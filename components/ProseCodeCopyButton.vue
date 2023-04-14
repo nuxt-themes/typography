@@ -60,9 +60,10 @@ css({
     transform: "scale(0.75)",
     opacity: 0,
 
-    '&:hover': {
-      backgroundColor: '{elements.surface.secondary.backgroundColor}',
-    },
+    // TODO: handle surface tokens
+    // '&:hover': {
+    //   backgroundColor: '{elements.surface.secondary.backgroundColor}',
+    // },
 
     '&:focus': {
       opacity: 1,

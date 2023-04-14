@@ -462,24 +462,5 @@ export default defineTheme({
         }
       }
     }
-  },
-  /**
-   * Using Elements tokens convention.
-   */
-  elements: {
-    surface: {
-      primary: {
-        backgroundColor: {
-          initial: '{color.gray.100}',
-          dark: '{color.gray.900}'
-        }
-      },
-      secondary: {
-        backgroundColor: {
-          initial: '{color.gray.200}',
-          dark: '{color.gray.800}'
-        }
-      }
-    }
   }
 })
