@@ -138,7 +138,7 @@ export default defineTheme({
         ]
       },
       white: '#ffffff',
-      black: '#0c0c0d',
+      black: '#0E0D0D',
       primary: {
         50: '#d9e5ff',
         100: '#b3cbff',
@@ -152,28 +152,33 @@ export default defineTheme({
         900: '#001238'
       },
       secondary: {
-        50: '#fafafa',
-        100: '#f4f4f5',
-        200: '#e4e4e7',
-        300: '#D4d4d8',
-        400: '#a1a1aa',
-        500: '#71717A',
-        600: '#52525B',
-        700: '#3f3f46',
-        800: '#27272A',
-        900: '#18181B'
+        50: '#FBFBFB',
+        100: '#F6F5F4',
+        200: '#ECEBE8',
+        300: '#DBD9D3',
+        400: '#ADA9A4',
+        500: '#97948F',
+        600: '#67635D',
+        700: '#36332E',
+        800: '#201E1B',
+        900: '#121110'
       }
     },
     radii: {
       none: '0px',
-      '2xs': '0.125rem',
-      xs: '0.25rem',
-      sm: '0.375rem',
-      md: '0.5rem',
-      lg: '0.75rem',
-      xl: '1rem',
-      '2xl': '1.5rem',
-      '3xl': '1.75rem',
+      '4xs': '2px',
+      '3xs': '4px',
+      '2xs': '6px',
+      xs: '8px',
+      sm: '10px',
+      md: '12px',
+      lg: '14px',
+      xl: '16px',
+      '2xl': '18px',
+      '3xl': '20px',
+      '4xl': '24px',
+      '5xl': '28px',
+      '6xl': '32px',
       full: '9999px'
     }
   },
@@ -255,7 +260,7 @@ export default defineTheme({
         },
         hover: {
           initial: '{typography.color.primary.500}',
-          dark: '{typography.color.primary.400}'
+          dark: '{typography.color.primary.500}'
         }
       },
       border: {
@@ -423,20 +428,19 @@ export default defineTheme({
       block: {
         fontSize: '{typography.fontSize.sm}',
         margin: '{typography.verticalMargin.base} 0',
-        border: {
-          width: '1px',
-          style: 'solid',
-          color: {
-            initial: '{typography.color.secondary.200}',
-            dark: '{typography.color.secondary.800}'
-          }
+        borderWidth: '1px',
+        borderStyle: 'solid',
+        borderColor: {
+          initial: '{typography.color.secondary.200}',
+          dark: '{typography.color.secondary.800}'
         },
+        borderRadius: '{typography.radii.3xs}',
         color: {
           initial: '{typography.color.secondary.700}',
           dark: '{typography.color.secondary.200}'
         },
         backgroundColor: {
-          initial: '{typography.color.secondary.100}',
+          initial: '{typography.color.secondary.50}',
           dark: '{typography.color.secondary.900}'
         },
         backdropFilter: {
@@ -448,7 +452,7 @@ export default defineTheme({
         }
       },
       inline: {
-        borderRadius: '{typography.radii.xs}',
+        borderRadius: '{typography.radii.3xs}',
         padding: '0.2rem 0.375rem 0.2rem 0.375rem',
         fontSize: '{typography.fontSize.sm}',
         fontWeight: '{typography.fontWeight.normal}',
@@ -458,7 +462,7 @@ export default defineTheme({
         },
         backgroundColor: {
           initial: '{typography.color.secondary.100}',
-          dark: '{typography.color.secondary.800}'
+          dark: '{typography.color.secondary.700}'
         }
       }
     }
