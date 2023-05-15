@@ -41,8 +41,12 @@ export default defineTheme({
           '@studioIcon mingcute:letter-spacing-line'
         ]
       },
-      tight: '-0.025em',
-      wide: '0.025em'
+      tighter: '-0.04em',
+      tight: '-0.02em',
+      normal: '0em',
+      wide: '0.02em',
+      wider: '0.04em',
+      widest: '0.08em'
     },
     fontSize: {
       $schema: {
