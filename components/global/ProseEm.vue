@@ -1,5 +1,5 @@
 <template>
-  <em>
+  <em class="prose-em">
     <slot />
   </em>
 </template>

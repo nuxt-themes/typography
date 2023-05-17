@@ -1,5 +1,5 @@
 <template>
-  <blockquote>
+  <blockquote class="prose-blockquote">
     <slot />
   </blockquote>
 </template>

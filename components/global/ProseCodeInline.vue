@@ -1,5 +1,5 @@
 <template>
-  <code>
+  <code class="prose-code-inline">
     <slot />
   </code>
 </template>
