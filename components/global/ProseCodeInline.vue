@@ -21,11 +21,22 @@ css({
   },
   'h1, h2, h3, h4, h5, h6': {
     'a code': {
-      color: "inherit",
+      color: '{prose.code.inline.color}',
       fontSize: "0.777777em",
       borderRadius: "{prose.code.inline.borderRadius}",
       padding: "0.15em 0.5em",
     }
-  }
+  },
+  'a code': {
+    color: '{prose.a.code.color.static}',
+    borderWidth: '{prose.a.code.border.width}',
+    borderStyle: '{prose.a.code.border.style}',
+    borderColor: '{prose.a.code.border.color.static}',
+  },
+  'a:hover code': {
+    color: '{prose.a.code.color.hover}',
+    borderColor: '{prose.a.code.border.color.hover}',
+    backgroundColor: '{prose.a.code.background.hover}',
+  },
 })
 </style>

@@ -305,10 +305,7 @@ export default defineTheme({
           }
         },
         color: {
-          static: {
-            initial: 'currentColor',
-            dark: 'currentColor'
-          },
+          static: '{prose.code.inline.color}',
           hover: {
             initial: 'currentColor',
             dark: 'currentColor'

@@ -39,19 +39,8 @@ css({
     },
     '&:has(code)': {
       borderBottom: '{prose.a.hasCode.borderBottom}',
-      ':deep(code)': {
-        color: '{prose.a.code.color.static}',
-        borderWidth: '{prose.a.code.border.width}',
-        borderStyle: '{prose.a.code.border.style}',
-        borderColor: '{prose.a.code.border.color.static}',
-      },
       '&:hover': {
         borderBottom: '{prose.a.hasCode.borderBottom}',
-        ':deep(code)': {
-          color: '{prose.a.code.color.hover}',
-          borderColor: '{prose.a.code.border.color.hover}',
-          backgroundColor: '{prose.a.code.background.hover}',
-        },
       },
     },
   },
