@@ -1,5 +1,5 @@
 <template>
-  <tbody>
+  <tbody class="prose-tbody">
     <slot />
   </tbody>
 </template>

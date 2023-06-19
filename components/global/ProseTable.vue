@@ -1,5 +1,5 @@
 <template>
-  <div class="table-wrapper">
+  <div class="prose-table">
     <table>
       <slot />
     </table>
@@ -8,7 +8,7 @@
 
 <style lang="ts" scoped>
 css({
-  ".table-wrapper": {
+  ".prose-table": {
     overflowX: "auto",
     maxWidth: "100%",
     margin: '{prose.table.margin}'

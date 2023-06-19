@@ -1,5 +1,5 @@
 <template>
-  <td>
+  <td class="prose-td">
     <slot />
   </td>
 </template>

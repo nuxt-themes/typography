@@ -45,10 +45,10 @@ css({
     width: "100%",
     fontSize: '{prose.code.block.fontSize}',
     margin: '{prose.code.block.margin}',
-    borderRadius: '{radii.md}',
-    borderWidth: '{prose.code.block.border.width}',
-    borderStyle: '{prose.code.block.border.style}',
-    borderColor: '{prose.code.block.border.color}',
+    borderRadius: '{prose.code.block.borderRadius}',
+    borderWidth: '{prose.code.block.borderWidth}',
+    borderStyle: '{prose.code.block.borderStyle}',
+    borderColor: '{prose.code.block.borderColor}',
     color: '{prose.code.block.color}',
     backgroundColor: '{prose.code.block.backgroundColor}',
     backdropFilter: '{prose.code.block.backdropFilter}',
@@ -71,7 +71,7 @@ css({
           userSelect: "none",
           fontWeight: 700,
           color: '{typography.color.primary.500}',
-          fontFamily: '{font.mono}'
+          fontFamily: '{typography.font.mono}'
         }
       }
     }
@@ -94,9 +94,9 @@ css({
     padding: '0.5rem 0.75rem',
     fontFamily: '{typography.font.code}',
     color: '{prose.code.block.color}',
-    borderRadius: '{radii.lg}',
-    fontSize: '{fontSize.xs}',
-    lineHeight: '{lead.normal}',
+    borderRadius: '{typography.radii.lg}',
+    fontSize: '{typography.fontSize.xs}',
+    lineHeight: '{typography.lead.normal}',
     transition: 'opacity 200ms',
     backdropFilter: 'blur(4px)',
   },
@@ -113,7 +113,7 @@ css({
     overflowX: "auto",
     margin: "0",
     padding: '{prose.code.block.pre.padding}',
-    lineHeight: '{lead.relaxed}',
+    lineHeight: '{typography.lead.relaxed}',
   },
   ":deep(pre code)": {
     paddingInlineEnd: '30px',
