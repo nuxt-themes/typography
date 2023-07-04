@@ -253,7 +253,8 @@ export default defineTheme({
       fontWeight: '{typography.fontWeight.semibold}'
     },
     img: {
-      margin: '{typography.verticalMargin.base} 0'
+      margin: '{typography.verticalMargin.base} 0',
+      borderRadius: '{typography.radii.full}'
     },
     a: {
       textDecoration: 'none',
