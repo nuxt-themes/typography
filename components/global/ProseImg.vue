@@ -43,7 +43,8 @@ const refinedSrc = computed(() => {
 <style lang="ts" scoped>
 css({
   img: {
-    margin: '{prose.img.margin}'
+    margin: '{prose.img.margin}',
+    borderRadius: '{prose.img.borderRadius}',
   }
 })
 </style>
