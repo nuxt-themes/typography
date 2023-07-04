@@ -34,6 +34,7 @@
   },
   "dependencies": {
     "@nuxtjs/color-mode": "^3.2.0",
+    "@vueuse/core": "^10.2.1",
     "nuxt-config-schema": "^0.4.6",
     "nuxt-icon": "^0.4.1",
     "pinceau": "^0.19.0",
