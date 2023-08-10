@@ -30,13 +30,21 @@ const refinedSrc = computed(() => {
 </script>
 
 <template>
-  <img v-bind="$attrs" :src="refinedSrc" :alt="alt" :width="width" :height="height">
+  <img
+    v-bind="$attrs"
+    :src="refinedSrc"
+    :alt="alt"
+    :width="width"
+    :height="height"
+    class="prose-img"
+  >
 </template>
 
 <style lang="ts" scoped>
 css({
   img: {
-    margin: '{prose.img.margin}'
+    margin: '{prose.img.margin}',
+    borderRadius: '{prose.img.borderRadius}',
   }
 })
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <ul>
+  <ul class="prose-ul">
     <slot />
   </ul>
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <ol>
+  <ol class="prose-ol">
     <slot />
   </ol>
 </template>

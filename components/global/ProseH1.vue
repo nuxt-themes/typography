@@ -10,7 +10,7 @@ const icon = computed(() => prose?.h1?.icon || prose?.headings?.icon)
 </script>
 
 <template>
-  <h1 :id="id">
+  <h1 :id="id" class="prose-h1">
     <NuxtLink :href="`#${id}`">
       <slot />
       <Icon v-if="hasIcon" :name="icon" />

@@ -1,5 +1,5 @@
 <template>
-  <hr>
+  <hr class="prose-hr">
 </template>
 
 <style lang="ts" scoped>

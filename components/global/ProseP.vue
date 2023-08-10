@@ -1,5 +1,7 @@
 <template>
-  <p><slot /></p>
+  <p class="prose-p">
+    <slot />
+  </p>
 </template>
 
 <style lang="ts" scoped>

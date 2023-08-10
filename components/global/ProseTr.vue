@@ -1,5 +1,5 @@
 <template>
-  <tr>
+  <tr class="prose-tr">
     <slot />
   </tr>
 </template>
