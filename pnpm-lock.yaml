@@ -1,4 +1,4 @@
-lockfileVersion: '6.1'
+lockfileVersion: '6.0'
 
 settings:
   autoInstallPeers: true
@@ -1103,9 +1103,6 @@ packages:
     peerDependencies:
       nuxt: ^3.6.5
       vite: '*'
-    peerDependenciesMeta:
-      nuxt:
-        optional: true
     dependencies:
       '@nuxt/devtools-kit': 0.7.5(nuxt@3.6.5)(rollup@3.27.2)(vite@4.4.9)
       '@nuxt/devtools-wizard': 0.7.5
@@ -5214,6 +5211,7 @@ packages:
   /iconv-lite@0.6.3:
     resolution: {integrity: sha512-4fCk79wshMdzMp2rH06qWrJE4iolqLhCUH+OiuIgU++RB0+94NlDL81atO7GX55uUKueo0txHNtvEyI6D7WdMw==}
     engines: {node: '>=0.10.0'}
+    requiresBuild: true
     dependencies:
       safer-buffer: 2.1.2
     dev: true
